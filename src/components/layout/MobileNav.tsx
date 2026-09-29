@@ -34,6 +34,7 @@ export function MobileNav({
   const navLinks: NavLink[] = [
     { label: "ABOUT", href: "/about" },
     { label: "SERVICES", action: () => setView('services') },
+    { label: "BLOG", href: "/blog" },
     { label: "CONTACT US", href: "/contact" },
   ];
 
