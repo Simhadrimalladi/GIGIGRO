@@ -48,38 +48,38 @@ export function MobileNav({
 
   // CREATIVE Level
   const creativeRow1: ServiceLink[] = [
-    { label: "BRANDING", href: "/branding" },
-    { label: "DESIGN", href: "/design" },
-    { label: "UI/UX", href: "/ui-ux" },
+    { label: "BRANDING", href: "/services/creative/branding" },
+    { label: "DESIGN", href: "/services/creative/design" },
+    { label: "UI/UX", href: "/services/creative/ui-ux" },
   ];
   const creativeRow2: ServiceLink[] = [
-    { label: "WEB DESIGN", href: "/web-design" },
+    { label: "WEB DESIGN", href: "/services/web/web-design" },
   ];
 
   // WEB Level
   const webRow1: ServiceLink[] = [
-    { label: "WEB DESIGN", href: "/web-design" },
-    { label: "WEB DEVELOPMENT", href: "/web-development" },
+    { label: "WEB DESIGN", href: "/services/web/web-design" },
+    { label: "WEB DEVELOPMENT", href: "/services/web/web-development" },
   ];
   const webRow2: ServiceLink[] = [
-    { label: "ECOMMERCE WEBSITES", href: "/ecommerce" },
-    { label: "WEB HOSTING", href: "/web-hosting" },
+    { label: "ECOMMERCE WEBSITES", href: "/services/web/ecommerce" },
+    { label: "WEB HOSTING", href: "/services/web/web-hosting" },
   ];
   const webRow3: ServiceLink[] = [
-    { label: "WEBSITE SUPPORT", href: "/website-support" },
+    { label: "WEBSITE SUPPORT", href: "/services/web/website-support" },
   ];
   const webRow4: ServiceLink[] = [
-    { label: "PAY MONTHLY WEBSITES", href: "/pay-monthly" },
+    { label: "PAY MONTHLY WEBSITES", href: "/services/web/pay-monthly" },
   ];
 
   // DIGITAL MARKETING Level
   const dmRow1: ServiceLink[] = [
-    { label: "WEBSITE DESIGN & DEV", href: "/web-design" },
-    { label: "SEO OPTIMIZATION", href: "/seo" },
+    { label: "WEBSITE DESIGN & DEV", href: "/services/web/web-design" },
+    { label: "SEO OPTIMIZATION", href: "/services/digital-marketing/seo" },
   ];
   const dmRow2: ServiceLink[] = [
-    { label: "GOOGLE & META ADS", href: "/ppc" },
-    { label: "SOCIAL MEDIA GROWTH", href: "/social-media" },
+    { label: "GOOGLE & META ADS", href: "/services/digital-marketing/ppc" },
+    { label: "SOCIAL MEDIA GROWTH", href: "/services/digital-marketing/social-media" },
   ];
 
   const handleLinkClick = (href?: string, action?: () => void) => {
