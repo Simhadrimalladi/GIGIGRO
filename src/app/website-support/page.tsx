@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Badges } from "@/components/sections/Badges";
-import { Services } from "@/components/sections/Services";
-import { Clients } from "@/components/sections/Clients";
+import { WebsiteSupportServices } from "@/components/sections/WebsiteSupportServices";
+import { WebsiteSupportSolutions } from "@/components/sections/WebsiteSupportSolutions";
+import { WebsiteSupportLocations } from "@/components/sections/WebsiteSupportLocations";
+import { WebsiteSupportTrust } from "@/components/sections/WebsiteSupportTrust";
 import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 import { SelectedWork } from "@/components/sections/SelectedWork";
@@ -17,7 +19,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 
-export default function Home() {
+export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState<string | undefined>(undefined);
   const [submittedUrl, setSubmittedUrl] = useState<string | undefined>(undefined);
@@ -30,48 +32,32 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#000000] text-[#F5F5F5] flex flex-col selection:bg-[#38BDF8] selection:text-[#000000] relative">
-      {/* Sticky Top Header with BIRD Branding, GET A QUOTE button & Menu */}
       <Header />
 
-      {/* Exact Reference Hero Banner with Golden Bird Wings Stardust & Proposal Form */}
-      <Hero onStartProject={(url) => handleOpenProject(undefined, url)} />
+      <Hero 
+        onStartProject={(url) => handleOpenProject(undefined, url)}
+        eyebrow="TOP RATED AND AWARD WINNING"
+        titleMain="Website Support Agency in\nUK"
+        titleSub="That"
+        titleHighlight="Delivers Results"
+        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+      />
 
-      {/* Accreditation Badges Strip */}
       <Badges />
-
-      Digital Marketing Services (6 Dark Cards)
-      <Services onSelectService={(service) => handleOpenProject(service)} />
-
-      {/* White Section: Recognised as a Leading Agency by Top Brands */}
-      <Clients />
-
-      {/* Industries We Work With (16 Grid Matrix) */}
+      <WebsiteSupportServices />
+      <WebsiteSupportSolutions />
+      <WebsiteSupportLocations />
+      <WebsiteSupportTrust />
       <Industries />
-
-      {/* Start a Project CTA */}
       <CTA />
-
-      {/* Case Studies, a selection of successful projects */}
       <SelectedWork />
-
-      {/* Stories of a Digital Marketing Agency (Editorial Insights) */}
       <BlogInsights />
-
-      {/* Agency Info - Black Section with sticky right map */}
       <AgencyInfo />
-
-      {/* Agency Role - White Section with sticky left mockup */}
       <AgencyRole />
-
-      {/* Climax Call to Action: Want to get in touch? Let's talk */}
       <FinalCTA onStartProject={() => handleOpenProject()} />
-
-      {/* Horizontal Continuous Agency Marquee */}
       <Marquee />
-      {/* Multi-Column Mayfair London Footer with Live Clock */}
       <Footer />
 
-      {/* Radix UI Interactive Project Proposal Modal */}
       <ProjectModal
         open={projectModalOpen}
         onOpenChange={setProjectModalOpen}

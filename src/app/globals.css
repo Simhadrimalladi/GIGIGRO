@@ -1,26 +1,573 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-primary: #000000;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --text-muted: #9a9a9a;
+    --accent-yellow: #38bdf8;
+    --accent-yellow-hover: #7dd3fc;
+    --border-color: #2b2b2b;
+    --input-bg: #141414;
+    --font-urbanist: "Urbanist", system-ui, -apple-system, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ========================================================
+   DIALOG ANIMATIONS
+   ======================================================== */
+@keyframes overlayShow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes overlayHide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes contentShow {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes contentHide {
+  from { transform: translateY(0); }
+  to { transform: translateY(100%); }
+}
+
+.dialog-overlay {
+  animation: overlayHide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.dialog-overlay[data-state="open"] {
+  animation: overlayShow 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.dialog-content {
+  animation: contentHide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.dialog-content[data-state="open"] {
+  animation: contentShow 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes textSlideUp {
+  0% { transform: translateY(60px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-text-slide-up {
+  animation: textSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-urbanist);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-urbanist);
+  }
+
+  ::selection {
+    background-color: var(--accent-yellow);
+    color: #000000;
+  }
+
+/* ========================================================
+   CUSTOM SCROLLBAR
+   ======================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+/* ========================================================
+   HEADER STYLES
+   ======================================================== */
+.bird-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  padding: 24px 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.bird-header-padding-sync {
+  padding: 24px 0;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .bird-header {
+    padding: 28px 0;
+  }
+  .bird-header-padding-sync {
+    padding: 28px 0;
+  }
+}
+
+
+
+.bird-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .bird-header-inner {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bird-header-inner {
+    padding: 0 64px;
+  }
+}
+
+.bird-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .bird-header-actions {
+    gap: 28px;
+  }
+}
+
+/* GET A QUOTE Button */
+.btn-quote {
+  background-color: var(--accent-yellow);
+  color: #000000;
+  font-family: var(--font-urbanist);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  height: 38px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.btn-quote:hover {
+  background-color: var(--accent-yellow-hover);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+}
+
+.btn-quote:active {
+  transform: scale(0.98);
+}
+
+/* Hamburger Menu Button */
+.btn-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 24px;
+  height: 38px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-hamburger:hover span {
+  background-color: var(--accent-yellow);
+}
+
+/* ========================================================
+   HERO BANNER STYLES
+   ======================================================== */
+.hero-section {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  padding-top: 140px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 170px;
+    padding-bottom: 90px;
+  }
+}
+
+.hero-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .hero-inner {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-inner {
+    padding: 0 64px;
+  }
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+/* Eyebrow */
+.hero-eyebrow {
+  margin-bottom: 22px;
+}
+
+.hero-eyebrow-text {
+  font-family: var(--font-urbanist);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #8e8e8e;
+}
+
+/* Main H1 Headline - Exact hierarchy from reference */
+.hero-heading {
+  font-family: var(--font-urbanist);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-heading-main {
+  display: block;
+  font-family: var(--font-urbanist);
+  font-size: clamp(34px, 4.6vw, 64px);
+  font-weight: 700;
+  line-height: 1.12;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.hero-heading-sub {
+  display: block;
+  font-family: var(--font-urbanist);
+  font-size: clamp(26px, 3.5vw, 48px); /* Exactly 48px Urbanist from reference */
+  font-weight: 700;
+  line-height: 1.18;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+}
+
+/* em.animated from DevTools: 48px Urbanist, padding: 0px 4px */
+.hero-heading em.animated {
+  font-style: normal;
+  color: #ffffff;
+  padding: 0 4px;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Underline SVG */
+.hero-underline-svg {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.hero-underline-path {
+  stroke: var(--accent-yellow);
+  stroke-width: 3.5px;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+}
+
+/* Supporting Paragraph - Expanded width matching Screenshot 2 */
+.hero-paragraph {
+  font-family: var(--font-urbanist);
+  font-size: 15px;
+  line-height: 1.68;
+  color: #a0a0a0;
+  max-width: 660px;
+  margin: 26px 0 32px 0;
+  font-weight: 400;
+}
+
+/* Form Container */
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 560px;
+}
+
+@media (min-width: 640px) {
+  .hero-form {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hero-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.hero-input {
+  width: 100%;
+  height: 46px;
+  background-color: #141414;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-family: var(--font-urbanist);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-input:focus {
+  border-color: var(--accent-yellow);
+}
+
+.hero-input-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-urbanist);
+  font-size: 14px;
+  color: #737373;
+}
+
+.hero-input-required {
+  color: #e53935;
+  margin-left: 4px;
+}
+
+/* GET MY FREE PROPOSAL Button */
+.btn-proposal {
+  height: 46px;
+  background-color: var(--accent-yellow);
+  color: #000000;
+  font-family: var(--font-urbanist);
+  font-weight: 800;
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.btn-proposal:hover {
+  background-color: var(--accent-yellow-hover);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.btn-proposal:active {
+  transform: scale(0.98);
+}
+
+/* ========================================================
+   HERO REVIEW BADGES - Brand Logos Matching Screenshot 2
+   ======================================================== */
+.hero-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+@media (min-width: 640px) {
+  .hero-reviews {
+    gap: 36px;
+  }
+}
+
+.hero-review-item {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-urbanist);
+  user-select: none;
+}
+
+.hero-review-brand {
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: -0.01em;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.hero-review-brand:hover {
+  opacity: 1;
+}
+
+.hero-review-star {
+  color: #00b67a;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.goodfirms-svg {
+  width: 17px;
+  height: 17px;
+  fill: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ========================================================
+   WHATSAPP FLOATING WIDGET
+   ======================================================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.whatsapp-pill {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: var(--font-urbanist);
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-pill strong {
+  font-weight: 700;
+}
+
+.whatsapp-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover .whatsapp-btn {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
+}
+
+.whatsapp-float:hover .whatsapp-pill {
+  transform: translateX(-3px);
+}
+
+/* Marquee & Utility styles */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
