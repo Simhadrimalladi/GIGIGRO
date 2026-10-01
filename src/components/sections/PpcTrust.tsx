@@ -30,7 +30,7 @@ export function PpcTrust() {
               <span className="font-bold text-[#000000]">Google Premier Partners:</span> We hold the highest level of partnership with Google, granting us access to advanced training, dedicated support, and beta features.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Relentless Optimization:</span> We don't just set and forget. Our account managers review and optimize your campaigns daily to ensure peak performance.
+              <span className="font-bold text-[#000000]">Relentless Optimization:</span> We don&apos;t just set and forget. Our account managers review and optimize your campaigns daily to ensure peak performance.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Custom Strategies:</span> We build bespoke campaigns tailored to your specific profit margins, customer lifetime value, and business objectives.

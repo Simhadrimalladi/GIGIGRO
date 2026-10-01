@@ -15,7 +15,7 @@ export function WebDesignConsultancy() {
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
             From conducting in-depth audits of your current digital presence to developing robust strategies for future growth, our consultants provide actionable insights that align with your business objectives.
           </p>
-          <a href="#" className="text-[14px] font-bold uppercase tracking-wider text-[#000000] border-b-2 border-[#000000] pb-1 hover:text-[#555] hover:border-[#555] transition-colors">Let's talk</a>
+          <a href="#" className="text-[14px] font-bold uppercase tracking-wider text-[#000000] border-b-2 border-[#000000] pb-1 hover:text-[#555] hover:border-[#555] transition-colors">Let&apos;s talk</a>
         </div>
         <div className="flex flex-col justify-center">
           <h3 className="text-[28px] font-bold mb-8">What We Can Cover</h3>

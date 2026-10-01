@@ -36,10 +36,10 @@ export function WebTrust() {
               <span className="font-bold text-[#000000]">Uncompromising Security:</span> Security is never an afterthought. We implement military-grade encryption and rigorous security protocols at every layer of development.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Agile Delivery:</span> We use Scrum and Kanban methodologies, providing transparent, iterative updates so you are always in control of the project's direction.
+              <span className="font-bold text-[#000000]">Agile Delivery:</span> We use Scrum and Kanban methodologies, providing transparent, iterative updates so you are always in control of the project&apos;s direction.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Performance Obsessed:</span> We treat milliseconds like millions. Our development process is focused on achieving perfect scores in Google's Core Web Vitals.
+              <span className="font-bold text-[#000000]">Performance Obsessed:</span> We treat milliseconds like millions. Our development process is focused on achieving perfect scores in Google&apos;s Core Web Vitals.
             </li>
           </ol>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light">

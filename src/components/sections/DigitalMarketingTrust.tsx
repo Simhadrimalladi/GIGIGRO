@@ -27,7 +27,7 @@ export function DigitalMarketingTrust() {
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Omni-Channel Expertise:</span> We don't operate in silos. Our teams collaborate seamlessly to ensure your messaging is consistent and powerful across every touchpoint.
+              <span className="font-bold text-[#000000]">Omni-Channel Expertise:</span> We don&apos;t operate in silos. Our teams collaborate seamlessly to ensure your messaging is consistent and powerful across every touchpoint.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Agile Methodology:</span> We continuously test, learn, and iterate, shifting resources quickly to the strategies that are driving the best results.

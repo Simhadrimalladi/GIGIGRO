@@ -4,6 +4,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SuccessModal } from "@/components/ui/SuccessModal";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { ChevronDown } from "lucide-react";
+
+const howDidYouHearOptions = [
+  { value: "Google", label: "Google Search" },
+  { value: "Social Media", label: "Social Media" },
+  { value: "Referral", label: "Referral" },
+  { value: "Clutch", label: "Clutch / GoodFirms" },
+  { value: "Other", label: "Other" }
+];
 
 export default function QuotePage() {
   const [formData, setFormData] = useState({
@@ -26,6 +37,8 @@ export default function QuotePage() {
     notes: "",
   });
 
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+
   const handleServiceChange = (service: string) => {
     setFormData((prev) => ({
       ...prev,
@@ -39,7 +52,26 @@ export default function QuotePage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Quote Form Submitted:", formData);
-    alert("Thank you! Your quote request has been submitted.");
+    setIsSuccessModalOpen(true);
+    setFormData({
+      fullName: "",
+      email: "",
+      phone: "",
+      website: "",
+      services: {
+        "WEB DESIGN": false,
+        "WEB APPLICATIONS": false,
+        "GRAPHIC DESIGN": false,
+        "SEO": false,
+        "PPC": false,
+        "SOCIAL": false,
+        "HOSTING & EMAILS": false,
+        "SUPPORT": false,
+        "UNSURE": false,
+      },
+      howDidYouHear: "",
+      notes: "",
+    });
   };
 
   return (
@@ -71,9 +103,14 @@ export default function QuotePage() {
           
           {/* Faint 'START A PROJECT' text in background */}
           <div className="absolute -bottom-16 left-0 w-full overflow-hidden pointer-events-none select-none opacity-10 flex whitespace-nowrap">
-            <span className="text-[120px] font-black uppercase text-transparent" style={{ WebkitTextStroke: '2px #38BDF8' }}>
-              START A PROJECT START A PROJECT
-            </span>
+            <div className="animate-marquee flex gap-8">
+              <span className="text-[120px] font-black uppercase text-transparent shrink-0" style={{ WebkitTextStroke: '2px #38BDF8' }}>
+                START A PROJECT • START A PROJECT • START A PROJECT •
+              </span>
+              <span className="text-[120px] font-black uppercase text-transparent shrink-0" style={{ WebkitTextStroke: '2px #38BDF8' }}>
+                START A PROJECT • START A PROJECT • START A PROJECT •
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -154,21 +191,43 @@ export default function QuotePage() {
             </div>
 
             {/* How did you hear */}
-            <div className="space-y-2">
+            <div className="space-y-2 relative">
               <label className="text-[11px] font-bold tracking-widest uppercase text-gray-500">How did you hear about BIRD? *</label>
-              <select 
-                required
-                className="w-full border border-gray-300 rounded p-4 text-[15px] focus:outline-none focus:border-[#38BDF8] transition-colors appearance-none bg-transparent"
-                value={formData.howDidYouHear}
-                onChange={(e) => setFormData({...formData, howDidYouHear: e.target.value})}
-              >
-                <option value="" disabled>Please select</option>
-                <option value="Google">Google Search</option>
-                <option value="Social Media">Social Media</option>
-                <option value="Referral">Referral</option>
-                <option value="Clutch">Clutch / GoodFirms</option>
-                <option value="Other">Other</option>
-              </select>
+              
+              <DropdownMenu.Root>
+                <DropdownMenu.Trigger asChild>
+                  <button 
+                    type="button"
+                    className="w-full border border-gray-300 rounded p-4 text-[15px] focus:outline-none focus:border-[#38BDF8] transition-colors flex justify-between items-center bg-white text-left shadow-sm"
+                  >
+                    <span className={formData.howDidYouHear ? "text-black" : "text-gray-400"}>
+                      {howDidYouHearOptions.find(opt => opt.value === formData.howDidYouHear)?.label || "Please select"}
+                    </span>
+                    <ChevronDown className="w-5 h-5 text-gray-400" />
+                  </button>
+                </DropdownMenu.Trigger>
+
+                <DropdownMenu.Portal>
+                  <DropdownMenu.Content 
+                    align="start"
+                    sideOffset={5}
+                    className="z-[100] w-[var(--radix-dropdown-menu-trigger-width)] bg-white rounded-lg border border-gray-200 shadow-xl overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
+                  >
+                    {howDidYouHearOptions.map((opt) => (
+                      <DropdownMenu.Item 
+                        key={opt.value}
+                        onSelect={() => setFormData({...formData, howDidYouHear: opt.value})}
+                        className="px-4 py-3 text-[15px] text-gray-700 outline-none cursor-pointer hover:bg-[#e0f2fe] hover:text-[#0ea5e9] transition-colors data-[highlighted]:bg-[#e0f2fe] data-[highlighted]:text-[#0ea5e9]"
+                      >
+                        {opt.label}
+                      </DropdownMenu.Item>
+                    ))}
+                  </DropdownMenu.Content>
+                </DropdownMenu.Portal>
+              </DropdownMenu.Root>
+              
+              {/* Hidden input for HTML validation requirement */}
+              <input type="hidden" required value={formData.howDidYouHear} />
             </div>
 
             {/* Notes */}
@@ -203,6 +262,14 @@ export default function QuotePage() {
           </div>
         </div>
       </section>
+      
+      <SuccessModal 
+        open={isSuccessModalOpen} 
+        onOpenChange={setIsSuccessModalOpen} 
+        title="Quote Request Received!"
+        description={`Thank you, ${formData.fullName || 'there'}. Our team will review your requirements and get back to you shortly.`}
+      />
+      
       <Footer />
     </main>
   );

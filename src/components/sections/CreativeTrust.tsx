@@ -27,7 +27,7 @@ export function CreativeTrust() {
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Boundary-Pushing Ideas:</span> We specialize in the unconventional. Our creative team is dedicated to finding unique, unexpected ways to tell your brand's story.
+              <span className="font-bold text-[#000000]">Boundary-Pushing Ideas:</span> We specialize in the unconventional. Our creative team is dedicated to finding unique, unexpected ways to tell your brand&apos;s story.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Full-Service Production:</span> From the initial storyboard to the final color grade, we handle every aspect of creative production entirely in-house.

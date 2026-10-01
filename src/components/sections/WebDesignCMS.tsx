@@ -54,13 +54,13 @@ export function WebDesignCMS() {
           
           <div className="space-y-6 text-[#A3A3A3] text-[14px] md:text-[15px] leading-[1.7] font-light">
             <p>
-              When considering the choice between custom CMS solutions and popular platforms like <span className="underline decoration-[#737373] underline-offset-4">WordPress</span> for UK clients, it's essential to examine the benefits each option brings to the table.
+              When considering the choice between custom CMS solutions and popular platforms like <span className="underline decoration-[#737373] underline-offset-4">WordPress</span> for UK clients, it&apos;s essential to examine the benefits each option brings to the table.
             </p>
             <p>
-              Custom CMS solutions offer a tailored approach, allowing for greater flexibility and control over the website's features and functionality. This customisation ensures a highly personalised experience that caters to the specific requirements of each business. By opting for a custom CMS, clients can achieve a more streamlined and efficient website, with the potential to integrate unique features or custom applications that may not be readily available on popular platforms.
+              Custom CMS solutions offer a tailored approach, allowing for greater flexibility and control over the website&apos;s features and functionality. This customisation ensures a highly personalised experience that caters to the specific requirements of each business. By opting for a custom CMS, clients can achieve a more streamlined and efficient website, with the potential to integrate unique features or custom applications that may not be readily available on popular platforms.
             </p>
             <p>
-              In contrast, popular platforms such as WordPress come with a wealth of benefits that cater to a broad range of businesses. The extensive library of plugins and themes available for WordPress enables businesses to quickly and cost-effectively implement desired features, often without the need for extensive custom development. Additionally, the platform's ease of use makes it accessible to users with varying levels of technical expertise, while the supportive community ensures that businesses can find answers to common questions or seek help when required.
+              In contrast, popular platforms such as WordPress come with a wealth of benefits that cater to a broad range of businesses. The extensive library of plugins and themes available for WordPress enables businesses to quickly and cost-effectively implement desired features, often without the need for extensive custom development. Additionally, the platform&apos;s ease of use makes it accessible to users with varying levels of technical expertise, while the supportive community ensures that businesses can find answers to common questions or seek help when required.
             </p>
             <p>
               Ultimately, the decision between custom CMS solutions and popular platforms like WordPress depends on the specific needs, resources, and objectives of each UK-based client. A custom CMS might be the right choice for businesses seeking a high degree of control and customisation, while WordPress could be a better fit for those seeking a more cost-effective, user-friendly option with a wide range of available features.
@@ -69,7 +69,7 @@ export function WebDesignCMS() {
 
           <div className="mt-12">
             <p className="text-[18px] text-[#FFFFFF] font-light">
-              Wanna get in touch? <a href="#" className="text-[#38BDF8] border-b border-[#38BDF8] pb-1 hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition-colors">Let's talk</a>
+              Wanna get in touch? <a href="#" className="text-[#38BDF8] border-b border-[#38BDF8] pb-1 hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition-colors">Let&apos;s talk</a>
             </p>
           </div>
         </div>

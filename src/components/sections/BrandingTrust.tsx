@@ -27,7 +27,7 @@ export function BrandingTrust() {
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Strategic Foundation:</span> We don't just design pretty logos; we build comprehensive brand systems rooted in deep market research and consumer psychology.
+              <span className="font-bold text-[#000000]">Strategic Foundation:</span> We don&apos;t just design pretty logos; we build comprehensive brand systems rooted in deep market research and consumer psychology.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Timeless Design:</span> We avoid fleeting trends, focusing instead on creating enduring visual identities that will serve your business for decades.

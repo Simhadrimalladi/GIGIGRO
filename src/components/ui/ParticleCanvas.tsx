@@ -37,7 +37,7 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    class GoldParticle {
+    class Particle {
       x: number;
       y: number;
       size: number;
@@ -68,8 +68,8 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
         this.angularSpeed = (Math.random() - 0.5) * 0.03;
         this.pulseSpeed = Math.random() * 0.04 + 0.01;
 
-        const goldHues = ["#D4AF37", "#FFDF73", "#E5C158", "#FFF2A8", "#B38F26"];
-        this.color = goldHues[Math.floor(Math.random() * goldHues.length)];
+        const skyBlueHues = ["#38BDF8", "#7DD3FC", "#BAE6FD", "#E0F2FE", "#0EA5E9"];
+        this.color = skyBlueHues[Math.floor(Math.random() * skyBlueHues.length)];
       }
 
       update() {
@@ -118,10 +118,10 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
     }
 
     const count = Math.min(Math.floor((width * height) / 6000), 160);
-    const particles: GoldParticle[] = [];
+    const particles: Particle[] = [];
 
     for (let i = 0; i < count; i++) {
-      particles.push(new GoldParticle());
+      particles.push(new Particle());
     }
 
     const connectParticles = () => {
@@ -148,7 +148,7 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
     const animate = () => {
       ctx.clearRect(0, 0, width, height);
 
-      // Deep golden glowing core behind the particles
+      // Deep sky blue glowing core behind the particles
       const gradient = ctx.createRadialGradient(
         width * 0.78,
         height * 0.45,
@@ -157,8 +157,8 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
         height * 0.45,
         width * 0.38
       );
-      gradient.addColorStop(0, "rgba(212, 175, 55, 0.15)");
-      gradient.addColorStop(0.5, "rgba(212, 175, 55, 0.04)");
+      gradient.addColorStop(0, "rgba(56, 189, 248, 0.15)");
+      gradient.addColorStop(0.5, "rgba(56, 189, 248, 0.04)");
       gradient.addColorStop(1, "rgba(5, 5, 5, 0)");
 
       ctx.fillStyle = gradient;

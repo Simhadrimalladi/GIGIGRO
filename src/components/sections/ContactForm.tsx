@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Send } from "lucide-react";
 import Image from "next/image";
+import { SuccessModal } from "../ui/SuccessModal";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ export function ContactForm() {
     message: ""
   });
 
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -21,7 +24,15 @@ export function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
-    alert("Form submitted! (Demo)");
+    setIsSuccessModalOpen(true);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      budget: "",
+      message: ""
+    });
   };
 
   return (
@@ -154,6 +165,13 @@ export function ContactForm() {
           </form>
         </div>
       </div>
+      
+      <SuccessModal 
+        open={isSuccessModalOpen} 
+        onOpenChange={setIsSuccessModalOpen} 
+        title="Message Sent Successfully!"
+        description={`Thank you, ${formData.name || 'there'}. Our senior strategist will get back to you within 24 hours.`}
+      />
     </section>
   );
 }

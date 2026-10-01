@@ -11,9 +11,9 @@ export function WebDesignTestimonial() {
             <strong className="text-white">100+ Projects Delivered</strong> Across Various Industries, Driving Unmatched <strong className="text-white">Web Design Success</strong>
           </p>
         </div>
-        <div className="text-[#38BDF8] text-[64px] leading-none text-left mb-4 italic font-serif">"</div>
+        <div className="text-[#38BDF8] text-[64px] leading-none text-left mb-4 italic font-serif">&quot;</div>
         <p className="text-[24px] md:text-[32px] font-medium leading-[1.4] mb-8 italic">
-          Excellent team - we've been really impressed with the build quality of our website and the flexibility provided within WordPress. The support team are also incredibly reactive (and helpful when we break things!)
+          Excellent team - we&apos;ve been really impressed with the build quality of our website and the flexibility provided within WordPress. The support team are also incredibly reactive (and helpful when we break things!)
         </p>
         <p className="text-[#A3A3A3] text-[14px] text-left">Rebecca S.</p>
       </div>

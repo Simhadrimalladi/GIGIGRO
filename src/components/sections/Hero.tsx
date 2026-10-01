@@ -12,15 +12,17 @@ interface HeroProps {
   titleSub?: string;
   titleHighlight?: string;
   description?: string;
+  showFormAndLogos?: boolean;
 }
 
 export function Hero({ 
   onStartProject,
-  eyebrow = "TOP RATED AND AWARD WINNING",
-  titleMain = "Digital Marketing Agency in\\nUK",
+  eyebrow = "TOP RATED DIGITAL AGENCY",
+  titleMain = "Transforming Brands With In Innovation",
   titleSub = "That",
-  titleHighlight = "Delivers Results",
-  description = "Accelerate your business growth with our multi award-winning, Full Service Digital Marketing Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+  titleHighlight = "Drives Growth",
+  description = "Accelerate your business growth with our multi award-winning, full-service digital agency. We offer a broad spectrum of tailored digital solutions designed to elevate your brand. With proven expertise and a global presence, we ensure you outpace the competition and achieve measurable success.",
+  showFormAndLogos = true
 }: HeroProps) {
   const [websiteUrl, setWebsiteUrl] = useState("");
   const containerRef = useRef<HTMLElement | null>(null);
@@ -132,66 +134,70 @@ export function Hero({
           </p>
 
           {/* Interactive Form with zero inline styles */}
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="hero-form"
-          >
-            <div className="hero-input-wrapper">
-              <input
-                type="text"
-                value={websiteUrl}
-                onChange={(e) => setWebsiteUrl(e.target.value)}
-                placeholder="Website URL *"
-                className="hero-input"
-              />
-              {!websiteUrl && (
-                <div className="hero-input-placeholder">
-                  <span>Website URL</span>
-                  <span className="hero-input-required">*</span>
+          {showFormAndLogos && (
+            <>
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="hero-form"
+              >
+                <div className="hero-input-wrapper">
+                  <input
+                    type="text"
+                    value={websiteUrl}
+                    onChange={(e) => setWebsiteUrl(e.target.value)}
+                    placeholder="Website URL *"
+                    className="hero-input"
+                  />
+                  {!websiteUrl && (
+                    <div className="hero-input-placeholder">
+                      <span>Website URL</span>
+                      <span className="hero-input-required">*</span>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
 
-            <button type="submit" className="btn-proposal">
-              GET MY FREE PROPOSAL
-            </button>
-          </form>
+                <button type="submit" className="btn-proposal">
+                  GET MY FREE PROPOSAL
+                </button>
+              </form>
 
-          {/* Review Badges from reference */}
-          <div className="hero-reviews">
-            <div className="hero-review-item">
-              <span className="hero-review-brand">
-                <span className="hero-review-star">★</span>
-                Trustpilot
-              </span>
-            </div>
+              {/* Review Badges from reference */}
+              <div className="hero-reviews">
+                <div className="hero-review-item">
+                  <span className="hero-review-brand">
+                    <span className="hero-review-star">★</span>
+                    Trustpilot
+                  </span>
+                </div>
 
-            <div className="hero-review-item">
-              <span className="hero-review-brand hero-brand-google">
-                Google
-              </span>
-            </div>
+                <div className="hero-review-item">
+                  <span className="hero-review-brand hero-brand-google">
+                    Google
+                  </span>
+                </div>
 
-            <div className="hero-review-item">
-              <span className="hero-review-brand hero-brand-goodfirms">
-                <svg
-                  className="goodfirms-svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z" />
-                </svg>
-                GoodFirms
-              </span>
-            </div>
+                <div className="hero-review-item">
+                  <span className="hero-review-brand hero-brand-goodfirms">
+                    <svg
+                      className="goodfirms-svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z" />
+                    </svg>
+                    GoodFirms
+                  </span>
+                </div>
 
-            <div className="hero-review-item">
-              <span className="hero-review-brand hero-brand-clutch">
-                Clutch
-              </span>
-            </div>
-          </div>
+                <div className="hero-review-item">
+                  <span className="hero-review-brand hero-brand-clutch">
+                    Clutch
+                  </span>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

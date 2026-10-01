@@ -1,8 +1,5 @@
 import React from "react";
 import { Code2, Building2, ShoppingCart, Smartphone, Settings } from "lucide-react";
-// Since lucide doesn't have a direct Wordpress logo, we'll use a generic globe or layout icon or custom SVG.
-// Using a simple layout icon for WordPress
-import { Layout } from "lucide-react"; 
 
 export function WebDevelopmentServices() {
   const services = [

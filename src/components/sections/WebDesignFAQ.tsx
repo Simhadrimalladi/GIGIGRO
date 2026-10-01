@@ -18,7 +18,7 @@ export function WebDesignFAQ() {
     <section className="bg-[#FFFFFF] text-[#000000] py-24">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
         <h2 className="text-[32px] md:text-[42px] font-bold tracking-tight leading-[1.1] mb-12">
-          UK Web Design FAQ's
+          UK Web Design FAQ&apos;s
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6">
           {faqs.map((faq, i) => (

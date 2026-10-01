@@ -30,7 +30,7 @@ export function WebsiteSupportTrust() {
               <span className="font-bold text-[#000000]">Rapid Response Times:</span> We pride ourselves on industry-leading SLA commitments, ensuring your issues are addressed within minutes, not days.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Proactive Maintenance:</span> We don't wait for things to break. Our team actively monitors and patches your systems to prevent problems before they occur.
+              <span className="font-bold text-[#000000]">Proactive Maintenance:</span> We don&apos;t wait for things to break. Our team actively monitors and patches your systems to prevent problems before they occur.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Transparent Reporting:</span> Receive comprehensive monthly reports detailing all updates, security scans, and performance metrics for complete visibility.

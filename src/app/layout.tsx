@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import { CustomCursor } from "@/components/ui/CustomCursor";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${urbanist.variable} font-urbanist scroll-smooth`}>
       <body suppressHydrationWarning className="min-h-screen bg-[#000000] text-[#FFFFFF] antialiased selection:bg-[#38BDF8] selection:text-[#000000]">
+        <CustomCursor />
         {children}
       </body>
     </html>

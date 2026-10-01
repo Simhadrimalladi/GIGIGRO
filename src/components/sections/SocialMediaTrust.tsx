@@ -33,7 +33,7 @@ export function SocialMediaTrust() {
               <span className="font-bold text-[#000000]">Platform Experts:</span> Our team consists of specialists for each major network, ensuring we utilize the unique features and algorithms of every platform.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Proactive Engagement:</span> We don't just post content; we actively build relationships with your audience, turning casual followers into brand advocates.
+              <span className="font-bold text-[#000000]">Proactive Engagement:</span> We don&apos;t just post content; we actively build relationships with your audience, turning casual followers into brand advocates.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Measurable ROI:</span> We tie social metrics directly to your business goals, proving the tangible value of your social media investment.

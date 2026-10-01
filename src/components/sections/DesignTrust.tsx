@@ -30,7 +30,7 @@ export function DesignTrust() {
               <span className="font-bold text-[#000000]">Limitless Creativity:</span> Our multi-disciplinary team pushes the boundaries of conventional design, delivering fresh, innovative concepts that demand attention.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Strategic Execution:</span> We don't just make things look pretty. Every pixel is placed with intent, designed to guide the viewer and drive specific actions.
+              <span className="font-bold text-[#000000]">Strategic Execution:</span> We don&apos;t just make things look pretty. Every pixel is placed with intent, designed to guide the viewer and drive specific actions.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Flawless Typography:</span> We obsess over the details. Our mastery of typography ensures your messaging is not just legible, but emotionally resonant.

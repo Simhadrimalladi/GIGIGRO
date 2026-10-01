@@ -12,7 +12,7 @@ export function WebDevelopmentMastery() {
           Our dedicated team of professionals employs state-of-the-art systems and processes to create websites that are not only aesthetically pleasing but also highly efficient, functional, and in line with the latest industry standards. With Bird, you get a potent blend of creative design and technical expertise that ensures your digital footprint is effective, engaging, and elevates your business above the competition.
         </p>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          In an environment where your digital presence can set the tone for your business success, partnering with Bird ensures that you get a website that's not just built, but meticulously crafted to suit your exact requirements.
+          In an environment where your digital presence can set the tone for your business success, partnering with Bird ensures that you get a website that&apos;s not just built, but meticulously crafted to suit your exact requirements.
         </p>
       </div>
     </section>

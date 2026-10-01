@@ -27,7 +27,7 @@ export function SeoTrust() {
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">White-Hat Techniques:</span> We strictly adhere to Google's Webmaster Guidelines, ensuring your rankings are sustainable and safe from algorithmic penalties.
+              <span className="font-bold text-[#000000]">White-Hat Techniques:</span> We strictly adhere to Google&apos;s Webmaster Guidelines, ensuring your rankings are sustainable and safe from algorithmic penalties.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
               <span className="font-bold text-[#000000]">Data-Driven Decisions:</span> Our strategies are built on comprehensive data analysis, not guesswork, guaranteeing a higher return on your investment.
