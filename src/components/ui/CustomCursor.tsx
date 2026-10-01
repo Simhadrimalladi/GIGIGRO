@@ -18,13 +18,13 @@ export function CustomCursor() {
       let idleTimeout: NodeJS.Timeout;
       const isHovering = { current: false };
 
-      const onMouseMove = (e: MouseEvent) => {
+      const onPointerMove = (e: PointerEvent) => {
         // Offset by +28px
         xTo(e.clientX + 28);
         yTo(e.clientY + 28);
 
         if (!isHovering.current) {
-          // Use overwrite: 'auto' to prevent tweens from fighting and flickering on every mousemove
+          // Use overwrite: 'auto' to prevent tweens from fighting and flickering on every pointermove
           gsap.to(cursorRef.current, { opacity: 1, scale: 1, duration: 0.15, overwrite: "auto" });
           
           // Reset idle timeout
@@ -35,11 +35,11 @@ export function CustomCursor() {
         }
       };
 
-      const onMouseDown = () => {
+      const onPointerDown = () => {
         gsap.to(cursorRef.current, { opacity: 0, scale: 0, duration: 0.1 });
       };
 
-      const onMouseUp = () => {
+      const onPointerUp = () => {
         if (!isHovering.current) {
           gsap.to(cursorRef.current, { opacity: 1, scale: 1, duration: 0.3 });
         }
@@ -56,9 +56,9 @@ export function CustomCursor() {
         gsap.to(cursorRef.current, { scale: 1, opacity: 1, duration: 0.3 });
       };
 
-      window.addEventListener("mousemove", onMouseMove);
-      window.addEventListener("mousedown", onMouseDown);
-      window.addEventListener("mouseup", onMouseUp);
+      window.addEventListener("pointermove", onPointerMove);
+      window.addEventListener("pointerdown", onPointerDown);
+      window.addEventListener("pointerup", onPointerUp);
 
       // We attach hover listeners to all interactive elements
       const interactives = document.querySelectorAll("a, button, input, select, textarea");
@@ -68,9 +68,9 @@ export function CustomCursor() {
       });
 
       return () => {
-        window.removeEventListener("mousemove", onMouseMove);
-        window.removeEventListener("mousedown", onMouseDown);
-        window.removeEventListener("mouseup", onMouseUp);
+        window.removeEventListener("pointermove", onPointerMove);
+        window.removeEventListener("pointerdown", onPointerDown);
+        window.removeEventListener("pointerup", onPointerUp);
         clearTimeout(idleTimeout);
         interactives.forEach((el) => {
           el.removeEventListener("mouseenter", onMouseEnterInteractive);
@@ -85,7 +85,7 @@ export function CustomCursor() {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-3 h-3 rounded-full pointer-events-none z-[9999] hidden md:block opacity-0 mix-blend-screen"
+      className="fixed top-0 left-0 w-3 h-3 rounded-full pointer-events-none z-[9999] opacity-0 mix-blend-screen"
       style={{
         backgroundColor: "#075985", // Very dark SkyBlue (Sky 800)
         boxShadow: "none", // Removed glow to keep it subtle
