@@ -113,36 +113,6 @@ export const SERVICES: ServiceItem[] = [
     ]
   },
   {
-    id: "web-design",
-    title: "Web Design",
-    icon: "Monitor",
-    details: [
-      { title: "Customised Websites", desc: "Create online realms aligning with brand essence and business objectives." },
-      { title: "Functional Features", desc: "Boost user experience focusing on usability and smooth navigation." },
-      { title: "Reliable Performance", desc: "Ensure uptime, security, and speed for optimal website functions." }
-    ]
-  },
-  {
-    id: "creative",
-    title: "Creative",
-    icon: "PenTool",
-    details: [
-      { title: "Strong Brand Presence", desc: "Build a cohesive, memorable identity resonating with target audience." },
-      { title: "Engaging Visuals", desc: "Capture audience interest with top-notch photography, video, and promos." },
-      { title: "Seamless User Interactions", desc: "Design user interfaces enhancing customer satisfaction and conversions." }
-    ]
-  },
-  {
-    id: "web-development",
-    title: "Web Development",
-    icon: "Wrench",
-    details: [
-      { title: "Global Accessibility", desc: "Build lightweight websites to reach diverse audiences, boosting your brand." },
-      { title: "Bespoke Development", desc: "Tailor projects to meet client needs, engaging target audiences, maximising ROI." },
-      { title: "Analytical Advancements", desc: "Use data-driven methods for continuous website refinement." }
-    ]
-  },
-  {
     id: "ppc",
     title: "PPC",
     icon: "Target",
@@ -161,7 +131,40 @@ export const SERVICES: ServiceItem[] = [
       { title: "Content Innovation", desc: "Drive brand loyalty with creative social media campaigns and strategies." },
       { title: "Interactive Promotions", desc: "Execute real-time promotions on social media to boost brand affinity." }
     ]
-  }
+  },
+  {
+    id: "Performance Marketing",
+    title: "Performance Marketing",
+    icon: "PenTool",
+    details: [
+      { title: "Strong Brand Presence", desc: "Build a cohesive, memorable identity resonating with target audience." },
+      { title: "Engaging Visuals", desc: "Capture audience interest with top-notch photography, video, and promos." },
+      { title: "Seamless User Interactions", desc: "Design user interfaces enhancing customer satisfaction and conversions." }
+    ]
+  },
+  {
+    id: "web-design",
+    title: "Web Design",
+    icon: "Monitor",
+    details: [
+      { title: "Customised Websites", desc: "Create online realms aligning with brand essence and business objectives." },
+      { title: "Functional Features", desc: "Boost user experience focusing on usability and smooth navigation." },
+      { title: "Reliable Performance", desc: "Ensure uptime, security, and speed for optimal website functions." }
+    ]
+  },
+  
+  {
+    id: "web-development",
+    title: "Web Development",
+    icon: "Wrench",
+    details: [
+      { title: "Global Accessibility", desc: "Build lightweight websites to reach diverse audiences, boosting your brand." },
+      { title: "Bespoke Development", desc: "Tailor projects to meet client needs, engaging target audiences, maximising ROI." },
+      { title: "Analytical Advancements", desc: "Use data-driven methods for continuous website refinement." }
+    ]
+  },
+  
+  
 ];
 
 export const MEDIA_LOGOS = [

@@ -3,29 +3,26 @@
 import React, { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
-import { Badges } from "@/components/sections/Badges";
-import { PpcServices } from "@/components/sections/PpcServices";
-import { PpcSolutions } from "@/components/sections/PpcSolutions";
-import { PpcLocations } from "@/components/sections/PpcLocations";
-import { PpcTrust } from "@/components/sections/PpcTrust";
+import { PerformanceMarketingServices } from "@/components/sections/PerformanceMarketingServices";
+import { PerformanceMarketingSolutions } from "@/components/sections/PerformanceMarketingSolutions";
+import { PerformanceMarketingLocations } from "@/components/sections/PerformanceMarketingLocations";
+import { PerformanceMarketingTrust } from "@/components/sections/PerformanceMarketingTrust";
 import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
 import { AgencyInfo } from "@/components/sections/AgencyInfo";
 import { AgencyRole } from "@/components/sections/AgencyRole";
-import { Marquee } from "@/components/sections/Marquee";
-import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 
-export default function Page() {
+export default function PerformanceMarketingPage() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState<string | undefined>(undefined);
   const [submittedUrl, setSubmittedUrl] = useState<string | undefined>(undefined);
 
   const handleOpenProject = (service?: string, url?: string) => {
-    setSelectedService(service);
+    setSelectedService(service || "Performance Marketing");
     setSubmittedUrl(url);
     setProjectModalOpen(true);
   };
@@ -35,27 +32,24 @@ export default function Page() {
       <Header />
 
       <Hero 
-        onStartProject={(url) => handleOpenProject(undefined, url)}
-        eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="PPC Agency in\nUK"
+        onStartProject={(url) => handleOpenProject("Performance Marketing", url)}
+        eyebrow="HIGH-IMPACT &amp; DATA-DRIVEN"
+        titleMain="Performance Marketing\nAgency in UK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Scales ROAS"
+        description="Transform your paid media channels into a high-converting growth engine. We combine multi-touch attribution, creative testing, and AI-driven bidding to lower your customer acquisition cost and maximize return on ad spend."
       />
 
-      <Badges />
-      <PpcServices />
-      <PpcSolutions />
-      <PpcLocations />
-      <PpcTrust />
+      <PerformanceMarketingServices />
+      <PerformanceMarketingSolutions />
+      <PerformanceMarketingLocations />
+      <PerformanceMarketingTrust />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />
       <AgencyInfo />
       <AgencyRole />
-      <FinalCTA onStartProject={() => handleOpenProject()} />
-      <Marquee />
       <Footer />
 
       <ProjectModal

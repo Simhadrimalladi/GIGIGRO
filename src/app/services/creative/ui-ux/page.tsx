@@ -10,7 +10,7 @@ import { UiUxLocations } from "@/components/sections/UiUxLocations";
 import { UiUxTrust } from "@/components/sections/UiUxTrust";
 import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
-import { SelectedWork } from "@/components/sections/SelectedWork";
+// import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
 import { AgencyInfo } from "@/components/sections/AgencyInfo";
 import { AgencyRole } from "@/components/sections/AgencyRole";
@@ -50,7 +50,7 @@ export default function Page() {
       <UiUxTrust />
       <Industries />
       <CTA />
-      <SelectedWork />
+      {/* <SelectedWork /> */}
       <BlogInsights />
       <AgencyInfo />
       <AgencyRole />

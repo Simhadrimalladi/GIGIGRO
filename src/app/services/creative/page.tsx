@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
-import { Badges } from "@/components/sections/Badges";
+// import { Badges } from "@/components/sections/Badges";
 import { CreativeServices } from "@/components/sections/CreativeServices";
 import { CreativeSolutions } from "@/components/sections/CreativeSolutions";
 import { CreativeLocations } from "@/components/sections/CreativeLocations";
 import { CreativeTrust } from "@/components/sections/CreativeTrust";
 import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
-import { SelectedWork } from "@/components/sections/SelectedWork";
+// import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
 import { AgencyInfo } from "@/components/sections/AgencyInfo";
 import { AgencyRole } from "@/components/sections/AgencyRole";
@@ -43,14 +43,14 @@ export default function Page() {
         description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
       />
 
-      <Badges />
+      {/* <Badges /> */}
       <CreativeServices />
       <CreativeSolutions />
       <CreativeLocations />
       <CreativeTrust />
       <Industries />
       <CTA />
-      <SelectedWork />
+      {/* <SelectedWork /> */}
       <BlogInsights />
       <AgencyInfo />
       <AgencyRole />

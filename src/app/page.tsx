@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
-import { Badges } from "@/components/sections/Badges";
+// import { Badges } from "@/components/sections/Badges";
 import { Services } from "@/components/sections/Services";
 import { Clients } from "@/components/sections/Clients";
 import { Industries } from "@/components/sections/Industries";
@@ -12,8 +12,8 @@ import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
 import { AgencyInfo } from "@/components/sections/AgencyInfo";
 import { AgencyRole } from "@/components/sections/AgencyRole";
-import { Marquee } from "@/components/sections/Marquee";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+// import { Marquee } from "@/components/sections/Marquee";
+// import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 
@@ -37,9 +37,9 @@ export default function Home() {
       <Hero onStartProject={(url) => handleOpenProject(undefined, url)} />
 
       {/* Accreditation Badges Strip */}
-      <Badges />
+      {/* <Badges /> */}
 
-      Digital Marketing Services (6 Dark Cards)
+      
       <Services onSelectService={(service) => handleOpenProject(service)} />
 
       {/* White Section: Recognised as a Leading Agency by Top Brands */}
@@ -64,10 +64,10 @@ export default function Home() {
       <AgencyRole />
 
       {/* Climax Call to Action: Want to get in touch? Let's talk */}
-      <FinalCTA onStartProject={() => handleOpenProject()} />
+      {/* <FinalCTA onStartProject={() => handleOpenProject()} /> */}
 
       {/* Horizontal Continuous Agency Marquee */}
-      <Marquee />
+      {/* <Marquee /> */}
       {/* Multi-Column Mayfair London Footer with Live Clock */}
       <Footer />
 

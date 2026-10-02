@@ -3,14 +3,11 @@
 import React, { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
-import { Badges } from "@/components/sections/Badges";
+// import { Badges } from "@/components/sections/Badges";
 import { AboutOurStory } from "@/components/sections/AboutOurStory";
 import { AboutValues } from "@/components/sections/AboutValues";
 import { AboutCulture } from "@/components/sections/AboutCulture";
-import { AboutLeadership } from "@/components/sections/AboutLeadership";
 import { CTA } from "@/components/sections/CTA";
-import { Marquee } from "@/components/sections/Marquee";
-import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 
@@ -38,14 +35,14 @@ export default function AboutPage() {
         description="We are a global collective of engineers, designers, and strategists. Since 2012, we've been pushing the boundaries of what's possible on the web, partnering with visionary brands to deliver exceptional digital experiences."
       />
 
-      <Badges />
+      {/* <Badges /> */}
       <AboutOurStory />
       <AboutValues />
       <AboutCulture />
-      <AboutLeadership />
+      {/* <AboutLeadership /> */}
       <CTA />
-      <FinalCTA onStartProject={() => handleOpenProject()} />
-      <Marquee />
+      {/* <FinalCTA onStartProject={() => handleOpenProject()} /> */}
+      {/* <Marquee /> */}
       <Footer />
 
       <ProjectModal

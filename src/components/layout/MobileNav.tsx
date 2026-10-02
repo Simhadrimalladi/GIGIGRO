@@ -65,19 +65,13 @@ export function MobileNav({
   ];
   const webRow2: ServiceLink[] = [
     { label: "ECOMMERCE WEBSITES", href: "/services/web/ecommerce" },
-    { label: "WEB HOSTING", href: "/services/web/web-hosting" },
-  ];
-  const webRow3: ServiceLink[] = [
-    { label: "WEBSITE SUPPORT", href: "/services/web/website-support" },
-  ];
-  const webRow4: ServiceLink[] = [
-    { label: "PAY MONTHLY WEBSITES", href: "/services/web/pay-monthly" },
+  
   ];
 
   // DIGITAL MARKETING Level
   const dmRow1: ServiceLink[] = [
-    { label: "WEBSITE DESIGN & DEV", href: "/services/web/web-design" },
-    { label: "SEO OPTIMIZATION", href: "/services/digital-marketing/seo" },
+    { label: "SEARCH ENGINE OPTIMIZATION (SEO)", href: "/services/digital-marketing/seo" },
+    { label: "PERFORMANCE MARKETING", href: "/services/digital-marketing/performance-marketing" },
   ];
   const dmRow2: ServiceLink[] = [
     { label: "GOOGLE & META ADS", href: "/services/digital-marketing/ppc" },
@@ -191,8 +185,6 @@ export function MobileNav({
               <div className="flex flex-col gap-y-8 sm:gap-y-12 w-full items-center">
                 {renderServiceRow(webRow1)}
                 {renderServiceRow(webRow2)}
-                {renderServiceRow(webRow3)}
-                {renderServiceRow(webRow4)}
               </div>
             </div>
           )}
