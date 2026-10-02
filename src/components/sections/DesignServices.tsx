@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Printer, Image, Video, BookOpen, Box } from "lucide-react";
+import { Layout, Printer, Image as ImageIcon, Video, BookOpen, Box } from "lucide-react";
 
 export function DesignServices() {
   const services = [
@@ -14,7 +14,7 @@ export function DesignServices() {
       features: ["Brochures & Flyers: Designing tactile marketing materials that leave an impression.", "Business stationery: Crafting premium business cards, letterheads, and envelopes.", "Large format: Creating impactful billboards, exhibition stands, and signage."]
     },
     {
-      icon: <Image className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      icon: <ImageIcon className="h-10 w-10 text-white" strokeWidth={1.5} />,
       title: "Illustration",
       features: ["Custom iconography: Designing unique icon sets tailored to your brand.", "Editorial illustration: Creating bespoke artwork for articles and blogs.", "Infographics: Turning complex data into easily digestible, shareable graphics."]
     },
