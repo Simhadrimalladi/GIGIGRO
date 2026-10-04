@@ -48,11 +48,11 @@ export function AgencyInfo() {
           </div>
 
           {/* Right Sticky Column */}
-          <div className="lg:w-[50%] lg:sticky lg:top-32">
-            <div className="relative w-full rounded-[4px] overflow-hidden bg-white shadow-2xl">
+          <div className="lg:w-[50%] lg:sticky lg:top-36">
+            <div className="relative w-full rounded-[12px] overflow-hidden bg-[#111111] border border-[#222222] shadow-2xl">
               <Image
-                src="https://cdn.bird.marketing/wp-content/uploads/Basic-Image-1-9.png"
-                alt="Target Location Map"
+                src="/images/agency-network-map.png"
+                alt="DIJIGRO Global Network Map"
                 width={1920}
                 height={1079}
                 sizes="(max-width: 1024px) 100vw, 50vw"

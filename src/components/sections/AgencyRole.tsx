@@ -15,11 +15,11 @@ export function AgencyRole() {
         <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Left Sticky Column */}
-          <div className="lg:w-[50%] lg:sticky lg:top-32">
-            <div className="relative w-full rounded-[4px] overflow-hidden bg-black shadow-2xl">
+          <div className="lg:w-[50%] lg:sticky lg:top-36">
+            <div className="relative w-full rounded-[12px] overflow-hidden bg-[#111111] border border-[#222222] shadow-2xl">
               <Image
-                src="https://cdn.bird.marketing/wp-content/uploads/Cover-menu.11.png"
-                alt="Website Mockup"
+                src="/images/agency-role-laptop.png"
+                alt="DIJIGRO Digital Marketing Agency Workspace"
                 width={1920}
                 height={1280}
                 sizes="(max-width: 1024px) 100vw, 50vw"

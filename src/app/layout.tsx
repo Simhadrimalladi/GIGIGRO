@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({
         />
         <CustomCursor />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
