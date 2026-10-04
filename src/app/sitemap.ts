@@ -22,10 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/digital-marketing/ppc",
     "/services/digital-marketing/social-media",
     "/services/digital-marketing/performance-marketing",
-    "/services/creative",
-    "/services/creative/branding",
-    "/services/creative/design",
-    "/services/creative/ui-ux",
   ];
 
   return routes.map((route) => ({

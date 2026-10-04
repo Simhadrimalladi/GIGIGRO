@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { Monitor, Megaphone, Pencil } from "lucide-react";
+import { Monitor, Megaphone } from "lucide-react";
 
 interface MobileNavProps {
   open: boolean;
@@ -18,7 +18,7 @@ export function MobileNav({
   onStartProject,
 }: MobileNavProps) {
   const router = useRouter();
-  const [view, setView] = useState<'main' | 'services' | 'web' | 'digital-marketing' | 'creative'>('main');
+  const [view, setView] = useState<'main' | 'services' | 'web' | 'digital-marketing'>('main');
 
   // Reset to main view after menu closes
   useEffect(() => {
@@ -44,19 +44,6 @@ export function MobileNav({
     { label: "WEB", action: () => setView('web'), icon: <Monitor className="w-6 h-6 sm:w-8 sm:h-8" /> },
     { label: "DIGITAL MARKETING", action: () => setView('digital-marketing'), icon: <Megaphone className="w-6 h-6 sm:w-8 sm:h-8" /> },
   ];
-  const servicesMainRow2: ServiceLink[] = [
-    { label: "CREATIVE", action: () => setView('creative'), icon: <Pencil className="w-6 h-6 sm:w-8 sm:h-8" /> },
-  ];
-
-  // CREATIVE Level
-  const creativeRow1: ServiceLink[] = [
-    { label: "BRANDING", href: "/services/creative/branding" },
-    { label: "DESIGN", href: "/services/creative/design" },
-    { label: "UI/UX", href: "/services/creative/ui-ux" },
-  ];
-  const creativeRow2: ServiceLink[] = [
-    { label: "WEB DESIGN", href: "/services/web/web-design" },
-  ];
 
   // WEB Level
   const webRow1: ServiceLink[] = [
@@ -65,7 +52,6 @@ export function MobileNav({
   ];
   const webRow2: ServiceLink[] = [
     { label: "ECOMMERCE WEBSITES", href: "/services/web/ecommerce" },
-  
   ];
 
   // DIGITAL MARKETING Level
@@ -169,7 +155,6 @@ export function MobileNav({
               </button>
               <div className="flex flex-col gap-y-10 sm:gap-y-14 w-full">
                 {renderServiceRow(servicesMainRow1)}
-                {renderServiceRow(servicesMainRow2)}
               </div>
             </div>
           )}
@@ -204,20 +189,7 @@ export function MobileNav({
             </div>
           )}
 
-          {view === 'creative' && (
-            <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center animate-in fade-in slide-in-from-bottom-10 duration-500 ease-out">
-              <button 
-                onClick={() => setView('services')}
-                className="mb-12 sm:mb-20 px-6 py-2 border border-white/40 text-white uppercase font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
-              >
-                BACK
-              </button>
-              <div className="flex flex-col gap-y-10 sm:gap-y-14 w-full items-center">
-                {renderServiceRow(creativeRow1)}
-                {renderServiceRow(creativeRow2)}
-              </div>
-            </div>
-          )}
+
           
         </Dialog.Content>
       </Dialog.Portal>

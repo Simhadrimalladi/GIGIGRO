@@ -155,8 +155,6 @@ export function Footer() {
               <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-[#7DD3FC] transition-colors">Performance Marketing</Link></li>
               <li><Link href="/services/digital-marketing/ppc" className="hover:text-[#7DD3FC] transition-colors">PPC Services</Link></li>
               <li><Link href="/services/digital-marketing/social-media" className="hover:text-[#7DD3FC] transition-colors">Social Media Marketing</Link></li>
-              <li><Link href="/services/creative/branding" className="hover:text-[#7DD3FC] transition-colors">Branding & Identity</Link></li>
-              <li><Link href="/services/creative/ui-ux" className="hover:text-[#7DD3FC] transition-colors">UI/UX Design</Link></li>
             </ul>
           </div>
           
