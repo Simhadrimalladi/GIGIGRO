@@ -110,7 +110,7 @@ html {
 /* ========================================================
    HEADER STYLES
    ======================================================== */
-.bird-header {
+.dijigro-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -123,23 +123,23 @@ html {
   pointer-events: none;
 }
 
-.bird-header-padding-sync {
+.dijigro-header-padding-sync {
   padding: 24px 0;
   transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
-  .bird-header {
+  .dijigro-header {
     padding: 28px 0;
   }
-  .bird-header-padding-sync {
+  .dijigro-header-padding-sync {
     padding: 28px 0;
   }
 }
 
 
 
-.bird-header-inner {
+.dijigro-header-inner {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
@@ -149,25 +149,25 @@ html {
 }
 
 @media (min-width: 640px) {
-  .bird-header-inner {
+  .dijigro-header-inner {
     padding: 0 48px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bird-header-inner {
+  .dijigro-header-inner {
     padding: 0 64px;
   }
 }
 
-.bird-header-actions {
+.dijigro-header-actions {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 @media (min-width: 640px) {
-  .bird-header-actions {
+  .dijigro-header-actions {
     gap: 28px;
   }
 }
@@ -178,11 +178,11 @@ html {
   color: #000000;
   font-family: var(--font-urbanist);
   font-weight: 800;
-  font-size: 12px;
-  letter-spacing: 0.06em;
+  font-size: 10px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  height: 38px;
-  padding: 0 20px;
+  height: 32px;
+  padding: 0 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -191,6 +191,16 @@ html {
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .btn-quote {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    height: 38px;
+    padding: 0 20px;
+  }
 }
 
 .btn-quote:hover {

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { BirdLogo } from "../ui/BirdLogo";
+import { DijigroLogo } from "../ui/DijigroLogo";
 import { MobileNav } from "./MobileNav";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -20,7 +20,7 @@ export function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,25 +47,25 @@ export function Header() {
     <>
       <header
         ref={headerRef}
-        className={`bird-header mix-blend-difference text-white pointer-events-none ${
-          isScrolled ? "bird-header-scrolled" : ""
+        className={`dijigro-header mix-blend-difference text-white pointer-events-none ${
+          isScrolled ? "dijigro-header-scrolled" : ""
         }`}
       >
-        <div className="bird-header-inner">
-          {/* Logo - Official BIRD Text with mix-blend-difference */}
+        <div className="dijigro-header-inner">
+          {/* Logo - Official DIJIGRO Text with mix-blend-difference */}
           <Link 
             href="/" 
-            aria-label="BIRD Home" 
+            aria-label="DIJIGRO Home" 
             className="pointer-events-auto"
             onClick={handleLogoClick}
           >
-            <BirdLogo hideArrow={true} />
+            <DijigroLogo hideArrow={true} />
           </Link>
 
           {/* Right Actions: Hamburger only in the mix-blend layer */}
-          <div className="bird-header-actions pointer-events-none">
+          <div className="dijigro-header-actions pointer-events-none">
             {/* Invisible spacer for the quote button to maintain layout */}
-            <div className="hidden sm:block w-[130px] h-[38px] opacity-0" />
+            <div className="w-[95px] sm:w-[130px] h-[32px] sm:h-[38px] opacity-0" />
 
             <button
               type="button"
@@ -88,17 +88,17 @@ export function Header() {
       </header>
 
       {/* Parallel layer for the button and pure Sky Blue arrow to escape mix-blend-difference */}
-      <div className="fixed top-0 left-0 right-0 z-[10000] pointer-events-none bird-header-padding-sync">
-        <div className="bird-header-inner">
+      <div className="fixed top-0 left-0 right-0 z-[10000] pointer-events-none dijigro-header-padding-sync">
+        <div className="dijigro-header-inner">
           <Link 
             href="/" 
-            aria-label="BIRD Home" 
+            aria-label="DIJIGRO Home" 
             className="pointer-events-auto"
             onClick={handleLogoClick}
           >
-            <BirdLogo arrowOnly={true} />
+            <DijigroLogo arrowOnly={true} />
           </Link>
-          <div className="bird-header-actions pointer-events-none">
+          <div className="dijigro-header-actions pointer-events-none">
             <Link
               href="/quote"
               className="btn-quote pointer-events-auto"

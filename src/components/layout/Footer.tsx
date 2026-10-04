@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { BirdLogo } from "../ui/BirdLogo";
+import { DijigroLogo } from "../ui/DijigroLogo";
 
 export function Footer() {
   const socialLinks = [
@@ -82,7 +82,7 @@ export function Footer() {
           {/* Column 1: Logo & Intro */}
           <div className="lg:col-span-1 space-y-6">
             <div className="w-[120px]">
-              <BirdLogo />
+              <DijigroLogo />
             </div>
             <div className="text-[12px] font-bold text-[#38BDF8] tracking-wide uppercase">
               Digital Marketing • Web Design • Web Development

@@ -1,12 +1,12 @@
 import React from "react";
 
-interface BirdLogoProps {
+interface DijigroLogoProps {
   className?: string;
   hideArrow?: boolean;
   arrowOnly?: boolean;
 }
 
-export function BirdLogo({ className = "", hideArrow = false, arrowOnly = false }: BirdLogoProps) {
+export function DijigroLogo({ className = "", hideArrow = false, arrowOnly = false }: DijigroLogoProps) {
   return (
     <div
       className={`relative inline-flex flex-col items-start justify-center text-current transition-opacity duration-200 hover:opacity-95 select-none group ${className}`}
@@ -54,7 +54,7 @@ export function BirdLogo({ className = "", hideArrow = false, arrowOnly = false 
       `}</style>
 
       <div className="relative inline-block">
-        <span className={`text-[32px] font-[800] leading-none tracking-tight block text-current ${arrowOnly ? "opacity-0" : ""}`}>
+        <span className={`text-[22px] sm:text-[26px] md:text-[32px] font-[800] leading-none tracking-tight block text-current ${arrowOnly ? "opacity-0" : ""}`}>
           DIJIGRO
         </span>
         {/* Sky Blue Underline with Upward Growth Arrow (Comfortable 7px gap under text with 10s repeating flow animation) */}

@@ -39,7 +39,7 @@ Form Button
 GET MY FREE WEBSITE REVIEW 
  
 3. TRUST / INTRODUCTION STRIP 
-Instead of copying Bird’s ratings and award claims, use this section to establish the DIJIGRO approach 
+Instead of copying DIJIGRO’s ratings and award claims, use this section to establish the DIJIGRO approach 
 without making unsupported claims. 
 Heading 
 A Digital Partner Focused on Your Business Goals 

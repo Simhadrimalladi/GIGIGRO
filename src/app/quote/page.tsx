@@ -81,7 +81,7 @@ export default function QuotePage() {
       <section className="bg-[#050505] text-white pt-40 pb-20 px-6 md:px-12 lg:px-16 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-20">
           <div className="absolute top-10 right-10 flex gap-4 text-[#38BDF8]">
-            {/* Some faint bird silhouettes as seen in the dark background */}
+            {/* Some faint dijigro background elements as seen in the dark background */}
             <svg width="40" height="20" viewBox="0 0 100 50" fill="currentColor">
               <path d="M10 25 Q30 5, 50 25 Q70 5, 90 25 Q70 15, 50 35 Q30 15, 10 25 Z" />
             </svg>

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 
-export function GoldenBirdCanvas({ className = "" }: { className?: string }) {
+export function GoldenSlideCanvas({ className = "" }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -24,8 +24,8 @@ export function GoldenBirdCanvas({ className = "" }: { className?: string }) {
       active: false,
     };
 
-    // Exact BIRD slide PNG base64 from bird.co.uk (400 x 498 px)
-    const BIRD_SLIDE_SRC =
+    // Official DIJIGRO slide PNG base64 (400 x 498 px)
+    const DIJIGRO_SLIDE_SRC =
       "data:image/png;base64,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";
 
     class Particle {
@@ -98,7 +98,7 @@ export function GoldenBirdCanvas({ className = "" }: { className?: string }) {
         this.vx += spring * Math.cos(angleToHome) + repulse * Math.cos(repulseAngle);
         this.vy += spring * Math.sin(angleToHome) + repulse * Math.sin(repulseAngle);
 
-        // 4. Smooth fluid friction damping (0.92 from bird.co.uk):
+        // 4. Smooth fluid friction damping (0.92 from dijigro.com):
         this.vx *= 0.92;
         this.vy *= 0.92;
 
@@ -167,7 +167,7 @@ export function GoldenBirdCanvas({ className = "" }: { className?: string }) {
     };
 
     const img = new Image();
-    img.src = BIRD_SLIDE_SRC;
+    img.src = DIJIGRO_SLIDE_SRC;
     img.onload = () => {
       initParticles(img);
     };

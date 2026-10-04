@@ -56,9 +56,9 @@ export function CustomCursor() {
         gsap.to(cursorRef.current, { scale: 1, opacity: 1, duration: 0.3 });
       };
 
-      window.addEventListener("pointermove", onPointerMove);
-      window.addEventListener("pointerdown", onPointerDown);
-      window.addEventListener("pointerup", onPointerUp);
+      window.addEventListener("pointermove", onPointerMove, { passive: true });
+      window.addEventListener("pointerdown", onPointerDown, { passive: true });
+      window.addEventListener("pointerup", onPointerUp, { passive: true });
 
       // We attach hover listeners to all interactive elements
       const interactives = document.querySelectorAll("a, button, input, select, textarea");

@@ -25,7 +25,7 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
       width = canvas.width = canvas.offsetWidth;
       height = canvas.height = canvas.offsetHeight;
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize, { passive: true });
 
     const mouse = { x: width * 0.75, y: height * 0.5, radius: 160 };
 
@@ -35,7 +35,7 @@ export function ParticleCanvas({ className = "" }: { className?: string }) {
       mouse.y = e.clientY - rect.top;
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
 
     class Particle {
       x: number;

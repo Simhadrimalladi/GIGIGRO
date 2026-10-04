@@ -30,10 +30,10 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#000000] text-[#F5F5F5] flex flex-col selection:bg-[#38BDF8] selection:text-[#000000] relative">
-      {/* Sticky Top Header with BIRD Branding, GET A QUOTE button & Menu */}
+      {/* Sticky Top Header with DIJIGRO Branding, GET A QUOTE button & Menu */}
       <Header />
 
-      {/* Exact Reference Hero Banner with Golden Bird Wings Stardust & Proposal Form */}
+      {/* Exact Reference Hero Banner with Golden Stardust Stardust & Proposal Form */}
       <Hero onStartProject={(url) => handleOpenProject(undefined, url)} />
 
       {/* Accreditation Badges Strip */}

@@ -40,29 +40,27 @@ export function SelectedWork() {
     <section
       id="case-studies"
       ref={containerRef}
-      className="relative bg-white py-24 md:py-32"
+      className="relative bg-[#000000] text-[#F5F5F5] py-20 md:py-32 border-t border-[#222222]"
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           
           {/* Left Sticky Column */}
-          <div className="lg:w-[40%] lg:sticky lg:top-32 space-y-8">
+          <div className="lg:w-[40%] lg:sticky lg:top-36 space-y-6">
             <div>
-              <div className="inline-flex items-baseline text-[13px] font-medium tracking-wide text-[#737373] uppercase mb-6 relative">
-                <span className="relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-[#737373]/50">
-                  OUR WORK
-                </span>
+              <div className="inline-flex items-baseline text-[13px] font-mono tracking-widest text-[#38BDF8] uppercase mb-4 relative font-semibold">
+                <span>OUR WORK</span>
                 <span className="text-[#38BDF8] font-black text-lg ml-1">.</span>
               </div>
 
-              <h2 className="text-[38px] md:text-[48px] lg:text-[54px] font-bold text-black tracking-tight leading-[1.1]">
+              <h2 className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[54px] font-bold text-white tracking-tight leading-[1.1]">
                 Projects Built Around <br />
-                <span className="bg-[#38BDF8] px-2 py-0 inline-block mt-1">
+                <span className="bg-[#38BDF8] text-[#000000] px-2 py-0.5 inline-block mt-1">
                   Real Business Needs
                 </span>
               </h2>
 
-              <p className="mt-8 text-[15px] text-[#4A4A4A] leading-[1.8] max-w-[400px]">
+              <p className="mt-6 text-[14px] sm:text-[15px] text-[#A3A3A3] leading-[1.8] font-light max-w-[420px]">
                 Good digital work starts with understanding the business behind the brief. Explore selected DIJIGRO projects to see how strategy, design, development and marketing come together to solve different digital challenges.
               </p>
             </div>
