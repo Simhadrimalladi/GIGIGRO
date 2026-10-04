@@ -42,7 +42,7 @@ export function DesignServices() {
           Design Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Design is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Transform complex ideas into stunning visual communication. Our multi-disciplinary designers excel across digital graphics, print marketing, custom iconography, motion animation, and photorealistic 3D product rendering.
         </p>
       </div>
 

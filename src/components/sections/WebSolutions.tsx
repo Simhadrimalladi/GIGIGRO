@@ -9,7 +9,7 @@ export function WebSolutions() {
           <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">Inspiring Confidence</span>
         </h2>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          At Bird, our technical expertise is suited to the procurement of enterprise-grade digital infrastructure. With extensive experience in delivering web solutions that truly scale securely and perform flawlessly, there is no agency you could turn to with more confidence to engineer your digital future.
+          At DIJIGRO, our technical expertise is suited to the procurement of enterprise-grade digital infrastructure. With extensive experience in delivering web solutions that truly scale securely and perform flawlessly, there is no agency you could turn to with more confidence to engineer your digital future.
         </p>
       </div>
     </section>

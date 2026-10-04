@@ -42,7 +42,7 @@ export function CreativeServices() {
           Creative Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Creative is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Elevate your brand presence through captivating visual storytelling, campaign ideation, cinematic video production, and sonic branding. We combine high-concept creative direction with flawless technical execution to create unforgettable brand experiences.
         </p>
       </div>
 

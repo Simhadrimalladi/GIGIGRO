@@ -42,7 +42,7 @@ export function DigitalMarketingServices() {
           Digital Marketing Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Digital Marketing is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Drive scalable customer acquisition and brand authority through data-backed, full-funnel digital marketing strategies. From email automation to conversion rate optimization and predictive analytics, we turn cold traffic into loyal brand advocates.
         </p>
       </div>
 

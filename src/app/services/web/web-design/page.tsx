@@ -34,12 +34,12 @@ export default function WebDesignPage() {
       <Header />
 
       <Hero 
-        onStartProject={(url) => handleOpenProject(undefined, url)}
-        eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Web Design Agency in&#10;UK"
-        titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning, Web Design Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        onStartProject={(url) => handleOpenProject("Web Design", url)}
+        eyebrow="WEB DESIGN"
+        titleMain="Websites Designed for People and Built for Business"
+        titleSub=""
+        titleHighlight=""
+        description="Your website is often the first place people experience your brand. We design professional, responsive websites that make your business easy to understand, simple to navigate and ready to turn visitors into enquiries, customers or opportunities. Whether you need a new business website, an ecommerce store or a complete website redesign, we create the experience around your brand, audience and goals."
       />
 
       {/* <Badges /> */}

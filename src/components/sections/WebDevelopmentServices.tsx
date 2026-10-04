@@ -4,12 +4,10 @@ import { Code2, Building2, ShoppingCart, Smartphone, Settings } from "lucide-rea
 export function WebDevelopmentServices() {
   const services = [
     {
-      icon: <Code2 className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "PHP Development",
+      icon: <Building2 className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Business Website Development",
       features: [
-        "Harness the power of PHP's dynamic and flexible nature, ideal for creating diverse web applications tailored to specific business needs.",
-        "Capitalise on PHP's vast ecosystem and extensive library support, ensuring rapid development and integration of functionalities.",
-        "Leverage PHP's compatibility with various databases and platforms, guaranteeing seamless operations and interoperability."
+        "We develop professional business websites with clear structure, responsive layouts and the functionality needed to present your business online and generate enquiries."
       ]
     },
     {
@@ -31,45 +29,35 @@ export function WebDevelopmentServices() {
       ),
       title: "WordPress Development",
       features: [
-        "Capitalise on the ease-of-use and extensive customisation options that WordPress offers, enabling a unique and personal website design.",
-        "Boost your SEO with WordPress' built-in features and extensive SEO plugins to enhance your site's visibility.",
-        "Easily manage content with the intuitive CMS interface of WordPress, keeping your site current and engaging."
-      ]
-    },
-    {
-      icon: <Building2 className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Enterprise Development",
-      features: [
-        "Enhance your business efficiency with tailor-made enterprise solutions designed to streamline processes and improve productivity.",
-        "Improve data management with custom applications designed to handle complex business data efficiently and securely.",
-        "Gain a competitive edge with innovative solutions that are scalable, flexible, and designed to evolve with your business."
+        "Build on a flexible content management system that allows businesses to manage and update website content without depending on a developer for every small change."
       ]
     },
     {
       icon: <ShoppingCart className="h-10 w-10 text-white" strokeWidth={1.5} />,
       title: "Ecommerce Development",
       features: [
-        "Enhance your online store's functionality and user experience with Magento's or WooCommerce's extensive feature sets and customisation options.",
-        "Improve your store's visibility on search engines with built-in SEO features, driving more traffic and conversions.",
-        "Scale your ecommerce business effortlessly with Magento's or WooCommerce's robust and scalable platforms."
+        "Create online stores where customers can browse products, understand what you offer and complete purchases through a straightforward shopping experience."
+      ]
+    },
+    {
+      icon: <Code2 className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Custom Web Development",
+      features: [
+        "For projects that need functionality beyond a standard website, we develop tailored solutions around specific business processes, features and integrations."
       ]
     },
     {
       icon: <Smartphone className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Web Applications",
+      title: "Web Application Development",
       features: [
-        "Improve user interaction with customised web applications designed to meet specific business requirements and goals.",
-        "Enhance accessibility with web applications that are available round-the-clock and accessible from any device.",
-        "Drive business growth with web applications that improve operational efficiency, customer engagement, and overall user experience."
+        "We build browser-based applications that help users perform tasks, access information or interact with your business through a dedicated online platform."
       ]
     },
     {
       icon: <Settings className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Javascript Development",
+      title: "Website Redevelopment",
       features: [
-        "Elevate user experiences with JavaScript's asynchronous capabilities, enabling dynamic content updates without page reloads.",
-        "Tap into the expansive JavaScript ecosystem, benefiting from a plethora of libraries and frameworks like React, Vue, Node.js and Angular for tailored solutions.",
-        "Harness the versatility of JavaScript for both frontend and backend development, ensuring cohesive and integrated web applications."
+        "When an existing website has technical, structural or performance limitations, we can rebuild or improve it while keeping the important parts of your existing digital presence in mind."
       ]
     }
   ];
@@ -77,11 +65,14 @@ export function WebDevelopmentServices() {
   return (
     <section className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <p className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3">
+          WHAT WE DEVELOP
+        </p>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          Web Development Services
+          From Business Websites to Custom Web Solutions
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] max-w-[1200px] font-light">
-          In an era dominated by the digital landscape, your online presence becomes a cornerstone of your business strategy. This is where Bird, an award-winning web development agency based in the UK, shines. Bird provides a transformative approach to web development, leveraging our exceptional technical acumen to bring your digital vision to life. We understand that every business has unique digital needs, and we endeavor to meet these with bespoke, high-quality solutions.
+          Every project has different technical requirements. We choose the development approach according to the website, users, functionality and future needs.
         </p>
       </div>
 

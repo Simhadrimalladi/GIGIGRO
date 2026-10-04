@@ -84,18 +84,21 @@ export function Footer() {
             <div className="w-[120px]">
               <BirdLogo />
             </div>
-            <p className="text-[11px] text-[#A3A3A3] leading-[1.8] font-light max-w-[250px]">
-              A multi award winning digital agency based in the United Kingdom. With a distinct offering in Technical Web, Digital Marketing and Creative.
+            <div className="text-[12px] font-bold text-[#38BDF8] tracking-wide uppercase">
+              Digital Marketing • Web Design • Web Development
+            </div>
+            <p className="text-[12px] text-[#A3A3A3] leading-[1.8] font-light max-w-[270px]">
+              DIJIGRO helps businesses build, improve and grow their digital presence through practical strategy, creative thinking and reliable technology.
             </p>
-            <div className="pt-4">
-              <span className="text-[15px] font-light text-[#A3A3A3] block mb-1">
-                Interested in working with us?
+            <div className="pt-2">
+              <span className="text-[14px] font-light text-[#A3A3A3] block mb-1">
+                Have a project in mind?
               </span>
               <Link
                 href="/contact"
-                className="text-[17px] font-light text-[#7DD3FC] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#7DD3FC] hover:opacity-70 transition-opacity"
+                className="text-[16px] font-bold text-[#38BDF8] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#38BDF8] hover:opacity-70 transition-opacity"
               >
-                Start a Project
+                Let’s talk.
               </Link>
             </div>
           </div>
@@ -106,14 +109,14 @@ export function Footer() {
               CAREERS
             </h4>
             <p className="text-[12px] text-[#A3A3A3] leading-[1.6] font-light pr-4">
-              We are always looking for talented people to join the team. Scan our careers page to find out about working for us and see if there is an opportunity to become part of the flock.
+              We are always looking for talented developers, designers, and growth marketers to join our team. Explore career opportunities at DIJIGRO.
             </p>
             <div>
               <Link
-                href="/careers"
+                href="/contact"
                 className="text-[14px] font-light text-[#A3A3A3] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#A3A3A3] hover:text-white hover:after:bg-white transition-colors"
               >
-                Careers
+                Join Our Team
               </Link>
             </div>
           </div>
@@ -124,33 +127,36 @@ export function Footer() {
               NEED SUPPORT?
             </h4>
             <p className="text-[12px] text-[#A3A3A3] leading-[1.6] font-light pr-4">
-              On our support plan? feel free to submit a ticket or give us a call during business hours.
+              Have an active support plan? Submit a request or contact our dedicated engineering team during business hours.
             </p>
             <div className="flex items-center gap-2 text-[13px] font-light text-[#A3A3A3] pt-2">
-              <span className="text-[#7DD3FC]">🎧</span> 09.00 am - 17.00 pm
+              <span className="text-[#7DD3FC]">🎧</span> Mon - Fri: 09:00 - 17:00 GMT
             </div>
             <div>
               <a
-                href="mailto:support@bird.co.uk"
+                href="mailto:support@dijigro.com"
                 className="text-[15px] font-light text-[#A3A3A3] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#A3A3A3] hover:text-white hover:after:bg-white transition-colors"
               >
-                support@bird.co.uk
+                support@dijigro.com
               </a>
             </div>
           </div>
 
-          {/* Column 4: QUICK LINKS */}
+          {/* Column 4: OUR SERVICES */}
           <div className="lg:col-span-1 space-y-6">
             <h4 className="text-[13px] font-bold tracking-widest text-white uppercase">
-              QUICK LINKS
+              OUR SERVICES
             </h4>
             <ul className="flex flex-col gap-2 text-[12px] font-light text-[#A3A3A3]">
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Nest</Link></li>
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Email Marketing</Link></li>
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Marketing Portal</Link></li>
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Digital Marketing Glossary</Link></li>
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Digital Marketing Agency London</Link></li>
-              <li><Link href="#" className="hover:text-[#7DD3FC] transition-colors">Digital Marketing Agency Essex</Link></li>
+              <li><Link href="/services/web/web-design" className="hover:text-[#7DD3FC] transition-colors">Web Design</Link></li>
+              <li><Link href="/services/web/web-development" className="hover:text-[#7DD3FC] transition-colors">Web Development</Link></li>
+              <li><Link href="/services/web/ecommerce" className="hover:text-[#7DD3FC] transition-colors">Ecommerce Websites</Link></li>
+              <li><Link href="/services/digital-marketing/seo" className="hover:text-[#7DD3FC] transition-colors">SEO, AEO & GEO</Link></li>
+              <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-[#7DD3FC] transition-colors">Performance Marketing</Link></li>
+              <li><Link href="/services/digital-marketing/ppc" className="hover:text-[#7DD3FC] transition-colors">PPC Services</Link></li>
+              <li><Link href="/services/digital-marketing/social-media" className="hover:text-[#7DD3FC] transition-colors">Social Media Marketing</Link></li>
+              <li><Link href="/services/creative/branding" className="hover:text-[#7DD3FC] transition-colors">Branding & Identity</Link></li>
+              <li><Link href="/services/creative/ui-ux" className="hover:text-[#7DD3FC] transition-colors">UI/UX Design</Link></li>
             </ul>
           </div>
           

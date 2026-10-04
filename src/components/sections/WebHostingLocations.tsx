@@ -18,7 +18,7 @@ export function WebHostingLocations() {
               London, W1K 7JA, UK
             </p>
             <a href="#" className="block text-[#38BDF8] underline underline-offset-4 mb-2">+44 203 135 7206</a>
-            <a href="#" className="block text-white hover:text-[#38BDF8] transition-colors">london@bird.co.uk</a>
+            <a href="mailto:london@dijigro.com" className="block text-white hover:text-[#38BDF8] transition-colors">london@dijigro.com</a>
           </div>
           <div>
             <h3 className="text-[20px] font-bold text-white mb-4">Web Hosting Essex</h3>
@@ -28,7 +28,7 @@ export function WebHostingLocations() {
               Essex, CM12 9AB, UK
             </p>
             <a href="#" className="block text-[#38BDF8] underline underline-offset-4 mb-2">+44 1277 289360</a>
-            <a href="#" className="block text-white hover:text-[#38BDF8] transition-colors">essex@bird.co.uk</a>
+            <a href="mailto:essex@dijigro.com" className="block text-white hover:text-[#38BDF8] transition-colors">essex@dijigro.com</a>
           </div>
           <div>
             <h3 className="text-[20px] font-bold text-white mb-4">Web Hosting Glasgow</h3>
@@ -37,7 +37,7 @@ export function WebHostingLocations() {
               Glasgow, G41 1JA, UK
             </p>
             <a href="#" className="block text-[#38BDF8] underline underline-offset-4 mb-2">+44 141 471 9005</a>
-            <a href="#" className="block text-white hover:text-[#38BDF8] transition-colors">glasgow@bird.co.uk</a>
+            <a href="mailto:glasgow@dijigro.com" className="block text-white hover:text-[#38BDF8] transition-colors">glasgow@dijigro.com</a>
           </div>
         </div>
       </div>

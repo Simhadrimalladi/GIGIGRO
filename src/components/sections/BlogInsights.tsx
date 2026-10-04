@@ -49,27 +49,27 @@ export function BlogInsights() {
             <div>
               <div className="inline-flex items-baseline text-[13px] font-medium tracking-wide text-[#737373] uppercase mb-6 relative">
                 <span className="relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-[#737373]/50">
-                  NEWS & INFORMATION
+                  INSIGHTS &amp; IDEAS
                 </span>
-                <span className="text-[#7DD3FC] font-black text-lg ml-1">.</span>
+                <span className="text-[#38BDF8] font-black text-lg ml-1">.</span>
               </div>
 
-              <h2 className="text-[44px] md:text-[56px] lg:text-[64px] font-bold text-white tracking-tight leading-[1.1]">
-                Stay <br />
-                up-to-date
+              <h2 className="text-[38px] md:text-[52px] font-bold text-white tracking-tight leading-[1.1]">
+                Practical Ideas for a <br />
+                <span className="text-[#38BDF8]">Better Digital Presence</span>
               </h2>
 
-              <p className="mt-8 text-[15px] text-[#A3A3A3] leading-[1.7] max-w-[400px] font-light">
-                Stay up-to-date with industry news and information with our articles covering all subjects in the Web and Digital Marketing landscape.
+              <p className="mt-8 text-[15px] text-[#A3A3A3] leading-[1.8] max-w-[400px] font-light">
+                The digital landscape keeps changing. Our insights explore practical topics across SEO, websites, digital marketing, content, paid advertising and online growth.
               </p>
             </div>
 
             <div className="pt-2">
               <Link
                 href="/blog"
-                className="inline-block text-[17px] font-light text-[#7DD3FC] relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-[#7DD3FC] hover:opacity-70 transition-opacity"
+                className="inline-block text-[15px] font-bold uppercase tracking-wider text-[#38BDF8] relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-[#38BDF8] hover:opacity-70 transition-opacity"
               >
-                Read all articles
+                READ ALL INSIGHTS
               </Link>
             </div>
           </div>

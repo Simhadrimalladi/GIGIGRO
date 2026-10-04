@@ -17,34 +17,32 @@ export function SeoTrust() {
     <section className="bg-[#FFFFFF] py-24 text-[#000000]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         <div className="flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            Building Trust and Credibility<br/>
-            in SEO: Our Awards<br/>
-            and Esteemed Clients
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            WHY DIJIGRO
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-6 text-[#000000]">
+            Search Strategy With a Business Perspective
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of organic visibility. Our dedication to delivering outstanding SEO services has earned us numerous accolades and an impressive portfolio of clients who dominate their respective markets.
+            SEO should not become a never-ending list of technical tasks. It should support what your business actually wants to achieve. Our approach connects search visibility with your wider digital presence so that your website is built to attract the right audience and give them useful information when they arrive.
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">White-Hat Techniques:</span> We strictly adhere to Google&apos;s Webmaster Guidelines, ensuring your rankings are sustainable and safe from algorithmic penalties.
+              <span className="font-bold text-[#000000]">PEOPLE-FIRST CONTENT:</span> We create and optimise content for people first, while making it easier for search systems to understand.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Data-Driven Decisions:</span> Our strategies are built on comprehensive data analysis, not guesswork, guaranteeing a higher return on your investment.
+              <span className="font-bold text-[#000000]">TECHNICAL + CONTENT:</span> Strong visibility depends on both a sound technical foundation and genuinely useful information.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Transparent Reporting:</span> We provide clear, jargon-free reports that show exactly how our work is impacting your traffic, leads, and revenue.
+              <span className="font-bold text-[#000000]">SEARCH + AI:</span> We consider traditional search together with emerging AI-powered discovery experiences.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Industry Experts:</span> Our SEO specialists constantly monitor algorithmic shifts and adapt our strategies to keep you ahead of the curve.
+              <span className="font-bold text-[#000000]">CLEAR REPORTING:</span> We focus on understandable reporting so you can see what is being worked on and how the website is progressing.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Proven Track Record:</span> We have consistently helped businesses across diverse sectors achieve #1 rankings for highly competitive, commercial keywords.
+              <span className="font-bold text-[#000000]">LONG-TERM THINKING:</span> We aim to build sustainable search visibility rather than rely on shortcuts that may not last.
             </li>
           </ol>
-          <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning SEO services.
-          </p>
         </div>
         <div className="flex flex-col justify-center gap-10">
           {awards.map((award, idx) => {

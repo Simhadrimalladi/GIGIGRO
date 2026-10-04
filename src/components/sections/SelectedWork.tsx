@@ -50,30 +50,29 @@ export function SelectedWork() {
             <div>
               <div className="inline-flex items-baseline text-[13px] font-medium tracking-wide text-[#737373] uppercase mb-6 relative">
                 <span className="relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-[#737373]/50">
-                  OUR WORKS
+                  OUR WORK
                 </span>
-                <span className="text-[#7DD3FC] font-black text-lg ml-1">.</span>
+                <span className="text-[#38BDF8] font-black text-lg ml-1">.</span>
               </div>
 
-              <h2 className="text-[44px] md:text-[56px] lg:text-[64px] font-bold text-black tracking-tight leading-[1.1]">
-                Case Studies, a <br />
-                selection of <br />
-                <span className="bg-[#7DD3FC] px-2 py-0 inline-block mt-1">
-                  successful projects.
+              <h2 className="text-[38px] md:text-[48px] lg:text-[54px] font-bold text-black tracking-tight leading-[1.1]">
+                Projects Built Around <br />
+                <span className="bg-[#38BDF8] px-2 py-0 inline-block mt-1">
+                  Real Business Needs
                 </span>
               </h2>
 
-              <p className="mt-8 text-[15px] text-[#4A4A4A] leading-[1.7] max-w-[400px]">
-                We always put our clients first to deliver our best time after time. Below is some of our proudest work.
+              <p className="mt-8 text-[15px] text-[#4A4A4A] leading-[1.8] max-w-[400px]">
+                Good digital work starts with understanding the business behind the brief. Explore selected DIJIGRO projects to see how strategy, design, development and marketing come together to solve different digital challenges.
               </p>
             </div>
 
             <div className="pt-2">
               <Link
-                href="/case-studies"
-                className="inline-block text-[17px] font-medium text-black relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-black hover:opacity-70 transition-opacity"
+                href="/portfolio"
+                className="inline-block text-[15px] font-bold text-black uppercase tracking-wider relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-black hover:opacity-70 transition-opacity"
               >
-                View all Case Studies
+                VIEW ALL PROJECTS
               </Link>
             </div>
           </div>

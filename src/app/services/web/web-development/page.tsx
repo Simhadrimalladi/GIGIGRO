@@ -35,11 +35,11 @@ export default function Page() {
 
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
-        eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Web Development Agency in\nUK"
-        titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        eyebrow="WEB DEVELOPMENT"
+        titleMain="Web Development Built Around"
+        titleSub="Your"
+        titleHighlight="Business"
+        description="A website should do more than display information. It should work reliably, load smoothly and support the way your business operates. DIJIGRO develops websites and web solutions that combine functionality, performance and usability, helping businesses turn their digital ideas into working experiences. From business websites and ecommerce platforms to custom web applications, we develop solutions based on your requirements rather than forcing every project into the same structure."
       />
 
       {/* <Badges /> */}
@@ -54,7 +54,48 @@ export default function Page() {
       <WebDesignCMS />
       <WebDesignTools />
     
-      <WebDesignFAQ />
+      <WebDesignFAQ 
+        eyebrow="WEB DEVELOPMENT FAQ"
+        title="Frequently Asked Questions"
+        faqs={[
+          {
+            q: "What is web development?",
+            a: "Web development is the process of building the functional and technical parts of a website or web application. It includes everything from page functionality and content management to integrations and interactive features."
+          },
+          {
+            q: "Can you develop a website from an existing design?",
+            a: "Yes. We can take an approved website design and convert it into a fully functional, responsive website."
+          },
+          {
+            q: "Can you redesign and redevelop my existing website?",
+            a: "Yes. We can assess the existing website and determine whether it is better to improve specific areas or rebuild the platform."
+          },
+          {
+            q: "Do you build ecommerce websites?",
+            a: "Yes. We develop ecommerce websites based on your products, customers, required features and purchasing process."
+          },
+          {
+            q: "Do you develop custom web applications?",
+            a: "Yes. When a business requires functionality beyond a standard website, we can plan and develop a tailored web application around the specific requirements."
+          },
+          {
+            q: "Can you develop WordPress websites?",
+            a: "Yes. WordPress can be used where it is a suitable choice for the project's content management and functionality requirements."
+          },
+          {
+            q: "Will the website work on mobile devices?",
+            a: "Yes. Responsive development is considered so the website can adapt to different screen sizes and devices."
+          },
+          {
+            q: "Can you integrate third-party tools?",
+            a: "Where technically appropriate, we can integrate websites with relevant external platforms, services and business systems."
+          },
+          {
+            q: "Can you provide website maintenance after launch?",
+            a: "Yes. Ongoing maintenance, updates and improvements can be planned according to the website and your business requirements."
+          }
+        ]}
+      />
      
       <Footer />
 

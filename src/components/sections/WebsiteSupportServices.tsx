@@ -42,7 +42,7 @@ export function WebsiteSupportServices() {
           Website Support Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Website Support is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Protect your digital investment with 24/7 technical monitoring, guaranteed SLA response times, proactive CMS security patching, and rapid bug resolution. Our dedicated web engineers ensure your site stays fast, secure, and zero-downtime compliant.
         </p>
       </div>
 

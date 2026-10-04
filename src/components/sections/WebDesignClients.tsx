@@ -13,7 +13,7 @@ export function WebDesignClients() {
             Company
           </h2>
           <p className="text-[#666666] text-[15px] leading-[1.6] max-w-2xl font-light">
-            As a trusted UK Web Design Company, Bird has been featured in top-tier media and industry-leading platforms, showcasing our expertise in delivering exceptional digital marketing results.
+            As a trusted UK Web Design Company, DIJIGRO has been featured in top-tier media and industry-leading platforms, showcasing our expertise in delivering exceptional digital marketing results.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16 gap-x-8 items-center justify-items-center mb-20">

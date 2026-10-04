@@ -26,11 +26,11 @@ export default function BlogPage() {
       
       {/* Hero Section */}
       <Hero 
-        eyebrow="Insights & News"
-        titleMain="LATEST"
-        titleSub=""
-        titleHighlight="INSIGHTS"
-        description="Stay ahead of the curve with our expert analysis on digital marketing, web development, and industry trends."
+        eyebrow="INSIGHTS & IDEAS"
+        titleMain="Digital Insights That Help You"
+        titleSub="Move"
+        titleHighlight="Forward"
+        description="Practical articles, ideas and insights on digital marketing, SEO, AEO, GEO, web design, web development and online growth."
         onStartProject={(url) => {
           setSubmittedUrl(url);
           setProjectModalOpen(true);

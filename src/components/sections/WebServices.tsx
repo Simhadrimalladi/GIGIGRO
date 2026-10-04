@@ -42,7 +42,7 @@ export function WebServices() {
           Web Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Web is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          From high-speed React applications to cloud infrastructure and headless commerce platforms, our full-stack web engineering team crafts high-performance digital architecture designed for scale, speed, and seamless user conversion.
         </p>
       </div>
 

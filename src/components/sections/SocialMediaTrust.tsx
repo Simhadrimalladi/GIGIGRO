@@ -17,34 +17,35 @@ export function SocialMediaTrust() {
     <section className="bg-[#FFFFFF] py-24 text-[#000000]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         <div className="flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            Building Trust and Credibility<br/>
-            in Social Media: Our Awards<br/>
-            and Esteemed Clients
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            WHY DIJIGRO
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-6 text-[#000000]">
+            Social Media Built Around Your Brand
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of authentic brand connection. Our dedication to delivering outstanding social media services has earned us numerous accolades and an impressive portfolio of highly engaged brands.
+            A successful social media presence needs more than attractive posts. It needs consistency, clear messaging and an understanding of the people on the other side of the screen.
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Data-Informed Creativity:</span> Our creative campaigns are backed by rigorous data analysis, ensuring your content resonates with the right audience at the right time.
+              <span className="font-bold text-[#000000]">STRATEGY BEFORE POSTING:</span> We start with a clear direction instead of publishing random content.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Platform Experts:</span> Our team consists of specialists for each major network, ensuring we utilize the unique features and algorithms of every platform.
+              <span className="font-bold text-[#000000]">BRAND CONSISTENCY:</span> We keep your messaging, visual style and tone aligned across your social presence.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Proactive Engagement:</span> We don&apos;t just post content; we actively build relationships with your audience, turning casual followers into brand advocates.
+              <span className="font-bold text-[#000000]">AUDIENCE FOCUSED:</span> Content is planned around what your audience is likely to find useful, relevant or interesting.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Measurable ROI:</span> We tie social metrics directly to your business goals, proving the tangible value of your social media investment.
+              <span className="font-bold text-[#000000]">CREATIVE + PRACTICAL:</span> We combine creative ideas with content that serves a real communication or business purpose.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Trend Agility:</span> We monitor cultural shifts and platform changes in real-time, allowing your brand to remain relevant and cutting-edge.
+              <span className="font-bold text-[#000000]">DATA AWARE:</span> We use performance information to understand what is working and where the content strategy can improve.
+            </li>
+            <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
+              <span className="font-bold text-[#000000]">LONG-TERM THINKING:</span> We focus on building a recognisable and consistent social presence rather than chasing short-lived trends alone.
             </li>
           </ol>
-          <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning Social Media services.
-          </p>
         </div>
         <div className="flex flex-col justify-center gap-10">
           {awards.map((award, idx) => {

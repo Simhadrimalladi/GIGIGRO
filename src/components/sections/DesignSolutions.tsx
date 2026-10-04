@@ -9,7 +9,7 @@ export function DesignSolutions() {
           <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">Inspiring Confidence</span>
         </h2>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          At Bird, our creative disciplines are suited to the procurement of breathtaking visual communication. With extensive experience in delivering design services that truly capture attention and convey complex messages instantly, there is no agency you could turn to with more confidence to elevate your aesthetics.
+          At DIJIGRO, our creative disciplines are suited to the procurement of breathtaking visual communication. With extensive experience in delivering design services that truly capture attention and convey complex messages instantly, there is no agency you could turn to with more confidence to elevate your aesthetics.
         </p>
       </div>
     </section>

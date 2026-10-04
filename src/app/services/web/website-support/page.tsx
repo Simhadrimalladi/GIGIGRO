@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const supportFaqs = [
+  {
+    q: "What is your guaranteed response time for technical support?",
+    a: "We provide guaranteed SLA response times as fast as 15 minutes for critical emergencies and under 2 hours for standard tickets."
+  },
+  {
+    q: "What platforms do you support?",
+    a: "Our engineers specialize in supporting React, Next.js, Node, WordPress, Shopify, Laravel, and custom PHP/JavaScript platforms."
+  },
+  {
+    q: "How do you handle emergency website outages or hack attempts?",
+    a: "We deploy immediate malware isolation, restore your site from secure clean backups, patch the security vulnerability, and harden firewalls to prevent future breaches."
+  },
+  {
+    q: "Are content updates included in website support plans?",
+    a: "Yes, our support plans include dedicated developer hours every month for text changes, image swaps, layout tweaks, and new plugin installations."
+  },
+  {
+    q: "Do you provide monthly health & security reports?",
+    a: "Yes, every client receives a transparent monthly report detailing site uptime, security scan results, performance speeds, and completed maintenance tasks."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -37,10 +61,10 @@ export default function Page() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Website Support Agency in\nUK"
+        titleMain="Website Support & Maintenance in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Protects Your Site"
+        description="Keep your website running smoothly, securely, and glitch-free. Our dedicated technical team provides 24/7 proactive monitoring, rapid SLA ticket resolution, malware protection, and regular software updates."
       />
 
       <Badges />
@@ -48,6 +72,7 @@ export default function Page() {
       <WebsiteSupportSolutions />
       <WebsiteSupportLocations />
       <WebsiteSupportTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Website Support FAQs" faqs={supportFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

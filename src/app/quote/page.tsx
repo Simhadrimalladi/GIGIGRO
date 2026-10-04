@@ -91,14 +91,17 @@ export default function QuotePage() {
           </div>
         </div>
         <div className="max-w-[1400px] mx-auto relative z-10">
-          <h1 className="text-[48px] md:text-[64px] font-bold tracking-tight mb-4">
-            Let&apos;s Quote
+          <span className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3 block font-semibold">
+            GET A QUOTE
+          </span>
+          <h1 className="text-[48px] md:text-[64px] font-bold tracking-tight mb-4 text-white">
+            Tell Us What You Need
           </h1>
-          <p className="text-[#A3A3A3] text-[16px] font-light mb-8 max-w-xl">
-            Use the form or the contact details below to start the conversation.
+          <p className="text-[#A3A3A3] text-[16px] font-light mb-8 max-w-2xl">
+            Planning a new website, looking for better digital marketing or need help with an existing project? Share a few details about your requirements and we’ll get back to you with the next steps.
           </p>
-          <p className="text-[18px] font-light">
-            Wanna get in touch? <a href="/contact" className="text-[#38BDF8] border-b border-[#38BDF8] pb-1 hover:text-[#7dd3fc] transition-colors">Let&apos;s Talk</a>
+          <p className="text-[18px] font-light text-white">
+            Not sure what you need? <a href="/contact" className="text-[#38BDF8] border-b border-[#38BDF8] pb-1 hover:text-[#7dd3fc] transition-colors">Let&apos;s Talk</a>
           </p>
           
           {/* Faint 'START A PROJECT' text in background */}
@@ -140,7 +143,7 @@ export default function QuotePage() {
                   <input 
                     type="email" 
                     required
-                    placeholder="john@bird.co.uk"
+                    placeholder="john@dijigro.com"
                     className="w-full border border-gray-300 rounded p-4 text-[15px] focus:outline-none focus:border-[#38BDF8] transition-colors"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -162,7 +165,7 @@ export default function QuotePage() {
                   <input 
                     type="url" 
                     required
-                    placeholder="https://bird.co.uk"
+                    placeholder="https://dijigro.com"
                     className="w-full border border-gray-300 rounded p-4 text-[15px] focus:outline-none focus:border-[#38BDF8] transition-colors"
                     value={formData.website}
                     onChange={(e) => setFormData({...formData, website: e.target.value})}
@@ -192,7 +195,7 @@ export default function QuotePage() {
 
             {/* How did you hear */}
             <div className="space-y-2 relative">
-              <label className="text-[11px] font-bold tracking-widest uppercase text-gray-500">How did you hear about BIRD? *</label>
+              <label className="text-[11px] font-bold tracking-widest uppercase text-gray-500">How did you hear about DIJIGRO? *</label>
               
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>

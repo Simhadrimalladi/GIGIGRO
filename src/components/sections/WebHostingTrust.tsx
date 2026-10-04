@@ -40,7 +40,7 @@ export function WebHostingTrust() {
             and Esteemed Clients
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of trust and credibility in the web hosting industry. Our dedication to delivering outstanding web hosting services has earned us numerous accolades and an impressive portfolio of satisfied clients. Our commitment to excellence is reflected in:
+            At DIJIGRO, we understand the significance of trust and credibility in the web hosting industry. Our dedication to delivering outstanding web hosting services has earned us numerous accolades and an impressive portfolio of satisfied clients. Our commitment to excellence is reflected in:
           </p>
 
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
@@ -62,7 +62,7 @@ export function WebHostingTrust() {
           </ol>
 
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning web hosting services.
+            Choose DIJIGRO as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning web hosting services.
           </p>
         </div>
 

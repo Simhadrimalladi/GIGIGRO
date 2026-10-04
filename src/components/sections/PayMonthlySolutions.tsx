@@ -9,7 +9,7 @@ export function PayMonthlySolutions() {
           <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">Inspiring Confidence</span>
         </h2>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          At Bird, our subscription models are suited to the procurement of high-quality digital presences without the capital expenditure. With extensive experience in delivering pay monthly websites that truly empower small to medium businesses, there is no digital agency you could turn to with more confidence.
+          At DIJIGRO, our subscription models are suited to the procurement of high-quality digital presences without the capital expenditure. With extensive experience in delivering pay monthly websites that truly empower small to medium businesses, there is no digital agency you could turn to with more confidence.
         </p>
       </div>
     </section>

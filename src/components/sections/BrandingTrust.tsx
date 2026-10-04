@@ -23,7 +23,7 @@ export function BrandingTrust() {
             and Esteemed Clients
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of a powerful brand. Our dedication to delivering outstanding branding services has earned us numerous accolades and an impressive portfolio of iconic identities.
+            At DIJIGRO, we understand the significance of a powerful brand. Our dedication to delivering outstanding branding services has earned us numerous accolades and an impressive portfolio of iconic identities.
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
@@ -43,7 +43,7 @@ export function BrandingTrust() {
             </li>
           </ol>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning Branding services.
+            Choose DIJIGRO as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning Branding services.
           </p>
         </div>
         <div className="flex flex-col justify-center gap-10">

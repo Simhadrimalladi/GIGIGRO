@@ -5,44 +5,47 @@ export function SeoServices() {
   const services = [
     {
       icon: <Search className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Keyword Strategy",
-      features: ["In-depth research: Identifying high-intent search terms for your niche.", "Competitor gap analysis: Finding opportunities your rivals missed.", "Search intent mapping: Aligning keywords with the buyer journey."]
+      title: "Keyword & Search Intent",
+      features: ["We identify the topics, questions and search terms that matter to your audience and map them to the right pages and stages of the customer journey."]
     },
     {
       icon: <Code className="h-10 w-10 text-white" strokeWidth={1.5} />,
       title: "Technical SEO",
-      features: ["Site architecture: Optimizing your structure for efficient crawling.", "Core Web Vitals: Enhancing load speed, interactivity, and stability.", "Indexation fixes: Resolving duplicate content and crawl errors."]
+      features: ["We assess technical factors such as crawlability, indexing, site structure, page experience, mobile usability and other issues that can affect how search engines access and understand your website."]
     },
     {
       icon: <FileText className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "On-Page Optimization",
-      features: ["Content enhancement: Upgrading existing pages for better relevance.", "Meta optimization: Crafting compelling titles and descriptions for high CTR.", "Internal linking: Distributing authority effectively across your site."]
+      title: "On-Page SEO",
+      features: ["We improve page titles, headings, content structure, internal links, metadata and other on-page elements to make pages clearer and more relevant."]
     },
     {
       icon: <Link className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Link Building",
-      features: ["High-authority outreach: Acquiring backlinks from trusted industry sites.", "Digital PR: Creating shareable content that naturally earns media coverage.", "Toxic link cleanup: Disavowing harmful links that damage your profile."]
+      title: "Content Optimization",
+      features: ["We create and improve useful content that answers real customer questions, demonstrates expertise and gives visitors a reason to trust your business."]
     },
     {
       icon: <MapPin className="h-10 w-10 text-white" strokeWidth={1.5} />,
       title: "Local SEO",
-      features: ["Google Business Profile: Fully optimizing your local listings.", "Citation building: Ensuring consistent NAP data across directories.", "Localized content: Targeting specific geographic regions effectively."]
+      features: ["For businesses serving specific areas, we improve local search visibility through accurate business information, relevant location signals and useful local content."]
     },
     {
       icon: <BarChart className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Analytics & Reporting",
-      features: ["Custom dashboards: Real-time tracking of rankings and organic traffic.", "Conversion tracking: Measuring the actual ROI of your organic visitors.", "Monthly strategy reviews: Adapting our approach based on hard data."]
+      title: "Ecommerce SEO",
+      features: ["We optimise online stores around product discovery, category structure, search intent, technical health and content so customers can find relevant products through organic search."]
     },
   ];
 
   return (
     <section className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <p className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3">
+          OUR SEO SERVICES
+        </p>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          SEO Services
+          A Complete Foundation for Organic Visibility
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective SEO is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          We look at the parts of your website and online presence that influence how effectively search systems can discover, understand and connect your business with relevant searches.
         </p>
       </div>
 
@@ -53,17 +56,14 @@ export function SeoServices() {
               <div className="mb-8">{svc.icon}</div>
               <h3 className="text-[28px] font-bold mb-8 text-white tracking-tight">{svc.title}</h3>
               <ul className="space-y-6">
-                {svc.features.map((feature, idx) => {
-                  const [boldPart, restPart] = feature.split(': ');
-                  return (
-                    <li key={idx} className="flex items-start gap-4">
-                      <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
-                      <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
-                        {restPart ? (<><span className="text-[#E5E5E5] font-normal">{boldPart}:</span> {restPart}</>) : (feature)}
-                      </div>
-                    </li>
-                  );
-                })}
+                {svc.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-4">
+                    <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
+                    <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
+                      {feature}
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

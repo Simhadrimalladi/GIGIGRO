@@ -4,15 +4,17 @@ export function WebDevelopmentMastery() {
   return (
     <section className="bg-[#FFFFFF] py-24 md:py-32 flex flex-col items-center justify-center text-center px-6">
       <div className="max-w-[900px] mx-auto">
+        <p className="text-[#000000] text-[13px] font-mono tracking-widest uppercase mb-3 font-semibold">
+          THE RIGHT TECHNOLOGY
+        </p>
         <h2 className="text-[32px] md:text-[52px] font-bold text-[#000000] tracking-tight leading-[1.2] mb-8">
-          Revolutionising the Digital<br className="hidden md:block"/>
-          Landscape With <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">Custom Web<br className="hidden md:block"/>Development</span>
+          We Choose Technology Based on <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">What You Need</span>
         </h2>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto mb-6">
-          Our dedicated team of professionals employs state-of-the-art systems and processes to create websites that are not only aesthetically pleasing but also highly efficient, functional, and in line with the latest industry standards. With Bird, you get a potent blend of creative design and technical expertise that ensures your digital footprint is effective, engaging, and elevates your business above the competition.
+          There is no single technology that is right for every website. The technology and development approach should depend on factors such as the type of website, required functionality, expected traffic, integrations, content management needs and future plans.
         </p>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          In an environment where your digital presence can set the tone for your business success, partnering with Bird ensures that you get a website that&apos;s not just built, but meticulously crafted to suit your exact requirements.
+          For some businesses, a content management system may be the most practical choice. Other projects may require a more customised development approach. We focus on choosing technology that solves the problem—not technology simply because it is new.
         </p>
       </div>
     </section>

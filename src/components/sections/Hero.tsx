@@ -17,11 +17,11 @@ interface HeroProps {
 
 export function Hero({ 
   onStartProject,
-  eyebrow = "TOP RATED DIGITAL AGENCY",
-  titleMain = "Transforming Brands With In Innovation",
-  titleSub = "That",
-  titleHighlight = "Drives Growth",
-  description = "Accelerate your business growth with our multi award-winning, full-service digital agency. We offer a broad spectrum of tailored digital solutions designed to elevate your brand. With proven expertise and a global presence, we ensure you outpace the competition and achieve measurable success.",
+  eyebrow = "DIGITAL MARKETING • WEB DESIGN • WEB DEVELOPMENT",
+  titleMain = "Digital Marketing That Helps Your Business Grow",
+  titleSub = "",
+  titleHighlight = "",
+  description = "Your digital presence should do more than look good. It should help people find your business, understand what you offer and take the next step. DIJIGRO brings digital marketing, creative strategy, web design and web development together to build online experiences that support real business goals.",
   showFormAndLogos = true
 }: HeroProps) {
   const [websiteUrl, setWebsiteUrl] = useState("");
@@ -107,25 +107,27 @@ export function Hero({
             <span className="hero-heading-main whitespace-pre-line">
               {titleMain}
             </span>
-            <span className="hero-heading-sub">
-              {titleSub}{" "}
-              <em className="animated">
-                {titleHighlight}
-                {/* Hand-drawn yellow curved underline stroke */}
-                <svg
-                  className="hero-underline-svg"
-                  viewBox="0 0 320 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    ref={underlinePathRef}
-                    d="M4 12 C 60 17, 140 18, 220 12 C 265 8, 295 7, 316 11"
-                    className="hero-underline-path"
-                  />
-                </svg>
-              </em>
-            </span>
+            {(titleSub || titleHighlight) && (
+              <span className="hero-heading-sub">
+                {titleSub}{" "}
+                <em className="animated">
+                  {titleHighlight}
+                  {/* Hand-drawn yellow curved underline stroke */}
+                  <svg
+                    className="hero-underline-svg"
+                    viewBox="0 0 320 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      ref={underlinePathRef}
+                      d="M4 12 C 60 17, 140 18, 220 12 C 265 8, 295 7, 316 11"
+                      className="hero-underline-path"
+                    />
+                  </svg>
+                </em>
+              </span>
+            )}
           </h1>
 
           {/* Subtitle Paragraph */}

@@ -27,10 +27,10 @@ export default function ContactPage() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="GET IN TOUCH"
-        titleMain="Start Your Digital\nTransformation"
-        titleSub="With"
-        titleHighlight="GIGIGRO"
-        description="Whether you're an enterprise looking to scale, or a visionary startup ready to disrupt, we want to hear from you. Reach out to our global team to discuss your next big project."
+        titleMain="Let's Talk About Your Next"
+        titleSub="Digital"
+        titleHighlight="Project"
+        description="Have a website to build, a digital marketing challenge to solve or an idea you want to take online? Tell us what you need. We’ll listen, understand your goals and discuss the right way forward."
       />
 
       {/* <Badges /> */}

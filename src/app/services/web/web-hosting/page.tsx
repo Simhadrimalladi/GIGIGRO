@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const hostingFaqs = [
+  {
+    q: "What uptime guarantee do you offer for web hosting?",
+    a: "We guarantee 99.9% uptime across all our cloud hosting environments, backed by redundant server architecture and 24/7 proactive monitoring."
+  },
+  {
+    q: "Are daily backups included with DIJIGRO web hosting?",
+    a: "Yes, automated daily backups of your website files and databases are included as standard, with one-click restore functionality."
+  },
+  {
+    q: "Do you offer free SSL certificates?",
+    a: "Absolutely. Every website hosted on our platform receives a free Let's Encrypt SSL certificate to ensure data encryption and trust."
+  },
+  {
+    q: "Can DIJIGRO assist with migrating our site from our current host?",
+    a: "Yes, our technical team handles seamless, zero-downtime website migrations from your existing provider free of charge."
+  },
+  {
+    q: "How scalable are your hosting servers?",
+    a: "Our cloud infrastructure allows effortless scaling of CPU, RAM, and storage as your traffic spikes, ensuring your site remains responsive under heavy load."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -37,10 +61,10 @@ export default function Page() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Web Hosting Services in\nUK"
+        titleMain="Web Hosting Infrastructure in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Guarantees Uptime"
+        description="Experience enterprise-grade cloud hosting with 99.9% guaranteed uptime, lightning-fast SSD storage, automated daily backups, and robust 24/7 security monitoring tailored for high-performance websites."
       />
 
       <Badges />
@@ -48,6 +72,7 @@ export default function Page() {
       <WebHostingSolutions />
       <WebHostingLocations />
       <WebHostingTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Web Hosting FAQs" faqs={hostingFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

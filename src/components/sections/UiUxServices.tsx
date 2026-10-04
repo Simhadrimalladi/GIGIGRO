@@ -42,7 +42,7 @@ export function UiUxServices() {
           UI/UX Design Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective UI/UX Design is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Craft intuitive, frictionless digital products that users love. From user research and information architecture to high-fidelity wireframing, interactive prototyping, and scalable design systems, we craft user interfaces engineered for maximum engagement and retention.
         </p>
       </div>
 

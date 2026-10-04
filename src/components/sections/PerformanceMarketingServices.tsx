@@ -5,68 +5,47 @@ export function PerformanceMarketingServices() {
   const services = [
     {
       icon: <TrendingUp className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Paid Search & Shopping Scaling",
-      features: [
-        "High-intent keyword capture: Dominating Google & Bing search SERPs with high-converting ads.",
-        "Shopping Feed Optimization: Maximizing ROAS with automated product feed management.",
-        "Smart Bidding Strategies: Leveraging AI & machine learning to optimize bids for max ROI."
-      ]
+      title: "Paid Search",
+      features: ["Reach people actively searching for products or services related to your business through targeted search advertising."]
     },
     {
       icon: <Target className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Paid Social Growth (Meta & TikTok)",
-      features: [
-        "Full-funnel audience targeting: Engaging cold prospects and turning them into loyal buyers.",
-        "High-converting ad creative: Producing UGC, short-form video, and high-impact visual assets.",
-        "Scaling profitably: Expanding budget safely while maintaining low Cost Per Acquisition (CPA)."
-      ]
-    },
-    {
-      icon: <RefreshCw className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Funnel & Conversion Rate Optimization",
-      features: [
-        "Landing page engineering: Crafting lightning-fast, high-converting custom landing pages.",
-        "A/B & Multivariate testing: Continuous testing of headlines, offers, and checkout flows.",
-        "Friction reduction: Streamlining user paths to dramatically increase checkout completion."
-      ]
-    },
-    {
-      icon: <BarChart className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Multi-Touch Attribution & Analytics",
-      features: [
-        "Server-side tracking (CAPI): Bypassing ad blockers and iOS restrictions for true data accuracy.",
-        "Custom dashboard reporting: Real-time visibility into customer acquisition cost (CAC) & LTV.",
-        "Cross-channel insights: Understanding exact customer touchpoints across the entire buyer journey."
-      ]
+      title: "Paid Social",
+      features: ["Run targeted advertising campaigns across relevant social platforms to reach potential customers based on audience, interests, behaviour and other available signals."]
     },
     {
       icon: <Zap className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Dynamic Retargeting & LTV Boost",
-      features: [
-        "Omnichannel retargeting: Re-engaging warm visitors across web, social, and video platforms.",
-        "Cart abandonment recovery: Hyper-personalized messaging to convert lost visitors into sales.",
-        "Customer lifetime value enhancement: Repeat purchase workflows and post-purchase upsells."
-      ]
+      title: "Lead Generation",
+      features: ["Build campaigns around meaningful actions such as enquiries, calls, registrations, bookings or other business-defined goals."]
     },
     {
       icon: <Award className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Programmatic & Native Advertising",
-      features: [
-        "Premium Publisher Placements: Displaying your brand across top-tier global media networks.",
-        "Native Content Syndication: Driving high-intent traffic with non-disruptive native ad formats.",
-        "Real-Time Bidding (RTB): Precision targeting based on contextual and behavioral user signals."
-      ]
+      title: "Ecommerce Advertising",
+      features: ["Promote products to relevant audiences and create campaigns designed around product discovery, consideration and purchase."]
+    },
+    {
+      icon: <RefreshCw className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Remarketing",
+      features: ["Reconnect with people who have already interacted with your website, products or campaigns and guide them towards the next step."]
+    },
+    {
+      icon: <BarChart className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Landing Page Optimisation",
+      features: ["Improve the pages people reach after clicking an advertisement so that the experience is relevant, clear and focused on the intended action."]
     },
   ];
 
   return (
     <section className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <p className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3">
+          PERFORMANCE MARKETING SERVICES
+        </p>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          Performance Marketing Services
+          From Clicks to Meaningful Actions
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          Drive predictable, profitable revenue growth with data-backed Performance Marketing. Our team combines multi-channel paid acquisition, conversion rate optimization, and advanced analytics to ensure every marketing dollar spent directly translates into measurable business growth.
+          Performance marketing is not simply about buying more traffic. It is about understanding which activities contribute to your business goals and improving them over time.
         </p>
       </div>
 
@@ -77,17 +56,14 @@ export function PerformanceMarketingServices() {
               <div className="mb-8">{svc.icon}</div>
               <h3 className="text-[28px] font-bold mb-8 text-white tracking-tight">{svc.title}</h3>
               <ul className="space-y-6">
-                {svc.features.map((feature, idx) => {
-                  const [boldPart, restPart] = feature.split(': ');
-                  return (
-                    <li key={idx} className="flex items-start gap-4">
-                      <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
-                      <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
-                        {restPart ? (<><span className="text-[#E5E5E5] font-normal">{boldPart}:</span> {restPart}</>) : (feature)}
-                      </div>
-                    </li>
-                  );
-                })}
+                {svc.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-4">
+                    <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
+                    <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
+                      {feature}
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

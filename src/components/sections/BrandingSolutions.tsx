@@ -9,7 +9,7 @@ export function BrandingSolutions() {
           <span className="bg-[#38BDF8] px-2 py-1 leading-[1.4] box-decoration-clone">Inspiring Confidence</span>
         </h2>
         <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.8] font-light max-w-[800px] mx-auto">
-          At Bird, our branding strategies are suited to the procurement of deep, emotional connections with your audience. With extensive experience in delivering brand identities that truly resonate and endure, there is no creative agency you could turn to with more confidence to define your legacy.
+          At DIJIGRO, our branding strategies are suited to the procurement of deep, emotional connections with your audience. With extensive experience in delivering brand identities that truly resonate and endure, there is no creative agency you could turn to with more confidence to define your legacy.
         </p>
       </div>
     </section>

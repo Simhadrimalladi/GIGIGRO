@@ -34,36 +34,36 @@ export function EcommerceTrust() {
         
         {/* Left Column: Content */}
         <div className="flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            Building Trust and Credibility<br/>
-            in Ecommerce: Our Awards<br/>
-            and Esteemed Clients
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            BUILT FOR THE CUSTOMER
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-6 text-[#000000]">
+            More Than a Product Catalogue
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of trust and credibility in the ecommerce industry. Our dedication to delivering outstanding ecommerce website design services has earned us numerous accolades and an impressive portfolio of satisfied clients. Our commitment to excellence is reflected in:
+            An ecommerce website should make the buying decision easier. That means giving customers the information they need while removing unnecessary obstacles from the shopping journey.
           </p>
 
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Industry Awards:</span> We have been recognised by reputable organisations and publications for our exceptional work in ecommerce website design and digital marketing, a testament to our expertise and dedication.
+              <span className="font-bold text-[#000000]">EASY TO NAVIGATE:</span> Customers should be able to move from category to product to checkout without getting lost.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Esteemed Clientele:</span> Our diverse portfolio includes SMBs, startups, enterprises, and well-established brands, all of whom have benefited from our tailored ecommerce solutions.
+              <span className="font-bold text-[#000000]">CLEAR PRODUCT INFORMATION:</span> Good product presentation helps customers understand features, benefits, pricing and available options.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Success Stories:</span> We have helped numerous businesses achieve remarkable growth, increased revenue, and improved online visibility through our innovative and results-driven strategies.
+              <span className="font-bold text-[#000000]">TRUST & CONFIDENCE:</span> A professional shopping experience, clear information and a reliable checkout help create confidence throughout the buying journey.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Client Testimonials:</span> Our satisfied clients consistently praise our professional approach, attention to detail and commitment to delivering exceptional results.
+              <span className="font-bold text-[#000000]">FAST & RESPONSIVE:</span> Your store should provide a smooth experience across mobile, tablet and desktop devices.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Long-Term Partnerships:</span> We build lasting relationships with our clients, offering continuous support and guidance to ensure their ongoing success in the dynamic ecommerce landscape.
+              <span className="font-bold text-[#000000]">READY FOR SEARCH:</span> The website structure can be planned with search visibility in mind, creating a stronger foundation for ecommerce SEO.
+            </li>
+            <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
+              <span className="font-bold text-[#000000]">READY TO GROW:</span> Your ecommerce website should be able to evolve as your product range, customers and business requirements change.
             </li>
           </ol>
-
-          <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning ecommerce website design services.
-          </p>
         </div>
 
         {/* Right Column: Awards */}

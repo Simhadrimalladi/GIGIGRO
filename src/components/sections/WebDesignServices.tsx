@@ -4,56 +4,45 @@ import { ShoppingCart, BookOpen, Smartphone, FileText, Paintbrush, Laptop } from
 export function WebDesignServices() {
   const services = [
     {
-      icon: <ShoppingCart className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      icon: <Laptop className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
+      title: "Business Website Design",
+      features: [
+        "First Impression: Clearly presents your business, services, expertise and contact information while creating a strong first impression."
+      ]
+    },
+    {
+      icon: <ShoppingCart className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
       title: "Ecommerce Web Design",
       features: [
-        "Streamlined shopping experience: User-friendly purchase process with intuitive navigation.",
-        "Secure transactions: Trustworthy payment processing and data protection for customer confidence."
+        "Seamless Shopping: Online stores designed to make browsing, product discovery and purchasing straightforward across desktop and mobile devices."
       ]
     },
     {
-      icon: <BookOpen className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Brochure Web Design",
+      icon: <BookOpen className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
+      title: "Corporate Website Design",
       features: [
-        "Clear information presentation: Concisely showcase company offerings and value propositions.",
-        "Easy navigation: Straightforward browsing experience to facilitate user interaction.",
-        "Cost-effective solution: An affordable way to establish a professional online presence."
+        "Structured Clarity: Structured digital experiences for established businesses that need to communicate capabilities, services, people and brand with clarity."
       ]
     },
     {
-      icon: <Smartphone className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Mobile Web Design",
+      icon: <FileText className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
+      title: "Landing Page Design",
       features: [
-        "Device compatibility: Optimised for smartphones and tablets to ensure seamless functionality.",
-        "Improved UX: Seamless navigation and responsiveness on mobile devices.",
-        "Increased reach: Capture the growing audience of mobile internet users."
+        "Conversion Focus: Focused pages built around a specific campaign, service, product or conversion goal."
       ]
     },
     {
-      icon: <FileText className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "One Page Web Design",
-      features: [
-        "Simplified layout: Consolidate all essential content on a single, user-friendly page.",
-        "Fast loading times: Minimal elements streamline access and improve site performance.",
-        "User engagement: Encourage scroll-based exploration and interactivity."
-      ]
-    },
-    {
-      icon: <Paintbrush className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      icon: <Paintbrush className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
       title: "Website Redesign",
       features: [
-        "Refreshed look: Modernise site appearance to align with current design trends.",
-        "Updated functionality: Integrate new features and enhancements to improve user experience.",
-        "Enhanced performance: Boost loading speed, mobile responsiveness, and overall UX."
+        "Fresh Approach: A fresh approach for outdated or underperforming websites, improving visual presentation, navigation, content structure and user experience."
       ]
     },
     {
-      icon: <Laptop className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Custom Bespoke Web Design",
+      icon: <Smartphone className="h-10 w-10 text-[#38BDF8]" strokeWidth={1.5} />,
+      title: "Custom Web Design",
       features: [
-        "Unique branding: Tailor-made visuals and style to reflect your company's identity.",
-        "Personalised features: Custom functionality designed to meet specific business needs.",
-        "Competitive edge: Stand out from rivals with a distinct and memorable online presence."
+        "Unique Experience: Unique website experiences created around specific business requirements rather than relying on a one-size-fits-all layout."
       ]
     }
   ];
@@ -61,11 +50,14 @@ export function WebDesignServices() {
   return (
     <section className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+          WHAT WE DESIGN
+        </span>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          Web Design Services
+          The Right Website for the Way You Do Business
         </h2>
-        <p className="text-[#A3A3A3] text-[15px] leading-[1.8] max-w-none font-light">
-          In the highly competitive digital landscape, a captivating and effective web presence is paramount for success. At Bird, a leading Web Design Agency UK, we excel in crafting bespoke, award-winning online experiences tailored to meet the specific needs of business owners, SMBs, website owners, startups, and enterprises alike. Our innovative and cutting-edge website designs, combined with our robust systems and processes, ensure a seamless and efficient project lifecycle that drives tangible results.
+        <p className="text-[#A3A3A3] text-[16px] leading-[1.8] max-w-none font-light">
+          Different businesses need different types of websites. We create designs based on what your customers need to see, understand and do.
         </p>
       </div>
 

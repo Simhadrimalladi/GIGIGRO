@@ -25,34 +25,42 @@ export function AboutCulture() {
         </div>
         
         <div className="order-1 lg:order-2 flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            Our Culture:<br/>
-            Where Brilliance<br/>
-            Meets Wellbeing
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            OUR CULTURE
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-8 text-[#000000]">
+            Curious Minds. Collaborative Work. Continuous Growth.
           </h2>
-          <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            We believe that the best work is produced by teams who are respected, supported, and given the freedom to experiment. At GIGIGRO, we have cultivated an environment that champions continuous learning and psychological safety.
+          <p className="text-[#333333] text-[15px] leading-[1.7] font-light mb-4">
+            We believe the best digital work happens when people are encouraged to learn, share ideas and think differently.
           </p>
+          <p className="text-[#333333] text-[15px] leading-[1.7] font-light mb-4">
+            Our culture is built around curiosity, collaboration and continuous improvement. We give importance to open communication, practical thinking and the freedom to explore better ways of solving problems.
+          </p>
+          <p className="text-[#333333] text-[15px] leading-[1.7] font-light mb-8">
+            Our experience in digital marketing training has also shaped how we work—we believe knowledge becomes more valuable when it is shared.
+          </p>
+
           <ul className="space-y-6 list-none p-0 m-0">
             <li className="flex items-start gap-4">
               <span className="text-[#38BDF8] mt-1 shrink-0">■</span>
               <div>
-                <strong className="block text-[16px] text-[#000000] mb-1">Diversity & Inclusion</strong>
-                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">We celebrate diverse perspectives. Our team comes from 15+ different countries, bringing unique cultural insights to global campaigns.</span>
+                <strong className="block text-[16px] text-[#000000] mb-1">LEARN</strong>
+                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">Stay curious. Keep developing. Keep adapting.</span>
               </div>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-[#38BDF8] mt-1 shrink-0">■</span>
               <div>
-                <strong className="block text-[16px] text-[#000000] mb-1">Continuous Growth</strong>
-                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">Every team member gets a dedicated R&D budget for courses, certifications, and attending global tech conferences.</span>
+                <strong className="block text-[16px] text-[#000000] mb-1">COLLABORATE</strong>
+                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">Share ideas. Listen carefully. Build together.</span>
               </div>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-[#38BDF8] mt-1 shrink-0">■</span>
               <div>
-                <strong className="block text-[16px] text-[#000000] mb-1">Remote-First Philosophy</strong>
-                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">While we have hubs in London and New York, we empower our talent to work from wherever they feel most inspired and productive.</span>
+                <strong className="block text-[16px] text-[#000000] mb-1">GROW</strong>
+                <span className="text-[#555555] text-[14px] leading-[1.6] font-light">Learn from experience and continually improve.</span>
               </div>
             </li>
           </ul>

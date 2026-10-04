@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const creativeFaqs = [
+  {
+    q: "What creative production capabilities does DIJIGRO offer?",
+    a: "We offer end-to-end creative capabilities including campaign ideation, video production, commercial scriptwriting, photography, sonic branding, and 3D animation."
+  },
+  {
+    q: "How do you align creative concepts with business performance?",
+    a: "Our creative direction marries high-level aesthetic storytelling with performance marketing metrics—ensuring every campaign grabs attention while driving conversion."
+  },
+  {
+    q: "Do you handle full-service video and commercial production?",
+    a: "Yes, our in-house production team handles everything from pre-production storyboarding to casting, filming, editing, motion graphics, and final audio mastering."
+  },
+  {
+    q: "Can DIJIGRO create custom brand assets for multi-channel distribution?",
+    a: "Absolutely. We deliver complete asset suites formatted specifically for TV, social media reels, digital billboards, print, and web."
+  },
+  {
+    q: "What is the typical turnaround time for a creative campaign?",
+    a: "Turnaround times vary based on scope—focused video or graphic assets take 1 to 2 weeks, while major multi-channel brand campaigns typically run 4 to 8 weeks."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -37,10 +61,10 @@ export default function Page() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Creative Agency in\nUK"
+        titleMain="Full Service Creative Agency in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Inspires Action"
+        description="Disrupt your industry with high-impact creative direction, cinematic video production, brand storytelling, and multi-channel campaign ideation engineered to captivate your audience."
       />
 
       {/* <Badges /> */}
@@ -48,6 +72,7 @@ export default function Page() {
       <CreativeSolutions />
       <CreativeLocations />
       <CreativeTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Creative Production FAQs" faqs={creativeFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

@@ -9,7 +9,7 @@ export function WebDesignTools() {
           UK Web Design <span className="bg-[#38BDF8] px-2 py-1">Tools & Software</span>
         </h2>
         <p className="text-[#333333] text-[15px] leading-[1.6] font-light max-w-3xl mx-auto mb-16">
-          At Bird, our UK Web Design team utilises a diverse suite of industry-leading tools and software to bring your digital vision to life. From advanced design platforms to robust development frameworks, we ensure every project is built for performance and scalability.
+          At DIJIGRO, our UK Web Design team utilises a diverse suite of industry-leading tools and software to bring your digital vision to life. From advanced design platforms to robust development frameworks, we ensure every project is built for performance and scalability.
         </p>
         <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 items-center opacity-60">
           {tools.map(tool => (

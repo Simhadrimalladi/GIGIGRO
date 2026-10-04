@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const dmFaqs = [
+  {
+    q: "What digital marketing channels does DIJIGRO cover?",
+    a: "We offer end-to-end digital marketing solutions spanning SEO, Generative Engine Optimization (GEO), Paid Search (PPC), Paid Social, Performance Marketing, Email Automation, and Conversion Rate Optimization (CRO)."
+  },
+  {
+    q: "How do you measure ROI on digital marketing campaigns?",
+    a: "We establish clear KPIs including Customer Acquisition Cost (CAC), Return On Ad Spend (ROAS), Cost Per Lead (CPL), and Organic Revenue Growth, providing real-time analytics dashboards."
+  },
+  {
+    q: "How long does it take to see results from digital marketing?",
+    a: "PPC and Paid Social campaigns generate immediate traffic and conversions within 24-48 hours, whereas organic channels like SEO and Content Marketing compound results over 3 to 6 months."
+  },
+  {
+    q: "Will I have a dedicated account manager?",
+    a: "Yes, every DIJIGRO client is assigned a dedicated Digital Growth Partner who manages campaign strategy, weekly updates, and monthly performance reviews."
+  },
+  {
+    q: "Do you offer tailored digital marketing packages for B2B and E-commerce?",
+    a: "Absolutely. We customize our channel mix, audience targeting, and content strategy specifically to suit B2B lead generation pipelines or B2C e-commerce revenue growth."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -37,10 +61,10 @@ export default function Page() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Digital Marketing Agency in\nUK"
+        titleMain="Full Service Digital Marketing in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Drives Revenue"
+        description="Scale your business with our multi award-winning Digital Marketing Agency in UK. We combine data-driven SEO, high-converting PPC, performance marketing, and automated conversion strategies to maximize ROI."
       />
 
       {/* <Badges /> */}
@@ -48,6 +72,7 @@ export default function Page() {
       <DigitalMarketingSolutions />
       <DigitalMarketingLocations />
       <DigitalMarketingTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Digital Marketing FAQs" faqs={dmFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

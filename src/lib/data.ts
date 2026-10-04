@@ -104,42 +104,38 @@ export const PARTNER_LOGOS = [
 export const SERVICES: ServiceItem[] = [
   {
     id: "seo",
-    title: "SEO",
+    title: "SEO Services",
     icon: "Search",
     details: [
-      { title: "Enhanced Visibility", desc: "Utilise SEO to reach global audiences, elevating brand and growth prospects." },
-      { title: "Precision Targeting", desc: "Craft SEO-centric campaigns to engage ideal customers and maximise ROI." },
-      { title: "Data-Driven Optimisation", desc: "Employ SEO analytics for strategy enhancement and better performance." }
+      { title: "Organic Search", desc: "Help the right people discover your business through search." },
+      { title: "Technical & Content", desc: "Our SEO approach focuses on technical health, useful content, search intent and sustainable organic visibility." }
     ]
   },
   {
     id: "ppc",
-    title: "PPC",
+    title: "PPC & Paid Advertising",
     icon: "Target",
     details: [
-      { title: "Global Engagement", desc: "Launch PPC campaigns for instant global reach, enhancing brand visibility." },
-      { title: "Precision Targeting", desc: "Design tailored PPC strategies to capture ideal customers, maximising ROI." },
-      { title: "Performance Metrics", desc: "Harness data insights for ongoing PPC optimisation, improving campaigns." }
+      { title: "Targeted Campaigns", desc: "Reach potential customers when they are actively searching for your products or services." },
+      { title: "Data-Driven ROI", desc: "We create targeted campaigns, manage budgets carefully and continually improve performance using real campaign data." }
     ]
   },
   {
     id: "social-media",
-    title: "Social Media",
+    title: "Social Media Marketing",
     icon: "MessageSquare",
     details: [
-      { title: "Audience Expansion", desc: "Engage and grow your audience through social media's interactive nature." },
-      { title: "Content Innovation", desc: "Drive brand loyalty with creative social media campaigns and strategies." },
-      { title: "Interactive Promotions", desc: "Execute real-time promotions on social media to boost brand affinity." }
+      { title: "Awareness & Growth", desc: "Turn social platforms into useful channels for awareness, engagement and business growth." },
+      { title: "Campaign Strategy", desc: "We combine content, creative direction and campaign strategy to help your brand stay relevant and visible." }
     ]
   },
   {
-    id: "Performance Marketing",
+    id: "performance-marketing",
     title: "Performance Marketing",
     icon: "PenTool",
     details: [
-      { title: "Strong Brand Presence", desc: "Build a cohesive, memorable identity resonating with target audience." },
-      { title: "Engaging Visuals", desc: "Capture audience interest with top-notch photography, video, and promos." },
-      { title: "Seamless User Interactions", desc: "Design user interfaces enhancing customer satisfaction and conversions." }
+      { title: "Measurable Results", desc: "Make your marketing more measurable." },
+      { title: "Ad Spend to Outcomes", desc: "We connect campaigns, audiences, landing pages and conversion goals to create a clearer path from advertising spend to business outcomes." }
     ]
   },
   {
@@ -147,24 +143,19 @@ export const SERVICES: ServiceItem[] = [
     title: "Web Design",
     icon: "Monitor",
     details: [
-      { title: "Customised Websites", desc: "Create online realms aligning with brand essence and business objectives." },
-      { title: "Functional Features", desc: "Boost user experience focusing on usability and smooth navigation." },
-      { title: "Reliable Performance", desc: "Ensure uptime, security, and speed for optimal website functions." }
+      { title: "Brand Representation", desc: "Create a website that represents your brand and makes it easy for visitors to find what they need." },
+      { title: "Action-Guided UX", desc: "Our designs focus on clarity, usability, responsive layouts and experiences that guide users towards action." }
     ]
   },
-  
   {
     id: "web-development",
     title: "Web Development",
     icon: "Wrench",
     details: [
-      { title: "Global Accessibility", desc: "Build lightweight websites to reach diverse audiences, boosting your brand." },
-      { title: "Bespoke Development", desc: "Tailor projects to meet client needs, engaging target audiences, maximising ROI." },
-      { title: "Analytical Advancements", desc: "Use data-driven methods for continuous website refinement." }
+      { title: "Scalable Platforms", desc: "Turn your website design into a fast, reliable and scalable digital platform." },
+      { title: "Clean Structure", desc: "We develop websites with clean structure, practical functionality, responsive performance and future growth in mind." }
     ]
   },
-  
-  
 ];
 
 export const MEDIA_LOGOS = [
@@ -265,34 +256,34 @@ export const PRESS_FEATURES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: "The Best SEO Agencies in The UK",
-    category: "SEO",
-    date: "July 8, 2025",
+    title: "Why Your Website Traffic Is Not Turning Into Leads",
+    category: "Digital Marketing",
+    date: "May 2024",
     readTime: "5 min read",
     excerpt: "",
     image: "",
   },
   {
-    title: "The Best Graphic Design Software",
-    category: "Design",
-    date: "May 21, 2024",
-    readTime: "5 min read",
+    title: "SEO Foundations Every Business Website Should Have",
+    category: "SEO",
+    date: "June 2024",
+    readTime: "6 min read",
     excerpt: "",
     image: "",
   },
   {
-    title: "The Best Keyword Research Tools",
-    category: "SEO",
-    date: "May 15, 2024",
-    readTime: "5 min read",
+    title: "What Makes a Business Website Easy to Use?",
+    category: "Web Design",
+    date: "July 2024",
+    readTime: "4 min read",
     excerpt: "",
     image: "",
   },
   {
-    title: "The Best Link Building Tools",
-    category: "SEO",
-    date: "May 9, 2024",
-    readTime: "5 min read",
+    title: "SEO vs Paid Advertising: Understanding the Difference",
+    category: "PPC & SEO",
+    date: "August 2024",
+    readTime: "7 min read",
     excerpt: "",
     image: "",
   },

@@ -18,30 +18,30 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DIJGRO™ — Digital Marketing Agency in UK That Delivers Results",
+  title: "DIJIGRO™ — Digital Marketing Agency in UK That Delivers Results",
   description:
     "Accelerate your business growth with our multi award-winning, Full Service Digital Marketing Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide.",
   keywords: [
     "Digital Marketing Agency in UK",
     "Full Service Digital Marketing Agency UK",
-    "BIRD Marketing Agency",
+    "DIJIGRO Marketing Agency",
     "SEO Agency UK",
     "PPC Agency London",
     "Web Design Agency UK",
   ],
-  authors: [{ name: "BIRD Digital Marketing Agency" }],
+  authors: [{ name: "DIJIGRO Digital Marketing Agency" }],
   openGraph: {
-    title: "BIRD™ — Digital Marketing Agency in UK That Delivers Results",
+    title: "DIJIGRO™ — Digital Marketing Agency in UK That Delivers Results",
     description:
       "Accelerate your business growth with our multi award-winning, Full Service Digital Marketing Agency in UK.",
-    url: "https://bird.marketing",
-    siteName: "BIRD Marketing",
+    url: "https://dijigro.com",
+    siteName: "DIJIGRO Marketing",
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BIRD™ — Digital Marketing Agency in UK That Delivers Results",
+    title: "DIJIGRO™ — Digital Marketing Agency in UK That Delivers Results",
     description:
       "Accelerate your business growth with our multi award-winning, Full Service Digital Marketing Agency in UK.",
   },

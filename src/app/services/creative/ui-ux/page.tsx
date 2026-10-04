@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const uiuxFaqs = [
+  {
+    q: "What is the difference between UI and UX design?",
+    a: "UX (User Experience) design focuses on the overall user journey, wireframing, and product usability, while UI (User Interface) design focuses on the visual presentation, typography, colors, and interactive micro-animations."
+  },
+  {
+    q: "How do you conduct user research and testing?",
+    a: "We conduct real user interviews, competitor heuristic evaluations, interactive prototype testing in Figma, and heatmap conversion tracking to validate every design choice."
+  },
+  {
+    q: "Do you build design systems for engineering teams?",
+    a: "Yes, we construct comprehensive Figma design systems with auto-layout components, design tokens, and style guides to streamline developer handoffs."
+  },
+  {
+    q: "Are your UI/UX designs compliant with WCAG accessibility standards?",
+    a: "Absolutely. Accessibility is fundamental to our design process. We adhere strictly to WCAG 2.1 AA guidelines for color contrast, screen reader compatibility, and font sizing."
+  },
+  {
+    q: "Can DIJIGRO redesign an existing SaaS product or mobile app?",
+    a: "Yes, we perform full UX audits and product redesigns to eliminate user friction, improve onboarding flows, and boost product retention."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -39,8 +63,8 @@ export default function Page() {
         eyebrow="TOP RATED AND AWARD WINNING"
         titleMain="UI/UX Design Agency in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Delights Users"
+        description="Craft seamless, user-centric digital experiences. Our award-winning UI/UX designers turn complex workflows into intuitive web applications, SaaS dashboards, and mobile app interfaces engineered for maximum conversion."
       />
 
       <Badges />
@@ -48,6 +72,7 @@ export default function Page() {
       <UiUxSolutions />
       <UiUxLocations />
       <UiUxTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="UI/UX Design FAQs" faqs={uiuxFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

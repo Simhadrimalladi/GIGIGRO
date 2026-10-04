@@ -44,18 +44,19 @@ export function ContactForm() {
         
         {/* Left Side: Context & Trust */}
         <div className="flex flex-col justify-center">
+          <span className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3 block font-semibold">
+            START A CONVERSATION
+          </span>
           <h2 className="text-[42px] md:text-[56px] font-bold tracking-tight leading-[1.1] mb-8">
-            Let&apos;s build <br/>
-            something <span className="text-[#38BDF8]">exceptional</span> <br/>
-            together.
+            Tell Us About Your <span className="text-[#38BDF8]">Project</span>
           </h2>
           <p className="text-[#A3A3A3] text-[16px] leading-[1.7] font-light mb-10 max-w-lg">
-            Whether you&apos;re looking for a complete digital transformation, a cutting-edge web application, or a high-performance marketing campaign, our team of experts is ready to help you scale. Fill out the form, and a senior strategist will get back to you within 24 hours.
+            Fill in a few details and give us an idea of what you are looking to achieve. Whether you are starting something new or improving what you already have, we&apos;d love to hear about your project.
           </p>
           
           <div className="p-8 bg-[#0a0a0a] border border-[#222222] rounded-xl max-w-lg">
             <p className="text-[#E5E5E5] text-[15px] italic mb-6">
-              &quot;Partnering with GIGIGRO was the best decision for our digital presence. Their attention to detail and technical execution is unmatched in the industry.&quot;
+              &quot;Partnering with DIJIGRO was the best decision for our digital presence. Their attention to detail and technical execution is unmatched in the industry.&quot;
             </p>
             <div className="flex items-center gap-4">
               <div className="relative w-12 h-12 bg-[#333333] rounded-full overflow-hidden">

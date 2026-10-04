@@ -18,6 +18,30 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
+
+const brandingFaqs = [
+  {
+    q: "What is included in a complete brand identity package?",
+    a: "A complete brand package includes core strategy positioning, logo design variations, brand color palette, typography hierarchy, verbal tone-of-voice guidelines, and full brand usage rulebooks."
+  },
+  {
+    q: "How long does a full rebranding process take?",
+    a: "A full brand identity strategy and visual redesign typically takes 4 to 8 weeks, including research, concept development, refinements, and final asset delivery."
+  },
+  {
+    q: "Will I own full copyright and vector assets for our brand?",
+    a: "Yes, upon final project sign-off, you hold 100% full legal ownership of all logo files, vector graphics, font licenses, and brand documentation."
+  },
+  {
+    q: "Can DIJIGRO assist with physical packaging and stationery design?",
+    a: "Absolutely. We design physical collateral including product packaging, unboxing boxes, business cards, merchandise, and retail display materials."
+  },
+  {
+    q: "How do you ensure our new brand stays consistent across all channels?",
+    a: "We provide comprehensive digital brand guidelines and vector asset libraries to ensure your internal teams and third-party vendors execute your brand flawlessly."
+  }
+];
 
 export default function Page() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
@@ -37,10 +61,10 @@ export default function Page() {
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
         eyebrow="TOP RATED AND AWARD WINNING"
-        titleMain="Branding Agency in\nUK"
+        titleMain="Brand Identity Agency in\nUK"
         titleSub="That"
-        titleHighlight="Delivers Results"
-        description="Accelerate your business growth with our multi award-winning Agency in UK, offering a broad spectrum of tailored digital solutions. With headquarters in the UK and branches worldwide, our proven expertise ensures you outpace the competition and achieve measurable success."
+        titleHighlight="Defines Industry Leaders"
+        description="Craft an unforgettable visual and verbal brand identity. Our award-winning branding strategists and graphic designers build powerful logos, color systems, tone of voice, and brand guidelines that forge deep customer connections."
       />
 
       <Badges />
@@ -48,6 +72,7 @@ export default function Page() {
       <BrandingSolutions />
       <BrandingLocations />
       <BrandingTrust />
+      <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Brand Identity FAQs" faqs={brandingFaqs} />
       <Industries />
       <CTA />
       {/* <SelectedWork /> */}

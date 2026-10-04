@@ -4,57 +4,45 @@ import { Smartphone, Search, ShoppingCart, Package, CreditCard, Store } from "lu
 export function EcommerceServices() {
   const services = [
     {
-      icon: <Smartphone className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Mobile Ready",
+      icon: <Store className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Online Store Design",
       features: [
-        "Enhanced UX: Responsive design for seamless browsing on smartphones and tablets.",
-        "Greater reach: Engage with the growing mobile audience for increased visibility.",
-        "Improved performance: Fast loading and smooth interactions tailored for mobile devices."
-      ]
-    },
-    {
-      icon: <Search className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "SEO Ready",
-      features: [
-        "Higher rankings: Enhance visibility in search results for targeted keywords.",
-        "Increased traffic: Attract more potential customers through improved organic reach.",
-        "Competitive edge: Stand out among competitors by optimising your online presence."
-      ]
-    },
-    {
-      icon: <ShoppingCart className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Increased Sales",
-      features: [
-        "Boost revenue: Enhance online conversions through targeted strategies and user engagement.",
-        "Wider audience: Reach more potential customers by expanding your online presence.",
-        "Effective marketing: Improve sales through data-driven marketing tactics and customer insights."
+        "Create a professional storefront that reflects your brand and makes products easy to browse and understand."
       ]
     },
     {
       icon: <Package className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Efficient Inventory Management",
+      title: "Product & Category Pages",
       features: [
-        "Accurate tracking: Monitor stock levels and reduce errors.",
-        "Simplified fulfillment: Streamline order processing and shipping.",
-        "Informed decisions: Utilise data for better inventory planning and forecasting."
+        "Organise your products with clear categories, useful information, images and calls to action that help customers make informed decisions."
+      ]
+    },
+    {
+      icon: <ShoppingCart className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Shopping Cart & Checkout",
+      features: [
+        "Create a straightforward purchasing journey that reduces unnecessary steps and makes checkout easy to complete."
       ]
     },
     {
       icon: <CreditCard className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Fast Payment Processing",
+      title: "Payment Integration",
       features: [
-        "Seamless transactions: Offer a frictionless and user-friendly checkout experience.",
-        "Secure payments: Ensure customer trust with robust security measures.",
-        "Multiple options: Cater to diverse preferences with various payment methods."
+        "Connect your store with suitable payment solutions so customers can complete transactions through supported payment methods."
       ]
     },
     {
-      icon: <Store className="h-10 w-10 text-white" strokeWidth={1.5} />,
-      title: "Multi-channel Selling",
+      icon: <Search className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Order & Product Management",
       features: [
-        "Diversified reach: Access new customers through various platforms.",
-        "Unified experience: Consistent branding and messaging across channels.",
-        "Increased revenue: Maximise sales opportunities by targeting different market segments."
+        "Build practical systems for managing products, prices, orders and other essential store information."
+      ]
+    },
+    {
+      icon: <Smartphone className="h-10 w-10 text-white" strokeWidth={1.5} />,
+      title: "Mobile Shopping Experience",
+      features: [
+        "Make sure customers can browse products and complete purchases comfortably across different screen sizes."
       ]
     }
   ];
@@ -62,11 +50,14 @@ export function EcommerceServices() {
   return (
     <section className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <p className="text-[#38BDF8] text-[13px] font-mono tracking-widest uppercase mb-3">
+          OUR ECOMMERCE SOLUTIONS
+        </p>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          Ecommerce Ecommerce Web Design Services
+          Everything Your Store Needs to Sell Online
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In the ever-evolving digital landscape, a robust and innovative ecommerce website design is crucial to the success of UK-based retailers and shop owners. As the online marketplace becomes increasingly competitive, it is essential for shop owners, retailers, ecommerce entrepreneurs, and business of all sizes to invest in a top-tier ecommerce web design that not only captivates their target audience but also drives conversions and boosts profitability.
+          We design and develop ecommerce experiences around the complete customer journey—from discovering a product to placing an order.
         </p>
       </div>
 
@@ -84,23 +75,14 @@ export function EcommerceServices() {
                 {svc.title}
               </h3>
               <ul className="space-y-6">
-                {svc.features.map((feature, idx) => {
-                  const [boldPart, restPart] = feature.split(': ');
-                  return (
-                    <li key={idx} className="flex items-start gap-4">
-                      <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
-                      <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
-                        {restPart ? (
-                          <>
-                            <span className="text-[#E5E5E5] font-normal">{boldPart}:</span> {restPart}
-                          </>
-                        ) : (
-                          feature
-                        )}
-                      </div>
-                    </li>
-                  );
-                })}
+                {svc.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-4">
+                    <span className="text-[#38BDF8] mt-1 shrink-0">✓</span>
+                    <div className="text-[#A3A3A3] text-[14px] leading-[1.7] font-light">
+                      {feature}
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

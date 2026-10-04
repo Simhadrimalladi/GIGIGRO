@@ -32,51 +32,53 @@ export function WebDesignCompany() {
     <section className="bg-[#FFFFFF] py-24 text-[#000000]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         
-        {/* Left Column: Content */}
+        {/* Left Column: Process */}
         <div className="flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            The Innovative UK-Based<br className="hidden md:block" />
-            Web Design Company
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            HOW WE WORK
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-6 text-[#000000]">
+            A Clear Process From First Conversation to Launch
           </h2>
           <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.6] font-light mb-8">
-            Bird sets itself apart from other Web Design Agencies UK by offering a truly customer-centric experience.
+            We keep the web design process structured and collaborative, so you know what is happening at every stage.
           </p>
 
           <ul className="space-y-6 mb-10">
             <li className="flex items-start gap-4">
-              <span className="text-[#000000] mt-1 shrink-0 text-[10px]">■</span>
+              <span className="text-[#38BDF8] font-bold shrink-0 text-[14px]">01</span>
               <div className="text-[#333333] text-[14px] leading-[1.7] font-light">
-                <span className="font-bold text-[#000000]">Award-winning web design services:</span> Our accolades are a testament to our commitment to excellence and innovation.
+                <span className="font-bold text-[#000000]">DISCOVER:</span> We learn about your business, audience, competitors, existing website and goals.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#000000] mt-1 shrink-0 text-[10px]">■</span>
+              <span className="text-[#38BDF8] font-bold shrink-0 text-[14px]">02</span>
               <div className="text-[#333333] text-[14px] leading-[1.7] font-light">
-                <span className="font-bold text-[#000000]">UK-based team:</span> Our experienced and dedicated team is entirely UK-based, ensuring seamless communication and a strong understanding of the local market.
+                <span className="font-bold text-[#000000]">PLAN:</span> We organise the content, page structure and user journey before moving into visual design.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#000000] mt-1 shrink-0 text-[10px]">■</span>
+              <span className="text-[#38BDF8] font-bold shrink-0 text-[14px]">03</span>
               <div className="text-[#333333] text-[14px] leading-[1.7] font-light">
-                <span className="font-bold text-[#000000]">Efficiency-driven processes:</span> We utilise robust systems and processes that streamline project management and maximise productivity.
+                <span className="font-bold text-[#000000]">DESIGN:</span> We create the visual direction and page layouts around your brand and customer experience.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#000000] mt-1 shrink-0 text-[10px]">■</span>
+              <span className="text-[#38BDF8] font-bold shrink-0 text-[14px]">04</span>
               <div className="text-[#333333] text-[14px] leading-[1.7] font-light">
-                <span className="font-bold text-[#000000]">Partnership-Driven Process:</span> Fostering strong client relationships, we involve you in every stage of the project, ensuring alignment with your vision and seamless communication for outstanding results.
+                <span className="font-bold text-[#000000]">REFINE:</span> You review the designs, provide feedback and we make the necessary improvements.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#000000] mt-1 shrink-0 text-[10px]">■</span>
+              <span className="text-[#38BDF8] font-bold shrink-0 text-[14px]">05</span>
               <div className="text-[#333333] text-[14px] leading-[1.7] font-light">
-                <span className="font-bold text-[#000000]">All-Encompassing Solutions:</span> Our extensive service offering covers web design, development, SEO, content creation, and maintenance, streamlining the process and addressing all your digital needs in one place.
+                <span className="font-bold text-[#000000]">LAUNCH:</span> Once everything is ready, the approved design moves into development and prepares for launch.
               </div>
             </li>
           </ul>
 
-          <p className="text-[#333333] text-[15px] md:text-[16px] leading-[1.6] font-light">
-            If you&apos;re looking for the best web design agency, you can feel confident choosing Bird that you are partnering with a web design company that delivers exceptional results, time and time again.
+          <p className="text-[#000000] text-[15px] font-semibold leading-[1.6] p-4 bg-[#F5F5F5] border-l-4 border-[#38BDF8]">
+            A well-planned process creates a better website—and makes the journey easier for everyone involved.
           </p>
         </div>
 

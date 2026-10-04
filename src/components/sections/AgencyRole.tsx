@@ -35,10 +35,10 @@ export function AgencyRole() {
                 The Role of a Digital Marketing Agency
               </h3>
               <p className="text-[15px] text-[#4A4A4A] leading-[1.7] font-light mb-6">
-                As a comprehensive digital marketing agency, Bird crafts and implements digital solutions that encompass the full scope of the online world. Rather than focusing on individual service offerings, our approach is all-encompassing, enabling businesses to fully harness the potential of the digital sphere and improve their online visibility.
+                As a comprehensive digital marketing agency, DIJIGRO crafts and implements digital solutions that encompass the full scope of the online world. Rather than focusing on individual service offerings, our approach is all-encompassing, enabling businesses to fully harness the potential of the digital sphere and improve their online visibility.
               </p>
               <p className="text-[15px] text-[#4A4A4A] leading-[1.7] font-light">
-                Our team of digital professionals excels at understanding each brands unique requirements and creating bespoke strategies that help businesses shine in the digital realm. We take pride in facilitating digital transformations that drive growth, using progressive techniques that keep our clients at the forefront of digital innovation.
+                Our team of digital professionals excels at understanding each brand&apos;s unique requirements and creating bespoke strategies that help businesses shine in the digital realm. We take pride in facilitating digital transformations that drive growth, using progressive techniques that keep our clients at the forefront of digital innovation.
               </p>
             </div>
 
@@ -47,10 +47,10 @@ export function AgencyRole() {
                 Your Digital Success Partner
               </h3>
               <p className="text-[15px] text-[#4A4A4A] leading-[1.7] font-light mb-6">
-                Bird serves as a trusted partner in your digital journey, providing the support and guidance businesses require to navigate the complex and swiftly changing digital landscape. Our dedication to excellence and a customer-centric approach have made them a preferred digital partner for businesses aiming to enhance their digital visibility.
+                DIJIGRO serves as a trusted partner in your digital journey, providing the support and guidance businesses require to navigate the complex and swiftly changing digital landscape. Our dedication to excellence and a customer-centric approach have made us a preferred digital partner for businesses aiming to enhance their digital visibility.
               </p>
               <p className="text-[15px] text-[#4A4A4A] leading-[1.7] font-light">
-                In the digital universe, success hinges on visibility and innovation - and our digital marketing agency is committed to ensuring your business achieves both. We have mastered the art of deploying digital solutions to their fullest potential, guaranteeing our clients not only adapt but thrive in the digital era. Your digital success is our primary goal, and we have...
+                In the digital universe, success hinges on visibility and innovation - and our digital marketing agency is committed to ensuring your business achieves both. We have mastered the art of deploying digital solutions to their fullest potential, guaranteeing our clients not only adapt but thrive in the digital era. Your digital success is our primary goal.
               </p>
             </div>
             

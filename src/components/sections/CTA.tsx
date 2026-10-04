@@ -49,33 +49,36 @@ export function CTA() {
     <section ref={containerRef} className="relative bg-[#141414] py-24 md:py-32">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
         <div className="max-w-4xl">
-          
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            HAVE A DIGITAL GOAL?
+          </span>
           <Link href="/quote" className="group inline-flex flex-col mb-8 relative">
             <div className="overflow-hidden pb-1">
               <h2 
                 ref={textRef} 
-                className="text-[46px] md:text-[68px] lg:text-[76px] font-bold text-white tracking-tight leading-[1.1] transform translate-y-[100%]"
+                className="text-[38px] md:text-[54px] lg:text-[64px] font-bold text-white tracking-tight leading-[1.1] transform translate-y-[100%]"
               >
-                Start a project
+                Let’s Turn Your Next Idea Into a Digital Experience
               </h2>
             </div>
             <span 
               ref={underlineRef} 
-              className="w-full h-[3px] bg-white mt-1 transform scale-x-0 origin-left"
+              className="w-full h-[3px] bg-[#38BDF8] mt-2 transform scale-x-0 origin-left"
             ></span>
           </Link>
           
-          <p className="text-[#A3A3A3] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.6] md:leading-[1.7] max-w-3xl font-light">
-            Do you have a digital marketing objective{" "}
-            <Link href="/quote" className="text-white hover:text-white/80 transition-colors underline decoration-white/70 hover:decoration-white underline-offset-[5px] decoration-[1px]">
-              you&apos;d like to achieve
-            </Link>
-            ? Are you ready to find out how Bird can help to{" "}
-            <Link href="/quote" className="text-white hover:text-white/80 transition-colors underline decoration-white/70 hover:decoration-white underline-offset-[5px] decoration-[1px]">
-              build your business online
-            </Link>
-            ? If so, make contact with us today...
+          <p className="text-[#A3A3A3] text-[16px] md:text-[18px] leading-[1.8] max-w-3xl font-light mb-10">
+            Maybe your current website is holding your business back. Maybe your search visibility needs improvement. Or perhaps you want a better way to generate enquiries online. Tell us what you are trying to achieve, and we’ll help you identify where to start.
           </p>
+
+          <div className="flex flex-wrap items-center gap-6">
+            <Link href="/quote" className="px-8 py-4 bg-[#38BDF8] text-black font-bold text-[14px] uppercase tracking-wider hover:bg-[#7DD3FC] transition-colors rounded-none">
+              START YOUR PROJECT
+            </Link>
+            <Link href="/contact" className="px-8 py-4 border border-white/30 text-white font-bold text-[14px] uppercase tracking-wider hover:bg-white/10 transition-colors rounded-none">
+              TALK TO OUR TEAM
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -28,11 +28,11 @@ export default function AboutPage() {
 
       <Hero 
         onStartProject={(url) => handleOpenProject(undefined, url)}
-        eyebrow="ABOUT GIGIGRO"
-        titleMain="Architecting Digital\nFutures"
-        titleSub="With"
-        titleHighlight="Unmatched Precision"
-        description="We are a global collective of engineers, designers, and strategists. Since 2012, we've been pushing the boundaries of what's possible on the web, partnering with visionary brands to deliver exceptional digital experiences."
+        eyebrow="ABOUT DIJIGRO"
+        titleMain="Building Better Digital Experiences"
+        titleSub=""
+        titleHighlight=""
+        description="DIJIGRO is a digital marketing, web design and web development agency focused on helping businesses create a stronger presence online. Our digital journey began in 2015. Today, we bring that experience together with creativity, technology and practical thinking to build digital solutions that help businesses move forward."
       />
 
       {/* <Badges /> */}

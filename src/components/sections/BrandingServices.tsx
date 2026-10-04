@@ -42,7 +42,7 @@ export function BrandingServices() {
           Branding Services
         </h2>
         <p className="text-[#A3A3A3] text-[15px] leading-[1.8] font-light max-w-none">
-          In today&apos;s competitive digital landscape, effective Branding is essential for standing out and achieving your business objectives. Our award-winning team provides comprehensive solutions tailored to your unique needs, combining innovative strategies with proven execution to deliver measurable results that drive sustainable growth.
+          Define your legacy with a distinct, memorable brand identity. We craft comprehensive brand strategies, iconic logo designs, verbal tone guidelines, and packaging systems that command market authority and build lasting customer loyalty.
         </p>
       </div>
 

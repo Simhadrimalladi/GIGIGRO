@@ -45,13 +45,14 @@ export function Industries() {
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
         <div className="max-w-4xl mb-16 md:mb-20">
-          <h2 className="text-white text-[32px] md:text-[42px] font-bold tracking-tight leading-tight mb-5">
-            Industries We Work With
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            WHO WE WORK WITH
+          </span>
+          <h2 className="text-white text-[32px] md:text-[48px] font-bold tracking-tight leading-tight mb-5">
+            Digital Solutions for Different Types of Businesses
           </h2>
-          <p className="text-[#A3A3A3] text-[15px] leading-[1.6] max-w-2xl font-light">
-            At Bird, we extend our Digital Marketing Agency UK expertise across a diverse range of<br className="hidden md:block" />
-            industries, tailoring strategies to meet the unique demands and opportunities each sector<br className="hidden md:block" />
-            presents.
+          <p className="text-[#A3A3A3] text-[16px] leading-[1.8] max-w-3xl font-light">
+            Every business has a different audience, sales process and competitive landscape. Our approach adapts to the way your business operates rather than forcing every client into the same marketing formula.
           </p>
         </div>
 

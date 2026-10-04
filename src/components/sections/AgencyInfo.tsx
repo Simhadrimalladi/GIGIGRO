@@ -15,27 +15,36 @@ export function AgencyInfo() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Left Scrolling Column */}
-          <div className="lg:w-[50%] space-y-16">
+          <div className="lg:w-[50%] space-y-10">
             <div>
+              <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+                ABOUT DIJIGRO
+              </span>
               <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold text-white tracking-tight leading-[1.2] mb-6">
-                A Leading Full Service Digital Marketing Agency in the UK
+                We Build Digital Experiences With Business in Mind
               </h2>
-              <p className="text-[15px] text-[#A3A3A3] leading-[1.7] font-light">
-                Bird is a leading Full Service Digital Marketing Agency based in the UK, renowned for providing the best digital solutions for companies across the UK. Our dynamic digital marketing agency is distinguished by its knack for helping businesses bolster their digital presence, utilising cutting-edge technologies and innovative strategies.
+              <p className="text-[15px] text-[#A3A3A3] leading-[1.8] font-light mb-4">
+                DIJIGRO is a digital marketing and web development agency helping businesses build stronger, more useful online experiences.
+              </p>
+              <p className="text-[15px] text-[#A3A3A3] leading-[1.8] font-light">
+                We bring marketing, design and technology together so your digital presence is not only visually appealing but also useful to the people you want to reach.
               </p>
             </div>
 
             <div>
-              <h3 className="text-[28px] md:text-[32px] lg:text-[36px] font-bold text-white tracking-tight leading-[1.2] mb-6">
-                Strengthening Your Digital Presence
-              </h3>
-              <p className="text-[15px] text-[#A3A3A3] leading-[1.7] font-light">
-                In the ever-evolving digital landscape, maintaining a substantial digital presence is indispensable. Businesses across the globe are acknowledging the power of the digital world, and Bird&apos;s digital marketing services are leading the charge in this digital transformation. Our expertise lies in amplifying businesses&apos; digital footprints, ensuring they excel in the online arena.
+              <p className="text-[15px] text-[#A3A3A3] leading-[1.8] font-light mb-4">
+                From search visibility and social media to websites and custom development, we work across the digital journey to create solutions that make sense for your business.
+              </p>
+              <p className="text-[15px] text-[#A3A3A3] leading-[1.8] font-light">
+                Our approach is straightforward: understand the goal, build the right solution and keep improving it as your business grows.
               </p>
             </div>
             
-            {/* Added some padding at the bottom so it can scroll past the sticky image */}
-            <div className="h-[20vh] lg:h-[40vh]"></div>
+            <div>
+              <a href="/about" className="inline-block px-8 py-4 bg-[#38BDF8] text-black font-bold text-[14px] uppercase tracking-wider hover:bg-[#7DD3FC] transition-colors rounded-none">
+                MORE ABOUT DIJIGRO
+              </a>
+            </div>
           </div>
 
           {/* Right Sticky Column */}

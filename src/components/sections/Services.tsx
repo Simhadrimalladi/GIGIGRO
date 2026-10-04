@@ -29,11 +29,14 @@ export function Services({ onSelectService }: ServicesProps) {
   return (
     <section id="services" className="bg-[#050505] py-24 text-white">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
+        <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+          WHAT WE DO
+        </span>
         <h2 className="text-[42px] md:text-[52px] font-bold mb-6 tracking-tight text-white leading-tight">
-          Digital Marketing Services
+          Digital Services Designed to Work Together
         </h2>
-        <p className="text-[#A3A3A3] text-[15px] leading-[1.8] max-w-none font-light">
-          In the highly competitive online market, building a digital strategy is crucial to cultivating successful, revenue-driving brand engagements. Bird, a leading award-winning digital marketing agency in the UK, can harness the power of data-driven campaigns and multi-channel outreach to elevate your brand&apos;s presence across the web. Our team of savvy marketing professionals, adept in cutting-edge organic search, social media, and paid advertising, works diligently to refine your brand message, expand reach, and drive measurable growth. By leveraging targeted digital strategies, refining customer journeys, and executing creative campaigns, we empower your brand to rise above the digital noise.
+        <p className="text-[#A3A3A3] text-[16px] leading-[1.8] max-w-none font-light">
+          Your website, marketing and online visibility should support each other. That’s why our services are designed to work as part of one connected digital strategy rather than as separate pieces.
         </p>
       </div>
 

@@ -17,34 +17,32 @@ export function PpcTrust() {
     <section className="bg-[#FFFFFF] py-24 text-[#000000]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         <div className="flex flex-col">
-          <h2 className="text-[32px] md:text-[46px] font-bold tracking-tight leading-[1.1] mb-8">
-            Building Trust and Credibility<br/>
-            in PPC: Our Awards<br/>
-            and Esteemed Clients
+          <span className="text-[13px] font-bold text-[#38BDF8] tracking-widest uppercase block mb-3">
+            WHY DIJIGRO
+          </span>
+          <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight leading-[1.1] mb-6 text-[#000000]">
+            PPC With a Clear Business Focus
           </h2>
           <p className="text-[#333333] text-[15px] leading-[1.6] font-light mb-8">
-            At Bird, we understand the significance of every advertising dollar. Our dedication to delivering outstanding PPC services has earned us numerous accolades and an impressive portfolio of clients who enjoy exponential growth.
+            Paid advertising can become expensive when campaigns are built without a clear strategy or reliable measurement. Our approach is built around understanding where your budget is going and what the campaign is trying to achieve.
           </p>
           <ol className="space-y-6 mb-10 list-decimal pl-5 marker:font-bold">
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Google Premier Partners:</span> We hold the highest level of partnership with Google, granting us access to advanced training, dedicated support, and beta features.
+              <span className="font-bold text-[#000000]">STRATEGY BEFORE SPEND:</span> We start by understanding your objectives before deciding how the campaign should be structured.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Relentless Optimization:</span> We don&apos;t just set and forget. Our account managers review and optimize your campaigns daily to ensure peak performance.
+              <span className="font-bold text-[#000000]">DATA-LED OPTIMISATION:</span> Campaign decisions are guided by performance data rather than assumptions alone.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Custom Strategies:</span> We build bespoke campaigns tailored to your specific profit margins, customer lifetime value, and business objectives.
+              <span className="font-bold text-[#000000]">TRANSPARENT MANAGEMENT:</span> We keep campaign activity understandable so you can see what is being worked on and why.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Full Transparency:</span> You retain full ownership of your ad accounts, with complete visibility into exactly where and how your budget is being spent.
+              <span className="font-bold text-[#000000]">CONVERSION-FOCUSED:</span> We look beyond impressions and clicks to meaningful actions such as leads, enquiries and sales.
             </li>
             <li className="text-[#333333] text-[14px] leading-[1.7] font-light pl-2">
-              <span className="font-bold text-[#000000]">Conversion Obsessed:</span> We look beyond just clicks and impressions, focusing entirely on the metrics that matter: cost per acquisition and total revenue.
+              <span className="font-bold text-[#000000]">CONNECTED WITH YOUR WEBSITE:</span> Where needed, PPC can work alongside landing pages, web development, SEO and other digital activities.
             </li>
           </ol>
-          <p className="text-[#333333] text-[15px] leading-[1.6] font-light">
-            Choose Bird as your trusted partner and join the ranks of successful businesses that have experienced the transformative power of our award-winning PPC services.
-          </p>
         </div>
         <div className="flex flex-col justify-center gap-10">
           {awards.map((award, idx) => {
