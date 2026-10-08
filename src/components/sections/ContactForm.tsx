@@ -3,6 +3,14 @@
 import React, { useState } from "react";
 import { Send } from "lucide-react";
 import { SuccessModal } from "../ui/SuccessModal";
+import { CustomSelect } from "../ui/CustomSelect";
+
+const BUDGET_OPTIONS = [
+  { value: "5k-10k", label: "£5,000 - £10,000" },
+  { value: "10k-25k", label: "£10,000 - £25,000" },
+  { value: "25k-50k", label: "£25,000 - £50,000" },
+  { value: "50k+", label: "£50,000+" },
+];
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -111,18 +119,12 @@ export function ContactForm() {
 
             <div className="flex flex-col gap-2">
               <label className="text-[13px] font-bold text-[#A3A3A3] uppercase tracking-wider">Project Budget</label>
-              <select 
-                name="budget"
+              <CustomSelect 
+                options={BUDGET_OPTIONS}
                 value={formData.budget}
-                onChange={handleChange}
-                className="bg-[#111111] border border-[#333333] h-12 rounded-lg px-4 text-white outline-none focus:border-[#38BDF8] transition-colors appearance-none"
-              >
-                <option value="">Select a range...</option>
-                <option value="5k-10k">£5,000 - £10,000</option>
-                <option value="10k-25k">£10,000 - £25,000</option>
-                <option value="25k-50k">£25,000 - £50,000</option>
-                <option value="50k+">£50,000+</option>
-              </select>
+                onChange={(val) => setFormData({ ...formData, budget: val })}
+                placeholder="Select a range..."
+              />
             </div>
 
             <div className="flex flex-col gap-2">
