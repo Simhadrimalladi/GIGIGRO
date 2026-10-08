@@ -1,9 +1,14 @@
 "use client";
 
 import React, { useRef } from "react";
-import { GoldenGlobeCanvas } from "../ui/GoldenGlobeCanvas";
+import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+
+const GoldenGlobeCanvas = dynamic(
+  () => import("../ui/GoldenGlobeCanvas").then((m) => m.GoldenGlobeCanvas),
+  { ssr: false }
+);
 
 interface HeroProps {
   onStartProject: (websiteUrl?: string) => void;

@@ -82,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${urbanist.variable} font-urbanist scroll-smooth`}>
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth" className={`${urbanist.variable} font-urbanist scroll-smooth`}>
       <body suppressHydrationWarning className="min-h-screen bg-[#000000] text-[#FFFFFF] antialiased selection:bg-[#38BDF8] selection:text-[#000000]">
         <script
           type="application/ld+json"

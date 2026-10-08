@@ -258,9 +258,9 @@ export default function QuotePage() {
 
           {/* Trust Badges */}
           <div className="mt-24 pt-12 border-t border-gray-200 flex flex-wrap items-center justify-center gap-12 opacity-80">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Partner" width={120} height={40} className="grayscale hover:grayscale-0 transition-all opacity-60" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="AWS Partner" width={90} height={30} className="grayscale hover:grayscale-0 transition-all opacity-60" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Partner" width={90} height={30} className="grayscale hover:grayscale-0 transition-all opacity-60" />
+            <Image src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Partner" width={120} height={40} style={{ height: "auto" }} className="grayscale hover:grayscale-0 transition-all opacity-60" />
+            <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="AWS Partner" width={90} height={30} style={{ height: "auto" }} className="grayscale hover:grayscale-0 transition-all opacity-60" />
+            <Image src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Partner" width={90} height={30} style={{ height: "auto" }} className="grayscale hover:grayscale-0 transition-all opacity-60" />
             <div className="text-[20px] font-bold text-gray-400 grayscale hover:grayscale-0 transition-all cursor-pointer">★ Trustpilot</div>
           </div>
         </div>
