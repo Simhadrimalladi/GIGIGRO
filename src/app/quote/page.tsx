@@ -135,10 +135,9 @@ export default function QuotePage() {
         <div className="max-w-[1100px] mx-auto">
           <form onSubmit={handleSubmit} className="space-y-12">
             
-            {/* 01 // The Basics Card */}
+            {/* The Basics Card */}
             <div className="bg-[#0B0B0B] border border-[#222222] rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
-              <div className="flex items-center gap-3 mb-8 pb-4 border-b border-[#1A1A1A]">
-                <span className="text-[#38BDF8] text-[12px] font-mono font-bold tracking-wider px-3 py-1 rounded bg-[#38BDF8]/10 border border-[#38BDF8]/20">01</span>
+              <div className="mb-8 pb-4 border-b border-[#1A1A1A]">
                 <h2 className="text-[24px] md:text-[28px] font-bold text-white tracking-tight">The Basics</h2>
               </div>
 
@@ -190,10 +189,9 @@ export default function QuotePage() {
               </div>
             </div>
 
-            {/* 02 // Services Card */}
+            {/* Services Card */}
             <div className="bg-[#0B0B0B] border border-[#222222] rounded-2xl p-6 md:p-10 shadow-2xl">
-              <div className="flex items-center gap-3 mb-2 pb-4 border-b border-[#1A1A1A]">
-                <span className="text-[#38BDF8] text-[12px] font-mono font-bold tracking-wider px-3 py-1 rounded bg-[#38BDF8]/10 border border-[#38BDF8]/20">02</span>
+              <div className="mb-2 pb-4 border-b border-[#1A1A1A]">
                 <h2 className="text-[24px] md:text-[28px] font-bold text-white tracking-tight">Services Required</h2>
               </div>
               <p className="text-[13px] text-[#888888] font-medium tracking-wide uppercase mt-2 mb-6">What services would you like us to quote for? *</p>
@@ -222,10 +220,9 @@ export default function QuotePage() {
               <p className="text-[12px] text-[#777777] mt-4 italic">Feel free to select as many services as you like.</p>
             </div>
 
-            {/* 03 // Additional Details Card */}
+            {/* Additional Details Card */}
             <div className="bg-[#0B0B0B] border border-[#222222] rounded-2xl p-6 md:p-10 shadow-2xl space-y-6">
-              <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#1A1A1A]">
-                <span className="text-[#38BDF8] text-[12px] font-mono font-bold tracking-wider px-3 py-1 rounded bg-[#38BDF8]/10 border border-[#38BDF8]/20">03</span>
+              <div className="mb-6 pb-4 border-b border-[#1A1A1A]">
                 <h2 className="text-[24px] md:text-[28px] font-bold text-white tracking-tight">Additional Details</h2>
               </div>
 
@@ -266,14 +263,6 @@ export default function QuotePage() {
               </button>
             </div>
           </form>
-
-          {/* Trust Badges */}
-          <div className="mt-20 pt-12 border-t border-[#1A1A1A] flex flex-wrap items-center justify-center gap-12 opacity-80">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Partner" width={120} height={40} style={{ height: "auto" }} className="grayscale invert hover:invert-0 hover:grayscale-0 transition-all opacity-60" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="AWS Partner" width={90} height={30} style={{ height: "auto" }} className="grayscale invert hover:invert-0 hover:grayscale-0 transition-all opacity-60" />
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Partner" width={90} height={30} style={{ height: "auto" }} className="grayscale invert hover:invert-0 hover:grayscale-0 transition-all opacity-60" />
-            <div className="text-[20px] font-bold text-gray-400 hover:text-[#38BDF8] transition-all cursor-pointer">★ Trustpilot</div>
-          </div>
         </div>
       </section>
       
