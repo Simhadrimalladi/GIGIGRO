@@ -67,7 +67,7 @@ export function Industries() {
               className="group flex items-center cursor-pointer"
             >
               <div
-                className="w-[40px] h-[40px] shrink-0 mr-4 flex items-center justify-center [&_svg]:w-full [&_svg]:h-full [&_svg_path]:fill-[#7DD3FC] [&_svg_g_rect]:fill-[#7DD3FC] group-hover:[&_svg_path]:fill-white group-hover:[&_svg_g_rect]:fill-white [&_svg_path]:transition-colors [&_svg_path]:duration-300 [&_svg_g_rect]:transition-colors [&_svg_g_rect]:duration-300"
+                className="w-[40px] h-[40px] shrink-0 mr-4 flex items-center justify-center text-[#38BDF8] group-hover:text-white [&_svg]:w-full [&_svg]:h-full [&_svg]:stroke-current [&_svg_path]:stroke-current [&_svg_polyline]:stroke-current [&_svg_line]:stroke-current [&_svg_rect]:stroke-current [&_svg_circle]:stroke-current [&_svg_*]:transition-colors [&_svg_*]:duration-300"
                 dangerouslySetInnerHTML={{ __html: ind.icon }}
               />
               <h3 className="text-white text-[14px] font-medium leading-snug group-hover:text-white/90 transition-colors">

@@ -284,7 +284,21 @@ html {
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-content {
+    max-width: 680px;
+  }
 }
 
 /* Eyebrow */

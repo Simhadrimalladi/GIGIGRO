@@ -32,36 +32,36 @@ export function MobileNav({
   type ServiceLink = { label: string; href?: string; id?: string; action?: () => void; icon?: React.ReactNode };
 
   const navLinks: NavLink[] = [
-    { label: "ABOUT", href: "/about" },
-    { label: "SERVICES", action: () => setView('services') },
-    { label: "PORTFOLIO", href: "/portfolio" },
-    { label: "BLOG", href: "/blog" },
-    { label: "CONTACT US", href: "/contact" },
+    { label: "About", href: "/about" },
+    { label: "Services", action: () => setView('services') },
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   // SERVICES Level
   const servicesMainRow1: ServiceLink[] = [
-    { label: "WEB", action: () => setView('web'), icon: <Monitor className="w-6 h-6 sm:w-8 sm:h-8" /> },
-    { label: "DIGITAL MARKETING", action: () => setView('digital-marketing'), icon: <Megaphone className="w-6 h-6 sm:w-8 sm:h-8" /> },
+    { label: "Web", action: () => setView('web'), icon: <Monitor className="w-6 h-6 sm:w-8 sm:h-8" /> },
+    { label: "Digital Marketing", action: () => setView('digital-marketing'), icon: <Megaphone className="w-6 h-6 sm:w-8 sm:h-8" /> },
   ];
 
   // WEB Level
   const webRow1: ServiceLink[] = [
-    { label: "WEB DESIGN", href: "/services/web/web-design" },
-    { label: "WEB DEVELOPMENT", href: "/services/web/web-development" },
+    { label: "Web Design", href: "/services/web/web-design" },
+    { label: "Web Development", href: "/services/web/web-development" },
   ];
   const webRow2: ServiceLink[] = [
-    { label: "ECOMMERCE WEBSITES", href: "/services/web/ecommerce" },
+    { label: "Ecommerce Websites", href: "/services/web/ecommerce" },
   ];
 
   // DIGITAL MARKETING Level
   const dmRow1: ServiceLink[] = [
-    { label: "SEARCH ENGINE OPTIMIZATION (SEO)", href: "/services/digital-marketing/seo" },
-    { label: "PERFORMANCE MARKETING", href: "/services/digital-marketing/performance-marketing" },
+    { label: "Search Engine Optimization (SEO)", href: "/services/digital-marketing/seo" },
+    { label: "Performance Marketing", href: "/services/digital-marketing/performance-marketing" },
   ];
   const dmRow2: ServiceLink[] = [
-    { label: "GOOGLE & META ADS", href: "/services/digital-marketing/ppc" },
-    { label: "SOCIAL MEDIA GROWTH", href: "/services/digital-marketing/social-media" },
+    { label: "Google & Meta Ads", href: "/services/digital-marketing/ppc" },
+    { label: "Social Media Growth", href: "/services/digital-marketing/social-media" },
   ];
 
   const handleLinkClick = (href?: string, action?: () => void) => {
@@ -99,7 +99,7 @@ export function MobileNav({
               e.preventDefault();
             }
           }}
-          className="animate-text-slide-up flex items-center gap-3 sm:gap-4 text-[26px] sm:text-[38px] lg:text-[48px] font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors uppercase relative group cursor-pointer text-center"
+          className="animate-text-slide-up flex items-center gap-3 sm:gap-4 text-[26px] sm:text-[38px] lg:text-[48px] font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors relative group cursor-pointer text-center"
           style={{ animationDelay: `${idx * 0.05 + 0.1}s` }}
         >
           {link.icon && (
@@ -134,7 +134,7 @@ export function MobileNav({
                       handleLinkClick(link.href);
                     }
                   }}
-                  className="animate-text-slide-up text-[32px] sm:text-[48px] lg:text-[64px] font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors uppercase block cursor-pointer"
+                  className="animate-text-slide-up text-[32px] sm:text-[48px] lg:text-[64px] font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors block cursor-pointer"
                   style={{
                     animationDelay: `${idx * 0.1 + 0.2}s`
                   }}
@@ -149,9 +149,9 @@ export function MobileNav({
             <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center animate-in fade-in slide-in-from-bottom-10 duration-500 ease-out">
               <button 
                 onClick={() => setView('main')}
-                className="mb-12 sm:mb-20 px-6 py-2 border border-white/40 text-white uppercase font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
+                className="mb-12 sm:mb-20 px-6 py-2 border border-white/40 text-white font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
               >
-                BACK
+                Back
               </button>
               <div className="flex flex-col gap-y-10 sm:gap-y-14 w-full">
                 {renderServiceRow(servicesMainRow1)}
@@ -163,9 +163,9 @@ export function MobileNav({
             <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center animate-in fade-in slide-in-from-bottom-10 duration-500 ease-out">
               <button 
                 onClick={() => setView('services')}
-                className="mb-10 sm:mb-16 px-6 py-2 border border-white/40 text-white uppercase font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
+                className="mb-10 sm:mb-16 px-6 py-2 border border-white/40 text-white font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
               >
-                BACK
+                Back
               </button>
               <div className="flex flex-col gap-y-8 sm:gap-y-12 w-full items-center">
                 {renderServiceRow(webRow1)}
@@ -178,9 +178,9 @@ export function MobileNav({
             <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center animate-in fade-in slide-in-from-bottom-10 duration-500 ease-out">
               <button 
                 onClick={() => setView('services')}
-                className="mb-12 sm:mb-20 px-6 py-2 border border-white/40 text-white uppercase font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
+                className="mb-12 sm:mb-20 px-6 py-2 border border-white/40 text-white font-bold text-lg tracking-wider hover:bg-white/10 hover:border-white transition-all cursor-pointer"
               >
-                BACK
+                Back
               </button>
               <div className="flex flex-col gap-y-10 sm:gap-y-14 w-full items-center">
                 {renderServiceRow(dmRow1)}

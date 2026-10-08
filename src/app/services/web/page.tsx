@@ -8,7 +8,7 @@ import { WebServices } from "@/components/sections/WebServices";
 import { WebSolutions } from "@/components/sections/WebSolutions";
 import { WebLocations } from "@/components/sections/WebLocations";
 import { WebTrust } from "@/components/sections/WebTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -73,7 +73,7 @@ export default function Page() {
       <WebLocations />
       <WebTrust />
       <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Web Engineering FAQs" faqs={webFaqs} />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

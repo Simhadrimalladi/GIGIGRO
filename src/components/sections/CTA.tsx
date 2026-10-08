@@ -58,7 +58,7 @@ export function CTA() {
                 ref={textRef} 
                 className="text-[38px] md:text-[54px] lg:text-[64px] font-bold text-white tracking-tight leading-[1.1] transform translate-y-[100%]"
               >
-                Let’s Turn Your Next Idea Into a Digital Experience
+                Let’s turn your next idea into a Digital Experience
               </h2>
             </div>
             <span 

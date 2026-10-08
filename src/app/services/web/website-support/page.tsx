@@ -8,7 +8,7 @@ import { WebsiteSupportServices } from "@/components/sections/WebsiteSupportServ
 import { WebsiteSupportSolutions } from "@/components/sections/WebsiteSupportSolutions";
 import { WebsiteSupportLocations } from "@/components/sections/WebsiteSupportLocations";
 import { WebsiteSupportTrust } from "@/components/sections/WebsiteSupportTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -73,7 +73,7 @@ export default function Page() {
       <WebsiteSupportLocations />
       <WebsiteSupportTrust />
       <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Website Support FAQs" faqs={supportFaqs} />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

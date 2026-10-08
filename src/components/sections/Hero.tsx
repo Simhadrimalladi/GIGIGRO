@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { GoldenGlobeCanvas } from "../ui/GoldenGlobeCanvas";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -18,19 +18,37 @@ interface HeroProps {
 export function Hero({ 
   onStartProject,
   eyebrow = "DIGITAL MARKETING • WEB DESIGN • WEB DEVELOPMENT",
-  titleMain = "Digital Marketing That Helps Your Business Grow",
-  titleSub = "",
-  titleHighlight = "",
+  titleMain = "Digital Marketing That Helps",
+  titleSub = "Your",
+  titleHighlight = "Business Grow",
   description = "Your digital presence should do more than look good. It should help people find your business, understand what you offer and take the next step. DIJIGRO brings digital marketing, creative strategy, web design and web development together to build online experiences that support real business goals.",
   showFormAndLogos = true
 }: HeroProps) {
-  const [websiteUrl, setWebsiteUrl] = useState("");
   const containerRef = useRef<HTMLElement | null>(null);
   const eyebrowRef = useRef<HTMLDivElement | null>(null);
   const headlineRef = useRef<HTMLHeadingElement | null>(null);
   const paragraphRef = useRef<HTMLParagraphElement | null>(null);
   const formRef = useRef<HTMLFormElement | null>(null);
   const underlinePathRef = useRef<SVGPathElement | null>(null);
+
+  // Fallback calculation so titleHighlight with SVG underline ALWAYS renders on every page
+  let displayMain = titleMain;
+  const displaySub = titleSub;
+  let displayHighlight = titleHighlight;
+
+  if (!displayHighlight && titleMain) {
+    const words = titleMain.trim().split(" ");
+    if (words.length >= 3) {
+      displayHighlight = words.slice(-2).join(" ");
+      displayMain = words.slice(0, -2).join(" ");
+    } else if (words.length > 1) {
+      displayHighlight = words[words.length - 1];
+      displayMain = words.slice(0, -1).join(" ");
+    } else {
+      displayHighlight = titleMain;
+      displayMain = "";
+    }
+  }
 
   useGSAP(
     () => {
@@ -84,7 +102,7 @@ export function Hero({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onStartProject(websiteUrl);
+    onStartProject();
   };
 
   return (
@@ -104,15 +122,17 @@ export function Hero({
 
           {/* Main Headline - Exact typography hierarchy from reference */}
           <h1 ref={headlineRef} className="hero-heading">
-            <span className="hero-heading-main whitespace-pre-line">
-              {titleMain}
-            </span>
-            {(titleSub || titleHighlight) && (
+            {displayMain && (
+              <span className="hero-heading-main whitespace-pre-line">
+                {displayMain}
+              </span>
+            )}
+            {displayHighlight && (
               <span className="hero-heading-sub">
-                {titleSub}{" "}
+                {displaySub ? `${displaySub} ` : ""}
                 <em className="animated">
-                  {titleHighlight}
-                  {/* Hand-drawn yellow curved underline stroke */}
+                  {displayHighlight}
+                  {/* Hand-drawn blue curved underline stroke */}
                   <svg
                     className="hero-underline-svg"
                     viewBox="0 0 320 20"
@@ -137,68 +157,15 @@ export function Hero({
 
           {/* Interactive Form with zero inline styles */}
           {showFormAndLogos && (
-            <>
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="hero-form"
-              >
-                <div className="hero-input-wrapper">
-                  <input
-                    type="text"
-                    value={websiteUrl}
-                    onChange={(e) => setWebsiteUrl(e.target.value)}
-                    placeholder="Website URL *"
-                    className="hero-input"
-                  />
-                  {!websiteUrl && (
-                    <div className="hero-input-placeholder">
-                      <span>Website URL</span>
-                      <span className="hero-input-required">*</span>
-                    </div>
-                  )}
-                </div>
-
-                <button type="submit" className="btn-proposal">
-                  GET MY FREE PROPOSAL
-                </button>
-              </form>
-
-              {/* Review Badges from reference */}
-              <div className="hero-reviews">
-                <div className="hero-review-item">
-                  <span className="hero-review-brand">
-                    <span className="hero-review-star">★</span>
-                    Trustpilot
-                  </span>
-                </div>
-
-                <div className="hero-review-item">
-                  <span className="hero-review-brand hero-brand-google">
-                    Google
-                  </span>
-                </div>
-
-                <div className="hero-review-item">
-                  <span className="hero-review-brand hero-brand-goodfirms">
-                    <svg
-                      className="goodfirms-svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z" />
-                    </svg>
-                    GoodFirms
-                  </span>
-                </div>
-
-                <div className="hero-review-item">
-                  <span className="hero-review-brand hero-brand-clutch">
-                    Clutch
-                  </span>
-                </div>
-              </div>
-            </>
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="hero-form"
+            >
+              <button type="submit" className="btn-proposal">
+                GET MY FREE PROPOSAL
+              </button>
+            </form>
           )}
         </div>
       </div>

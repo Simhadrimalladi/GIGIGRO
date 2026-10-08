@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Send } from "lucide-react";
-import Image from "next/image";
 import { SuccessModal } from "../ui/SuccessModal";
 
 export function ContactForm() {
@@ -50,24 +49,9 @@ export function ContactForm() {
           <h2 className="text-[42px] md:text-[56px] font-bold tracking-tight leading-[1.1] mb-8">
             Tell Us About Your <span className="text-[#38BDF8]">Project</span>
           </h2>
-          <p className="text-[#A3A3A3] text-[16px] leading-[1.7] font-light mb-10 max-w-lg">
+          <p className="text-[#A3A3A3] text-[16px] leading-[1.7] font-light max-w-lg">
             Fill in a few details and give us an idea of what you are looking to achieve. Whether you are starting something new or improving what you already have, we&apos;d love to hear about your project.
           </p>
-          
-          <div className="p-8 bg-[#0a0a0a] border border-[#222222] rounded-xl max-w-lg">
-            <p className="text-[#E5E5E5] text-[15px] italic mb-6">
-              &quot;Partnering with DIJIGRO was the best decision for our digital presence. Their attention to detail and technical execution is unmatched in the industry.&quot;
-            </p>
-            <div className="flex items-center gap-4">
-              <div className="relative w-12 h-12 bg-[#333333] rounded-full overflow-hidden">
-                <Image src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Client" fill className="object-cover"/>
-              </div>
-              <div>
-                <p className="font-bold text-white text-[15px]">David Kensington</p>
-                <p className="text-[#A3A3A3] text-[13px]">CMO, Horizon Tech</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Right Side: The Form */}

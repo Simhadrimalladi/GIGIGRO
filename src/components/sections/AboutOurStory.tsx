@@ -16,7 +16,7 @@ export function AboutOurStory() {
             Our journey began in <strong className="text-white font-semibold">2015 with SRJINFOWAYS</strong>, where we started providing digital marketing training and services.
           </p>
           <p className="text-[#A3A3A3] text-[15px] leading-[1.7] font-light mb-4">
-            Over the years, we trained <strong className="text-white font-semibold">250+ students in digital marketing</strong> and worked with <strong className="text-white font-semibold">nearly 100 clients</strong>, gaining hands-on experience across different businesses, industries and digital challenges.
+            Over the years, we trained <strong className="text-white font-semibold">1250+ students in digital marketing</strong> and worked with <strong className="text-white font-semibold">nearly 100 clients</strong>, gaining hands-on experience across different businesses, industries and digital challenges.
           </p>
           <p className="text-[#A3A3A3] text-[15px] leading-[1.7] font-light mb-4">
             Teaching digital marketing gave us the opportunity to understand how people learn and use digital tools. Working with clients taught us something equally important—how businesses actually need those tools to deliver value.
@@ -31,7 +31,7 @@ export function AboutOurStory() {
               <p className="text-[12px] text-[#A3A3A3] font-light uppercase tracking-wider mt-1">Journey Began</p>
             </div>
             <div>
-              <p className="text-[28px] font-bold text-[#38BDF8]">250+</p>
+              <p className="text-[28px] font-bold text-[#38BDF8]">1250+</p>
               <p className="text-[12px] text-[#A3A3A3] font-light uppercase tracking-wider mt-1">Students Trained</p>
             </div>
             <div>

@@ -7,7 +7,7 @@ import { PerformanceMarketingServices } from "@/components/sections/PerformanceM
 import { PerformanceMarketingSolutions } from "@/components/sections/PerformanceMarketingSolutions";
 import { PerformanceMarketingLocations } from "@/components/sections/PerformanceMarketingLocations";
 import { PerformanceMarketingTrust } from "@/components/sections/PerformanceMarketingTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -45,7 +45,7 @@ export default function PerformanceMarketingPage() {
       <PerformanceMarketingSolutions />
       <PerformanceMarketingLocations />
       <PerformanceMarketingTrust />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

@@ -6,20 +6,20 @@ export function ContactInfo() {
     {
       icon: <Phone className="w-8 h-8 text-white" strokeWidth={1.5} />,
       title: "Call Us Directly",
-      details: ["+44 (0)20 7946 0912 (UK)", "+1 (212) 555-0198 (US)"],
+      details: ["+91 7815982599 (IND)", "+91 9398021676 (IND)"],
       desc: "Our support and sales teams are available from Mon-Fri, 9am to 6pm in local time zones."
     },
     {
       icon: <Mail className="w-8 h-8 text-white" strokeWidth={1.5} />,
       title: "Email Inquiries",
-      details: ["hello@gigigro.com", "support@gigigro.com"],
+      details: ["support@digigro.com"],
       desc: "Drop us an email anytime. We typically respond to all inquiries within 24 business hours."
     },
     {
       icon: <MapPin className="w-8 h-8 text-white" strokeWidth={1.5} />,
       title: "Visit Our HQ",
-      details: ["24 Berkeley Square", "Mayfair, London W1J 6HE"],
-      desc: "Looking for an in-person consultation? Reach out to schedule a meeting at our London headquarters."
+      details: ["Flat No. JV202, JV Gardens", "Employees Colony, Road No.1, Srinagar", "Gajuwaka, Visakhapatnam, AP - 530026"],
+      desc: "Looking for an in-person consultation? Reach out to schedule a meeting at our Visakhapatnam office."
     },
     {
       icon: <Clock className="w-8 h-8 text-white" strokeWidth={1.5} />,

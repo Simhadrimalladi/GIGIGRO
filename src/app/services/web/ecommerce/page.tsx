@@ -7,8 +7,7 @@ import { Badges } from "@/components/sections/Badges";
 import { EcommerceServices } from "@/components/sections/EcommerceServices";
 import { EcommerceSolutions } from "@/components/sections/EcommerceSolutions";
 import { EcommerceLocations } from "@/components/sections/EcommerceLocations";
-import { EcommerceTrust } from "@/components/sections/EcommerceTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -48,8 +47,7 @@ export default function Page() {
       <EcommerceServices />
       <EcommerceSolutions />
       <EcommerceLocations />
-      <EcommerceTrust />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

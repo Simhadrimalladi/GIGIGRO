@@ -8,7 +8,7 @@ import { SeoServices } from "@/components/sections/SeoServices";
 import { SeoSolutions } from "@/components/sections/SeoSolutions";
 import { SeoLocations } from "@/components/sections/SeoLocations";
 import { SeoTrust } from "@/components/sections/SeoTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -49,7 +49,7 @@ export default function Page() {
       <SeoSolutions />
       <SeoLocations />
       <SeoTrust />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

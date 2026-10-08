@@ -8,7 +8,7 @@ import { PayMonthlyServices } from "@/components/sections/PayMonthlyServices";
 import { PayMonthlySolutions } from "@/components/sections/PayMonthlySolutions";
 import { PayMonthlyLocations } from "@/components/sections/PayMonthlyLocations";
 import { PayMonthlyTrust } from "@/components/sections/PayMonthlyTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -73,7 +73,7 @@ export default function Page() {
       <PayMonthlyLocations />
       <PayMonthlyTrust />
       <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Pay Monthly Website FAQs" faqs={payMonthlyFaqs} />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

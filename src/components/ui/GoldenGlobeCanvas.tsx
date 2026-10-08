@@ -168,8 +168,8 @@ export function GoldenGlobeCanvas({ className = "" }: { className?: string }) {
       ctx.clearRect(0, 0, cw, ch);
 
       const isMobile = window.innerWidth < 1024;
-      const originX = isMobile ? cw / 2 : cw * 0.75;
-      const originY = ch * 0.52;
+      const originX = isMobile ? cw / 2 : cw * 0.78;
+      const originY = isMobile ? ch * 0.65 : ch * 0.50;
 
       const ambientGlow = ctx.createRadialGradient(
         originX, originY, 20 * dpr,

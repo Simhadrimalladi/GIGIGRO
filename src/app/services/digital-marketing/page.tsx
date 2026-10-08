@@ -8,7 +8,7 @@ import { DigitalMarketingServices } from "@/components/sections/DigitalMarketing
 import { DigitalMarketingSolutions } from "@/components/sections/DigitalMarketingSolutions";
 import { DigitalMarketingLocations } from "@/components/sections/DigitalMarketingLocations";
 import { DigitalMarketingTrust } from "@/components/sections/DigitalMarketingTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -73,7 +73,7 @@ export default function Page() {
       <DigitalMarketingLocations />
       <DigitalMarketingTrust />
       <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Digital Marketing FAQs" faqs={dmFaqs} />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

@@ -8,7 +8,7 @@ import { SocialMediaServices } from "@/components/sections/SocialMediaServices";
 import { SocialMediaSolutions } from "@/components/sections/SocialMediaSolutions";
 import { SocialMediaLocations } from "@/components/sections/SocialMediaLocations";
 import { SocialMediaTrust } from "@/components/sections/SocialMediaTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -49,7 +49,7 @@ export default function Page() {
       <SocialMediaSolutions />
       <SocialMediaLocations />
       <SocialMediaTrust />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

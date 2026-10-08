@@ -3,15 +3,16 @@
 import React from "react";
 import Link from "next/link";
 import { DijigroLogo } from "../ui/DijigroLogo";
+import { MapPin, Mail, Clock, ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   const socialLinks = [
     {
       name: "Facebook",
       href: "https://facebook.com",
-      hoverClass: "hover:border-[#1877F2] hover:bg-[#1877F2]/15 hover:shadow-[0_0_20px_rgba(24,119,242,0.4)]",
+      hoverClass: "hover:border-[#1877F2] hover:bg-[#1877F2]/15 hover:shadow-[0_0_15px_rgba(24,119,242,0.4)]",
       icon: (
-        <svg className="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
+        <svg className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="12" fill="#1877F2"/>
           <path d="M15.36 12.073h-2.285v7.427h-3.07v-7.427H8.385V9.43h1.62V7.787c0-2.317 1.345-3.597 3.498-3.597 1.031 0 2.11.184 2.11.184v2.32h-1.188c-1.149 0-1.507.713-1.507 1.446v1.29h2.614l-.418 2.643z" fill="#FFFFFF"/>
         </svg>
@@ -20,9 +21,9 @@ export function Footer() {
     {
       name: "Instagram",
       href: "https://instagram.com",
-      hoverClass: "hover:border-[#E4405F] hover:bg-[#E4405F]/15 hover:shadow-[0_0_20px_rgba(228,64,95,0.4)]",
+      hoverClass: "hover:border-[#E4405F] hover:bg-[#E4405F]/15 hover:shadow-[0_0_15px_rgba(228,64,95,0.4)]",
       icon: (
-        <svg className="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
+        <svg className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
           <defs>
             <radialGradient id="igGrad" cx="30%" cy="107%" r="150%" fx="30%" fy="107%">
               <stop offset="0%" stopColor="#fdf497" />
@@ -40,9 +41,9 @@ export function Footer() {
     {
       name: "Twitter / X",
       href: "https://twitter.com",
-      hoverClass: "hover:border-white/40 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]",
+      hoverClass: "hover:border-white/40 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]",
       icon: (
-        <svg className="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
+        <svg className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
           <rect width="24" height="24" rx="6" fill="#000000" stroke="#333333" strokeWidth="1"/>
           <path d="M17.18 5h2.2l-4.8 5.49L20.22 19h-4.43l-3.47-4.54L8.35 19H6.15l5.14-5.87L6 5h4.54l3.14 4.15L17.18 5zm-.77 12.68h1.22L9.67 6.26H8.36l8.05 11.42z" fill="#FFFFFF"/>
         </svg>
@@ -51,9 +52,9 @@ export function Footer() {
     {
       name: "LinkedIn",
       href: "https://linkedin.com",
-      hoverClass: "hover:border-[#0A66C2] hover:bg-[#0A66C2]/15 hover:shadow-[0_0_20px_rgba(10,102,194,0.4)]",
+      hoverClass: "hover:border-[#0A66C2] hover:bg-[#0A66C2]/15 hover:shadow-[0_0_15px_rgba(10,102,194,0.4)]",
       icon: (
-        <svg className="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
+        <svg className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
           <rect width="24" height="24" rx="5" fill="#0A66C2" />
           <path d="M19 19h-3v-4.74c0-1.42-.56-2.38-1.83-2.38-1 0-1.57.67-1.83 1.32-.1.23-.08.56-.08.89V19h-3s.04-9.25 0-10.2h3v1.54c.4-.62 1.11-1.5 2.7-1.5 1.97 0 3.45 1.29 3.45 4.06V19zM7.88 7.5a1.69 1.69 0 1 0 0-3.38 1.69 1.69 0 0 0 0 3.38zM6.38 19h3V8.8h-3V19z" fill="#FFFFFF"/>
         </svg>
@@ -62,9 +63,9 @@ export function Footer() {
     {
       name: "YouTube",
       href: "https://youtube.com",
-      hoverClass: "hover:border-[#FF0000] hover:bg-[#FF0000]/15 hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]",
+      hoverClass: "hover:border-[#FF0000] hover:bg-[#FF0000]/15 hover:shadow-[0_0_15px_rgba(255,0,0,0.4)]",
       icon: (
-        <svg className="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
+        <svg className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
           <rect width="24" height="24" rx="6" fill="#FF0000"/>
           <path d="M10 15l5.19-3L10 9v6z" fill="#FFFFFF"/>
         </svg>
@@ -73,100 +74,100 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-[#F5F5F5] pt-24 pb-16">
+    <footer className="bg-[#000000] text-[#F5F5F5] pt-20 pb-12 border-t border-[#1A1A1A]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
         
-        {/* Top Grid: 4 Balanced Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-16 border-b border-[#333333]">
+        {/* Main Grid: 4 Perfectly Balanced Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#1A1A1A]">
           
-          {/* Column 1: Logo & Intro */}
-          <div className="lg:col-span-1 space-y-6">
-            <div className="w-[120px]">
+          {/* Column 1: Brand & Overview */}
+          <div className="space-y-5">
+            <div className="w-[130px]">
               <DijigroLogo />
             </div>
-            <div className="text-[12px] font-bold text-[#38BDF8] tracking-wide uppercase">
-              Digital Marketing • Web Design • Web Development
-            </div>
-            <p className="text-[12px] text-[#A3A3A3] leading-[1.8] font-light max-w-[270px]">
-              DIJIGRO helps businesses build, improve and grow their digital presence through practical strategy, creative thinking and reliable technology.
+            <p className="text-[13px] text-[#A3A3A3] leading-[1.7] font-light">
+              DIJIGRO is a full-service agency specializing in digital marketing, bespoke web design, and scalable web engineering. We help businesses build, improve, and grow their online presence.
             </p>
             <div className="pt-2">
-              <span className="text-[14px] font-light text-[#A3A3A3] block mb-1">
-                Have a project in mind?
-              </span>
               <Link
                 href="/contact"
-                className="text-[16px] font-bold text-[#38BDF8] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#38BDF8] hover:opacity-70 transition-opacity"
+                className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#38BDF8] hover:text-white transition-colors group"
               >
-                Let’s talk.
+                <span>Have a project in mind? Let’s talk</span>
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
           </div>
 
-          {/* Column 2: CAREERS */}
-          <div className="lg:col-span-1 space-y-4">
-            <h4 className="text-[13px] font-bold tracking-widest text-white uppercase">
-              CAREERS
-            </h4>
-            <p className="text-[12px] text-[#A3A3A3] leading-[1.6] font-light pr-4">
-              We are always looking for talented developers, designers, and growth marketers to join our team. Explore career opportunities at DIJIGRO.
-            </p>
-            <div>
-              <Link
-                href="/contact"
-                className="text-[14px] font-light text-[#A3A3A3] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#A3A3A3] hover:text-white hover:after:bg-white transition-colors"
-              >
-                Join Our Team
-              </Link>
-            </div>
-          </div>
-
-          {/* Column 3: NEED SUPPORT? */}
-          <div className="lg:col-span-1 space-y-4">
-            <h4 className="text-[13px] font-bold tracking-widest text-white uppercase">
-              NEED SUPPORT?
-            </h4>
-            <p className="text-[12px] text-[#A3A3A3] leading-[1.6] font-light pr-4">
-              Have an active support plan? Submit a request or contact our dedicated engineering team during business hours.
-            </p>
-            <div className="flex items-center gap-2 text-[13px] font-light text-[#A3A3A3] pt-2">
-              <span className="text-[#7DD3FC]">🎧</span> Mon - Fri: 09:00 - 17:00 GMT
-            </div>
-            <div>
-              <a
-                href="mailto:support@dijigro.com"
-                className="text-[15px] font-light text-[#A3A3A3] relative inline-block after:absolute after:bottom-[2px] after:left-0 after:w-full after:h-[1px] after:bg-[#A3A3A3] hover:text-white hover:after:bg-white transition-colors"
-              >
-                support@dijigro.com
-              </a>
-            </div>
-          </div>
-
-          {/* Column 4: OUR SERVICES */}
-          <div className="lg:col-span-1 space-y-6">
-            <h4 className="text-[13px] font-bold tracking-widest text-white uppercase">
+          {/* Column 2: Our Services */}
+          <div className="space-y-4 lg:pl-4">
+            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
               OUR SERVICES
             </h4>
-            <ul className="flex flex-col gap-2 text-[12px] font-light text-[#A3A3A3]">
-              <li><Link href="/services/web/web-design" className="hover:text-[#7DD3FC] transition-colors">Web Design</Link></li>
-              <li><Link href="/services/web/web-development" className="hover:text-[#7DD3FC] transition-colors">Web Development</Link></li>
-              <li><Link href="/services/web/ecommerce" className="hover:text-[#7DD3FC] transition-colors">Ecommerce Websites</Link></li>
-              <li><Link href="/services/digital-marketing/seo" className="hover:text-[#7DD3FC] transition-colors">SEO, AEO & GEO</Link></li>
-              <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-[#7DD3FC] transition-colors">Performance Marketing</Link></li>
-              <li><Link href="/services/digital-marketing/ppc" className="hover:text-[#7DD3FC] transition-colors">PPC Services</Link></li>
-              <li><Link href="/services/digital-marketing/social-media" className="hover:text-[#7DD3FC] transition-colors">Social Media Marketing</Link></li>
+            <ul className="space-y-2.5 text-[13px] font-light text-[#A3A3A3]">
+              <li><Link href="/services/web/web-design" className="hover:text-[#38BDF8] transition-colors">Web Design</Link></li>
+              <li><Link href="/services/web/web-development" className="hover:text-[#38BDF8] transition-colors">Web Development</Link></li>
+              <li><Link href="/services/web/ecommerce" className="hover:text-[#38BDF8] transition-colors">Ecommerce Platforms</Link></li>
+              <li><Link href="/services/digital-marketing/seo" className="hover:text-[#38BDF8] transition-colors">SEO & AEO Optimization</Link></li>
+              <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-[#38BDF8] transition-colors">Performance Marketing</Link></li>
+              <li><Link href="/services/digital-marketing/ppc" className="hover:text-[#38BDF8] transition-colors">PPC Campaigns</Link></li>
+              <li><Link href="/services/digital-marketing/social-media" className="hover:text-[#38BDF8] transition-colors">Social Media Marketing</Link></li>
             </ul>
           </div>
-          
+
+          {/* Column 3: Quick Navigation */}
+          <div className="space-y-4 lg:pl-4">
+            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
+              COMPANY & NAVIGATION
+            </h4>
+            <ul className="space-y-2.5 text-[13px] font-light text-[#A3A3A3]">
+              <li><Link href="/" className="hover:text-[#38BDF8] transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-[#38BDF8] transition-colors">About Us</Link></li>
+              <li><Link href="/services/web" className="hover:text-[#38BDF8] transition-colors">Web Solutions</Link></li>
+              <li><Link href="/services/digital-marketing" className="hover:text-[#38BDF8] transition-colors">Digital Marketing</Link></li>
+              <li><Link href="/blog" className="hover:text-[#38BDF8] transition-colors">Blog & Insights</Link></li>
+              <li><Link href="/contact" className="hover:text-[#38BDF8] transition-colors">Contact Support</Link></li>
+              <li><Link href="/quote" className="hover:text-[#38BDF8] transition-colors">Get a Free Quote</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact & Office Location */}
+          <div className="space-y-4">
+            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
+              GET IN TOUCH
+            </h4>
+            <div className="space-y-3 text-[13px] text-[#A3A3A3] font-light leading-[1.6]">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0 mt-1" />
+                <div>
+                  <p className="text-white font-medium">Flat No. JV202, JV Gardens,</p>
+                  <p>Employees Colony, Road No.1, Srinagar,</p>
+                  <p>Gajuwaka, Visakhapatnam,</p>
+                  <p>Andhra Pradesh - 530026 (India)</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2.5 pt-1">
+                <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                <a href="mailto:support@dijigro.com" className="hover:text-white transition-colors">
+                  support@dijigro.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                <span>Mon - Fri: 09:00 - 18:00 IST</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        {/* Bottom Section: Rating Badges + Social Icons on Left, Copyright & Legal Links on Right */}
-        <div className="pt-12 flex flex-col xl:flex-row items-center justify-between gap-8">
+        {/* Bottom Bar: Google Rating Badge, Social Media Icons, Copyright & Legal Links */}
+        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-6">
           
-          {/* Left: Google Rating, Trustpilot & Social Media Icons */}
-          <div className="flex flex-wrap items-center gap-6 md:gap-8">
+          {/* Left: Google Rating Badge & Social Icons */}
+          <div className="flex flex-wrap items-center gap-6">
             {/* Google Rating Badge */}
-            <div className="bg-white p-3 rounded-lg flex flex-col justify-center items-center w-max shadow-sm">
+            <div className="bg-[#111111] border border-[#222222] px-3.5 py-2 rounded-lg flex items-center gap-3 shadow-md">
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -174,32 +175,20 @@ export function Footer() {
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
                 </svg>
-                <span className="text-[14px] font-bold text-black whitespace-nowrap">
+                <span className="text-[13px] font-semibold text-white whitespace-nowrap">
                   Google Rating
                 </span>
               </div>
-              <div className="flex items-center gap-1 text-[12px] font-bold text-black mt-1 whitespace-nowrap">
-                5.0 <span className="text-[#F4B400] text-[14px] tracking-[2px]">★★★★★</span>
+              <div className="flex items-center gap-1 text-[12px] font-bold text-white whitespace-nowrap">
+                5.0 <span className="text-[#F4B400] text-[13px]">★★★★★</span>
               </div>
             </div>
 
-            {/* Trustpilot Badge */}
-            <div className="flex items-center">
-              <div className="flex flex-col items-center">
-                <span className="text-white text-[16px] font-bold flex items-center gap-1">
-                  <span className="text-[#00B67A] text-[20px]">★</span> Trustpilot
-                </span>
-                <span className="text-[#00B67A] text-[16px] mt-1 tracking-widest">
-                  ★★★★★
-                </span>
-              </div>
-            </div>
+            {/* Vertical Divider */}
+            <div className="hidden sm:block w-[1px] h-8 bg-[#222222]" />
 
-            {/* Divider line before social icons on desktop */}
-            <div className="hidden md:block w-[1px] h-10 bg-[#333333]" />
-
-            {/* Ultra-neat Real Brand Social Media Icons */}
-            <div className="flex items-center gap-3">
+            {/* Social Icons */}
+            <div className="flex items-center gap-2.5">
               {socialLinks.map((item) => (
                 <a
                   key={item.name}
@@ -207,7 +196,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
-                  className={`group w-10 h-10 rounded-full bg-[#111111] border border-[#2A2A2A] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md ${item.hoverClass}`}
+                  className={`group w-9 h-9 rounded-full bg-[#111111] border border-[#222222] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 ${item.hoverClass}`}
                 >
                   {item.icon}
                 </a>
@@ -215,16 +204,13 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Right: Copyright notice + Legal Links */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-[12px] text-[#A3A3A3] font-light">
+          {/* Right: Copyright & Legal Links */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-[12px] text-[#A3A3A3] font-light">
             <span>© {new Date().getFullYear()} DIJIGRO. All rights reserved.</span>
-            
-            <div className="flex items-center gap-4 text-[#A3A3A3]">
-              <Link href="#" className="hover:text-white transition-colors">Terms & Conditions</Link>
-              <span>•</span>
-              <Link href="#" className="hover:text-white transition-colors">Nominet Terms</Link>
-              <span>•</span>
+            <span className="hidden sm:inline text-[#333333]">•</span>
+            <div className="flex items-center gap-4">
               <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="#" className="hover:text-white transition-colors">Terms & Conditions</Link>
             </div>
           </div>
 
@@ -233,3 +219,4 @@ export function Footer() {
     </footer>
   );
 }
+

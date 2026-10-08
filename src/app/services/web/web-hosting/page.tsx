@@ -8,7 +8,7 @@ import { WebHostingServices } from "@/components/sections/WebHostingServices";
 import { WebHostingSolutions } from "@/components/sections/WebHostingSolutions";
 import { WebHostingLocations } from "@/components/sections/WebHostingLocations";
 import { WebHostingTrust } from "@/components/sections/WebHostingTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -73,7 +73,7 @@ export default function Page() {
       <WebHostingLocations />
       <WebHostingTrust />
       <WebDesignFAQ eyebrow="GOT QUESTIONS?" title="Web Hosting FAQs" faqs={hostingFaqs} />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />

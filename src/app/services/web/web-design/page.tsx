@@ -6,15 +6,13 @@ import { Hero } from "@/components/sections/Hero";
 // import { Badges } from "@/components/sections/Badges";
 import { WebDesignServices } from "@/components/sections/WebDesignServices";
 import { WebDesignMastery } from "@/components/sections/WebDesignMastery";
-import { WebDesignCompany } from "@/components/sections/WebDesignCompany";
 // import { WebDesignWork } from "@/components/sections/WebDesignWork";
 import { WebDesignTestimonial } from "@/components/sections/WebDesignTestimonial";
-import { WebDesignClients } from "@/components/sections/WebDesignClients";
 import { WebDesignConsultancy } from "@/components/sections/WebDesignConsultancy";
 import { WebDesignCMS } from "@/components/sections/WebDesignCMS";
 import { WebDesignTools } from "@/components/sections/WebDesignTools";
 import { WebDesignFAQ } from "@/components/sections/WebDesignFAQ";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { Footer } from "@/components/layout/Footer";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 
@@ -36,23 +34,20 @@ export default function WebDesignPage() {
       <Hero 
         onStartProject={(url) => handleOpenProject("Web Design", url)}
         eyebrow="WEB DESIGN"
-        titleMain="Websites Designed for People and Built for Business"
-        titleSub=""
-        titleHighlight=""
+        titleMain="Websites Designed for People and"
+        titleSub="Built for"
+        titleHighlight="Business"
         description="Your website is often the first place people experience your brand. We design professional, responsive websites that make your business easy to understand, simple to navigate and ready to turn visitors into enquiries, customers or opportunities. Whether you need a new business website, an ecommerce store or a complete website redesign, we create the experience around your brand, audience and goals."
       />
 
-      {/* <Badges /> */}
       <WebDesignServices />
       <WebDesignMastery />
-      <WebDesignCompany />
       {/* <WebDesignWork /> */}
       <WebDesignTestimonial />
-      <WebDesignClients />
-      <Industries />
-      <WebDesignConsultancy />
-      <WebDesignCMS />
-      <WebDesignTools />
+      {/* <Industries /> */}
+      <WebDesignConsultancy variant="design" />
+      <WebDesignCMS variant="design" />
+      <WebDesignTools variant="design" />
       
       <WebDesignFAQ />
    

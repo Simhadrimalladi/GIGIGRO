@@ -7,8 +7,7 @@ import { Badges } from "@/components/sections/Badges";
 import { PpcServices } from "@/components/sections/PpcServices";
 import { PpcSolutions } from "@/components/sections/PpcSolutions";
 import { PpcLocations } from "@/components/sections/PpcLocations";
-import { PpcTrust } from "@/components/sections/PpcTrust";
-import { Industries } from "@/components/sections/Industries";
+// import { Industries } from "@/components/sections/Industries";
 import { CTA } from "@/components/sections/CTA";
 // import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BlogInsights } from "@/components/sections/BlogInsights";
@@ -48,8 +47,7 @@ export default function Page() {
       <PpcServices />
       <PpcSolutions />
       <PpcLocations />
-      <PpcTrust />
-      <Industries />
+      {/* <Industries /> */}
       <CTA />
       {/* <SelectedWork /> */}
       <BlogInsights />
