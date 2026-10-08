@@ -74,69 +74,65 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#000000] text-[#F5F5F5] pt-20 pb-12 border-t border-[#1A1A1A]">
+    <footer className="bg-[#030508] text-[#F5F5F5] pt-20 pb-12 border-t border-[#151D2A]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
         
-        {/* Main Grid: 4 Perfectly Balanced Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#1A1A1A]">
+        {/* Main Grid: 4 Modern Agency Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#151D2A]">
           
           {/* Column 1: Brand & Overview */}
           <div className="space-y-5">
             <div className="w-[130px]">
               <DijigroLogo />
             </div>
-            <p className="text-[13px] text-[#A3A3A3] leading-[1.7] font-light">
-              DIJIGRO is a full-service agency specializing in digital marketing, bespoke web design, and scalable web engineering. We help businesses build, improve, and grow their online presence.
+            <p className="text-[13px] text-[#94A3B8] leading-[1.7] font-light">
+              DIJIGRO is a full-service digital agency specializing in high-performance digital marketing, bespoke web design, and scalable web engineering for growing brands worldwide.
             </p>
             <div className="pt-2">
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#38BDF8] hover:text-white transition-colors group"
+                href="/quote"
+                className="inline-flex items-center gap-2 text-[13px] font-bold text-black bg-[#38BDF8] px-5 py-2.5 rounded-full hover:bg-[#7dd3fc] transition-all shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_25px_rgba(56,189,248,0.45)] group"
               >
-                <span>Have a project in mind? Let’s talk</span>
+                <span>Start A Project</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
           </div>
 
-          {/* Column 2: Our Services */}
+          {/* Column 2: Web Solutions */}
           <div className="space-y-4 lg:pl-4">
-            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
-              OUR SERVICES
+            <h4 className="text-[12px] font-bold tracking-widest text-[#38BDF8] uppercase font-mono">
+              WEB SOLUTIONS
             </h4>
-            <ul className="space-y-2.5 text-[13px] font-light text-[#A3A3A3]">
-              <li><Link href="/services/web/web-design" className="hover:text-[#38BDF8] transition-colors">Web Design</Link></li>
-              <li><Link href="/services/web/web-development" className="hover:text-[#38BDF8] transition-colors">Web Development</Link></li>
-              <li><Link href="/services/web/ecommerce" className="hover:text-[#38BDF8] transition-colors">Ecommerce Platforms</Link></li>
-              <li><Link href="/services/digital-marketing/seo" className="hover:text-[#38BDF8] transition-colors">SEO & AEO Optimization</Link></li>
-              <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-[#38BDF8] transition-colors">Performance Marketing</Link></li>
-              <li><Link href="/services/digital-marketing/ppc" className="hover:text-[#38BDF8] transition-colors">PPC Campaigns</Link></li>
-              <li><Link href="/services/digital-marketing/social-media" className="hover:text-[#38BDF8] transition-colors">Social Media Marketing</Link></li>
+            <ul className="space-y-2.5 text-[13px] font-light text-[#94A3B8]">
+              <li><Link href="/services/web/web-design" className="hover:text-white transition-colors">Bespoke Web Design</Link></li>
+              <li><Link href="/services/web/web-development" className="hover:text-white transition-colors">Web Development</Link></li>
+              <li><Link href="/services/web/ecommerce" className="hover:text-white transition-colors">Ecommerce Platforms</Link></li>
+              <li><Link href="/services/web/website-support" className="hover:text-white transition-colors">Website Support & Care</Link></li>
+              <li><Link href="/services/web/web-hosting" className="hover:text-white transition-colors">Managed Web Hosting</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Quick Navigation */}
+          {/* Column 3: Digital Marketing */}
           <div className="space-y-4 lg:pl-4">
-            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
-              COMPANY & NAVIGATION
+            <h4 className="text-[12px] font-bold tracking-widest text-[#38BDF8] uppercase font-mono">
+              DIGITAL MARKETING
             </h4>
-            <ul className="space-y-2.5 text-[13px] font-light text-[#A3A3A3]">
-              <li><Link href="/" className="hover:text-[#38BDF8] transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-[#38BDF8] transition-colors">About Us</Link></li>
-              <li><Link href="/services/web" className="hover:text-[#38BDF8] transition-colors">Web Solutions</Link></li>
-              <li><Link href="/services/digital-marketing" className="hover:text-[#38BDF8] transition-colors">Digital Marketing</Link></li>
-              <li><Link href="/blog" className="hover:text-[#38BDF8] transition-colors">Blog & Insights</Link></li>
-              <li><Link href="/contact" className="hover:text-[#38BDF8] transition-colors">Contact Support</Link></li>
-              <li><Link href="/quote" className="hover:text-[#38BDF8] transition-colors">Get a Free Quote</Link></li>
+            <ul className="space-y-2.5 text-[13px] font-light text-[#94A3B8]">
+              <li><Link href="/services/digital-marketing/seo" className="hover:text-white transition-colors">SEO & Search Visibility</Link></li>
+              <li><Link href="/services/digital-marketing/performance-marketing" className="hover:text-white transition-colors">Performance Marketing</Link></li>
+              <li><Link href="/services/digital-marketing/ppc" className="hover:text-white transition-colors">PPC & Paid Ads</Link></li>
+              <li><Link href="/services/digital-marketing/social-media" className="hover:text-white transition-colors">Social Media Marketing</Link></li>
+              <li><Link href="/quote" className="hover:text-white transition-colors">Get A Free Quote</Link></li>
             </ul>
           </div>
 
           {/* Column 4: Contact & Office Location */}
           <div className="space-y-4">
-            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase">
+            <h4 className="text-[12px] font-bold tracking-widest text-white uppercase font-mono">
               GET IN TOUCH
             </h4>
-            <div className="space-y-3 text-[13px] text-[#A3A3A3] font-light leading-[1.6]">
+            <div className="space-y-3.5 text-[13px] text-[#94A3B8] font-light leading-[1.6]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0 mt-1" />
                 <div>
@@ -148,7 +144,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2.5 pt-1">
                 <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                <a href="mailto:support@dijigro.com" className="hover:text-white transition-colors">
+                <a href="mailto:support@dijigro.com" className="hover:text-white transition-colors text-white font-medium">
                   support@dijigro.com
                 </a>
               </div>
@@ -167,7 +163,7 @@ export function Footer() {
           {/* Left: Google Rating Badge & Social Icons */}
           <div className="flex flex-wrap items-center gap-6">
             {/* Google Rating Badge */}
-            <div className="bg-[#111111] border border-[#222222] px-3.5 py-2 rounded-lg flex items-center gap-3 shadow-md">
+            <div className="bg-[#0B111A] border border-[#1E293B] px-3.5 py-2 rounded-xl flex items-center gap-3 shadow-md">
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -185,7 +181,7 @@ export function Footer() {
             </div>
 
             {/* Vertical Divider */}
-            <div className="hidden sm:block w-[1px] h-8 bg-[#222222]" />
+            <div className="hidden sm:block w-[1px] h-8 bg-[#1E293B]" />
 
             {/* Social Icons */}
             <div className="flex items-center gap-2.5">
@@ -196,7 +192,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
-                  className={`group w-9 h-9 rounded-full bg-[#111111] border border-[#222222] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 ${item.hoverClass}`}
+                  className={`group w-9 h-9 rounded-full bg-[#0B111A] border border-[#1E293B] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 ${item.hoverClass}`}
                 >
                   {item.icon}
                 </a>
@@ -205,9 +201,9 @@ export function Footer() {
           </div>
 
           {/* Right: Copyright & Legal Links */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-[12px] text-[#A3A3A3] font-light">
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-[12px] text-[#94A3B8] font-light">
             <span>© {new Date().getFullYear()} DIJIGRO. All rights reserved.</span>
-            <span className="hidden sm:inline text-[#333333]">•</span>
+            <span className="hidden sm:inline text-[#334155]">•</span>
             <div className="flex items-center gap-4">
               <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-white transition-colors">Terms & Conditions</Link>
@@ -219,4 +215,3 @@ export function Footer() {
     </footer>
   );
 }
-

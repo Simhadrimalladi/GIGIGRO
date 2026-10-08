@@ -14,10 +14,6 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.dijigro.com",
       },
-      {
-        protocol: "https",
-        hostname: "cdn.bird.marketing",
-      },
     ],
   },
   compiler: {

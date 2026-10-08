@@ -86,19 +86,19 @@ export const HERO_METRICS = [
 ];
 
 export const PARTNER_LOGOS = [
-  { id: "badge", src: "https://cdn.bird.marketing/wp-content/uploads/2023/11/badge.svg", alt: "Badge", width: 95 },
-  { id: "clutch", src: "https://cdn.bird.marketing/wp-content/uploads/clutch-bird3x.png", alt: "Clutch", width: 170 },
-  { id: "goodfirms", src: "https://cdn.bird.marketing/wp-content/uploads/goodfirms-bird3x.png", alt: "GoodFirms", width: 170 },
-  { id: "designrush", src: "https://cdn.bird.marketing/wp-content/uploads/designrush-bird3x.png", alt: "DesignRush", width: 170 },
-  { id: "topinteractive", src: "https://cdn.bird.marketing/wp-content/uploads/topinteractive-bird3x.png", alt: "Top Interactive", width: 170 },
-  { id: "googlepartner", src: "https://cdn.bird.marketing/wp-content/uploads/googlepartner-bird3x.png", alt: "Google Partner", width: 170 },
-  { id: "manifest", src: "https://cdn.bird.marketing/wp-content/uploads/manifest-bird3x.png", alt: "Manifest", width: 170 },
-  { id: "trustpilot", src: "https://cdn.bird.marketing/wp-content/uploads/trustpilot-bird3x.png", alt: "Trustpilot", width: 170 },
-  { id: "drum", src: "https://cdn.bird.marketing/wp-content/uploads/drum-bird3x.png", alt: "The Drum", width: 170 },
-  { id: "dan", src: "https://cdn.bird.marketing/wp-content/uploads/dan-bird3x.png", alt: "DAN", width: 170 },
-  { id: "nominet", src: "https://cdn.bird.marketing/wp-content/uploads/nominet-bird3x.png", alt: "Nominet", width: 170 },
-  { id: "agencyspotter", src: "https://cdn.bird.marketing/wp-content/uploads/agencyspotter-bird3x.png", alt: "Agency Spotter", width: 170 },
-  { id: "digital", src: "https://cdn.bird.marketing/wp-content/uploads/digital-bird3x.png", alt: "Digital", width: 170 },
+  { id: "badge", src: "/images/logos/badge.svg", alt: "Badge", width: 95 },
+  { id: "clutch", src: "/images/logos/clutch.png", alt: "Clutch", width: 170 },
+  { id: "goodfirms", src: "/images/logos/goodfirms.png", alt: "GoodFirms", width: 170 },
+  { id: "designrush", src: "/images/logos/designrush.png", alt: "DesignRush", width: 170 },
+  { id: "topinteractive", src: "/images/logos/topinteractive.png", alt: "Top Interactive", width: 170 },
+  { id: "googlepartner", src: "/images/logos/googlepartner.png", alt: "Google Partner", width: 170 },
+  { id: "manifest", src: "/images/logos/manifest.png", alt: "Manifest", width: 170 },
+  { id: "trustpilot", src: "/images/logos/trustpilot.png", alt: "Trustpilot", width: 170 },
+  { id: "drum", src: "/images/logos/drum.png", alt: "The Drum", width: 170 },
+  { id: "dan", src: "/images/logos/dan.png", alt: "DAN", width: 170 },
+  { id: "nominet", src: "/images/logos/nominet.png", alt: "Nominet", width: 170 },
+  { id: "agencyspotter", src: "/images/logos/agencyspotter.png", alt: "Agency Spotter", width: 170 },
+  { id: "digital", src: "/images/logos/digital.png", alt: "Digital", width: 170 },
 ];
 
 export const SERVICES: ServiceItem[] = [
