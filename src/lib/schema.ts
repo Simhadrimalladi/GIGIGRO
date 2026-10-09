@@ -10,12 +10,17 @@ export function generateOrganizationSchema() {
     sameAs: [],
     address: {
       "@type": "PostalAddress",
-      addressCountry: "UK",
+      streetAddress: "Flat No. JV202, JV Gardens, Employees Colony, Road No.1, Srinagar, Gajuwaka",
+      addressLocality: "Visakhapatnam",
+      addressRegion: "Andhra Pradesh",
+      postalCode: "530026",
+      addressCountry: "IN",
     },
     contactPoint: {
       "@type": "ContactPoint",
+      email: "support@dijigro.com",
       contactType: "customer service",
-      availableLanguage: ["English"],
+      availableLanguage: ["English", "Telugu", "Hindi"],
     },
   };
 }

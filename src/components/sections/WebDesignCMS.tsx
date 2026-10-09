@@ -50,8 +50,8 @@ export function WebDesignCMS({
   const activeEyebrow = eyebrow || (variant === "design" ? "CUSTOM WEB DESIGN" : "CUSTOM WEB DEVELOPMENT");
 
   const imageSrc = variant === "design" 
-    ? "/images/web-design-showcase.jpg" 
-    : "/images/web-development-showcase.jpg";
+    ? "/images/web-design-showcase.webp" 
+    : "/images/web-development-showcase.webp";
 
   return (
     <section className="bg-[#000000] text-[#FFFFFF] py-24 border-b border-[#1A1A1A]">

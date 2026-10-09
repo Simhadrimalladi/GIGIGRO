@@ -87,18 +87,18 @@ export const HERO_METRICS = [
 
 export const PARTNER_LOGOS = [
   { id: "badge", src: "/images/logos/badge.svg", alt: "Badge", width: 95 },
-  { id: "clutch", src: "/images/logos/clutch.png", alt: "Clutch", width: 170 },
-  { id: "goodfirms", src: "/images/logos/goodfirms.png", alt: "GoodFirms", width: 170 },
-  { id: "designrush", src: "/images/logos/designrush.png", alt: "DesignRush", width: 170 },
-  { id: "topinteractive", src: "/images/logos/topinteractive.png", alt: "Top Interactive", width: 170 },
-  { id: "googlepartner", src: "/images/logos/googlepartner.png", alt: "Google Partner", width: 170 },
-  { id: "manifest", src: "/images/logos/manifest.png", alt: "Manifest", width: 170 },
-  { id: "trustpilot", src: "/images/logos/trustpilot.png", alt: "Trustpilot", width: 170 },
-  { id: "drum", src: "/images/logos/drum.png", alt: "The Drum", width: 170 },
-  { id: "dan", src: "/images/logos/dan.png", alt: "DAN", width: 170 },
-  { id: "nominet", src: "/images/logos/nominet.png", alt: "Nominet", width: 170 },
-  { id: "agencyspotter", src: "/images/logos/agencyspotter.png", alt: "Agency Spotter", width: 170 },
-  { id: "digital", src: "/images/logos/digital.png", alt: "Digital", width: 170 },
+  { id: "clutch", src: "/images/logos/clutch.webp", alt: "Clutch", width: 170 },
+  { id: "goodfirms", src: "/images/logos/goodfirms.webp", alt: "GoodFirms", width: 170 },
+  { id: "designrush", src: "/images/logos/designrush.webp", alt: "DesignRush", width: 170 },
+  { id: "topinteractive", src: "/images/logos/topinteractive.webp", alt: "Top Interactive", width: 170 },
+  { id: "googlepartner", src: "/images/logos/googlepartner.webp", alt: "Google Partner", width: 170 },
+  { id: "manifest", src: "/images/logos/manifest.webp", alt: "Manifest", width: 170 },
+  { id: "trustpilot", src: "/images/logos/trustpilot.webp", alt: "Trustpilot", width: 170 },
+  { id: "drum", src: "/images/logos/drum.webp", alt: "The Drum", width: 170 },
+  { id: "dan", src: "/images/logos/dan.webp", alt: "DAN", width: 170 },
+  { id: "nominet", src: "/images/logos/nominet.webp", alt: "Nominet", width: 170 },
+  { id: "agencyspotter", src: "/images/logos/agencyspotter.webp", alt: "Agency Spotter", width: 170 },
+  { id: "digital", src: "/images/logos/digital.webp", alt: "Digital", width: 170 },
 ];
 
 export const SERVICES: ServiceItem[] = [
@@ -199,7 +199,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     year: "2025",
     impact: "Custom Interactive Platform",
     description: "Creative web design and interactive digital platform built for scale.",
-    image: "/images/projects/simplifying-design-flows.png",
+    image: "/images/projects/simplifying-design-flows.webp",
     tags: ["Web Design", "Digital Experience"],
   },
   {
@@ -210,7 +210,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     year: "2025",
     impact: "iOS & Android Platform",
     description: "User-centered mobile app experience designed for travel discovery and engagement.",
-    image: "/images/projects/mobile-experience-app.jpg",
+    image: "/images/projects/mobile-experience-app.webp",
     tags: ["Mobile App", "UI/UX Design"],
   },
   {
@@ -221,7 +221,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     year: "2025",
     impact: "AI Powered Platform",
     description: "Next-generation 3D interactive web workspace with real-time design tools.",
-    image: "/images/projects/creatvise-3d-design.png",
+    image: "/images/projects/creatvise-3d-design.webp",
     tags: ["3D Web App", "AI Design"],
   },
 ];

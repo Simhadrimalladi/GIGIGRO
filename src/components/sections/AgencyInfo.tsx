@@ -51,7 +51,7 @@ export function AgencyInfo() {
           <div className="lg:w-[50%] lg:sticky lg:top-36">
             <div className="relative w-full rounded-[12px] overflow-hidden bg-[#111111] border border-[#222222] shadow-2xl">
               <Image
-                src="/images/agency-network-map.png"
+                src="/images/agency-network-map.webp"
                 alt="DIJIGRO Global Network Map"
                 width={1920}
                 height={1079}

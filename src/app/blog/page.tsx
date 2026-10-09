@@ -109,7 +109,7 @@ export default function BlogPage() {
           ) : (
             <div className="flex flex-col items-center justify-center py-24 px-6 text-center bg-[#050505] rounded-3xl border border-white/5">
               <div className="relative w-[300px] h-[300px] mb-6 rounded-2xl overflow-hidden">
-                <Image src="/empty-blog.jpg" alt="No blogs found illustration" fill className="object-contain" priority />
+                <Image src="/empty-blog.webp" alt="No blogs found illustration" fill className="object-contain" priority />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">No Insights Found</h3>
               <p className="text-[#888] text-lg max-w-md mx-auto leading-relaxed">
